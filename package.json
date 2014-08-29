@@ -1,0 +1,22 @@
+{
+	"name": "uCtrl-Website",
+	"version": "0.0.1",
+	"description": "Website and portal for the uCtrl web division",
+	"keywords": [
+		"uCtrl",
+		"Automation"
+	],
+	"license": "MIT",
+	"homepage": "https://github.com/uCtrl/Website",
+	"contributors": [
+		"the name here <mail address here OPTIONNAL>",
+		"Alexandre Beaudoin <ofrogon@gmail.com>"
+	],
+	"scripts": {
+		"preinstall": "install.sh"
+	},
+	"engines" : {
+		"node" : ">=0.10.3 <0.12"
+	},
+	"private": true
+}
