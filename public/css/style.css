@@ -1,30 +1,217 @@
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/open_sansregular/OpenSans-Regular-webfont.eot');
-  src: url('../fonts/open_sansregular/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open_sansregular/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/open_sansregular/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/open_sansregular/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  src: url('../fonts/opensans_regular/opensans-Regular-webfont.eot');
+  src: url('../fonts/opensans_regular/opensans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_regular/opensans-Regular-webfont.woff') format('woff'), url('../fonts/opensans_regular/opensans-Regular-webfont.ttf') format('truetype'), url('../fonts/opensans_regular/opensans-Regular-webfont.svg#open_sansregular') format('svg');
   font-weight: normal;
   font-style: normal;
 }
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/open_sansitalic/OpenSans-Italic-webfont.eot');
-  src: url('../fonts/open_sansitalic/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open_sansitalic/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/open_sansitalic/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/open_sansitalic/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+  src: url('../fonts/opensans_italic/opensans-Italic-webfont.eot');
+  src: url('../fonts/opensans_italic/opensans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_italic/opensans-Italic-webfont.woff') format('woff'), url('../fonts/opensans_italic/opensans-Italic-webfont.ttf') format('truetype'), url('../fonts/opensans_italic/opensans-Italic-webfont.svg#open_sansitalic') format('svg');
   font-weight: normal;
   font-style: italic;
 }
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/open_sansbold_italic/OpenSans-BoldItalic-webfont.eot');
-  src: url('../fonts/open_sansbold_italic/OpenSans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open_sansbold_italic/OpenSans-BoldItalic-webfont.woff') format('woff'), url('../fonts/open_sansbold_italic/OpenSans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/open_sansbold_italic/OpenSans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
+  src: url('../fonts/opensans_bolditalic/opensans-BoldItalic-webfont.eot');
+  src: url('../fonts/opensans_bolditalic/opensans-BoldItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_bolditalic/opensans-BoldItalic-webfont.woff') format('woff'), url('../fonts/opensans_bolditalic/opensans-BoldItalic-webfont.ttf') format('truetype'), url('../fonts/opensans_bolditalic/opensans-BoldItalic-webfont.svg#open_sansbold_italic') format('svg');
   font-weight: bold;
   font-style: italic;
 }
 @font-face {
   font-family: 'open_sans';
-  src: url('../fonts/open_sansbold/OpenSans-Bold-webfont.eot');
-  src: url('../fonts/open_sansbold/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/open_sansbold/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/open_sansbold/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/open_sansbold/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  src: url('../fonts/opensans_bold/opensans-Bold-webfont.eot');
+  src: url('../fonts/opensans_bold/opensans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans_bold/opensans-Bold-webfont.woff') format('woff'), url('../fonts/opensans_bold/opensans-Bold-webfont.ttf') format('truetype'), url('../fonts/opensans_bold/opensans-Bold-webfont.svg#open_sansbold') format('svg');
   font-weight: bold;
   font-style: normal;
+}
+*,
+*:focus {
+  box-sizing: border-box;
+  outline: none;
+  font-family: open_sans;
+}
+*::-moz-focus-inner,
+*:focus::-moz-focus-inner {
+  border: 0;
+}
+body,
+html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+html {
+  background-color: #3c3c3c;
+}
+body {
+  color: #ffffff;
+}
+a {
+  color: #ffffff;
+}
+.content,
+.line h1,
+.line p,
+.line > a,
+header {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+}
+.content,
+.line p,
+.line > a,
+header {
+  padding: 0 10px;
+}
+.line h1 {
+  padding: 5px 0 8px 0;
+}
+.line p:not(:last-child) {
+  margin-bottom: 10px;
+}
+header {
+  padding-left: 268px;
+  vertical-align: bottom;
+  min-height: 150px;
+  padding-top: 10px;
+}
+.logo {
+  border: none;
+  display: inline-block;
+  position: absolute;
+  left: 0;
+}
+nav {
+  margin-top: 93px;
+  display: inline-block;
+  width: 9999px;
+  background-color: #0d9b0d;
+  white-space-collapse: discard;
+}
+nav .btn {
+  background-color: #3c3c3c;
+  margin: 2px 0 2px 2px;
+  color: #0d9b0d;
+  height: 31px;
+  line-height: 21px;
+  display: inline-block;
+  font-weight: bold;
+  padding: 5px;
+  float: left;
+  cursor: pointer;
+  text-decoration: none;
+}
+nav .btn:hover {
+  background-color: #0dbe0d;
+  color: #000000;
+}
+.line {
+  width: 100%;
+  display: block;
+  padding-bottom: 10px;
+}
+.line:nth-child(2n) {
+  background-color: #0d9b0d;
+}
+.line:not(:last-child) {
+  margin-bottom: 10px;
+}
+.fork-on-github {
+  position: absolute;
+  top: 0;
+  right: 0;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  border-bottom-left-radius: 10px;
+  font-size: 20px;
+  padding: 3px 9px;
+  color: #ffffff;
+  text-decoration: none;
+}
+.fork-on-github:hover {
+  color: #0d9b0d;
+  background-color: #ffffff;
+}
+footer {
+  margin-top: 10px;
+  border-top: 2px solid #0d9b0d;
+  padding: 5px;
+  text-align: center;
+}
+.displace-zone {
+  display: table;
+  width: 100%;
+  padding: 5px 0;
+}
+.displace-case-1 {
+  width: 100%;
+}
+.displace-case-2 {
+  width: 50%;
+}
+.displace-case-3 {
+  width: 33.3333333%;
+}
+.displace-case-4 {
+  width: 25%;
+}
+.displace-case-1,
+.displace-case-2,
+.displace-case-3,
+.displace-case-4 {
+  border: 5px solid transparent;
+  display: inline-block;
+  vertical-align: top;
+  float: left;
+}
+.displace-content {
+  padding: 2px;
+}
+.displace-content h1,
+.displace-content h2,
+.displace-content h3,
+.displace-content h4,
+.displace-content h5,
+.displace-content h6 {
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  border-bottom: 2px solid;
+}
+.line:nth-child(2n) .displace-content {
+  border: 2px solid #ffffff;
+  color: #ffffff;
+}
+.line:nth-child(2n) .displace-content h1,
+.line:nth-child(2n) .displace-content h2,
+.line:nth-child(2n) .displace-content h3,
+.line:nth-child(2n) .displace-content h4,
+.line:nth-child(2n) .displace-content h5,
+.line:nth-child(2n) .displace-content h6 {
+  border-color: #ffffff;
+}
+.line:nth-child(2n) .displace-content a {
+  color: #ffffff;
+}
+.line:not(:nth-child(2n)) .displace-content {
+  border: 2px solid #0d9b0d;
+  color: #0d9b0d;
+}
+.line:not(:nth-child(2n)) .displace-content h1,
+.line:not(:nth-child(2n)) .displace-content h2,
+.line:not(:nth-child(2n)) .displace-content h3,
+.line:not(:nth-child(2n)) .displace-content h4,
+.line:not(:nth-child(2n)) .displace-content h5,
+.line:not(:nth-child(2n)) .displace-content h6 {
+  border-color: #0d9b0d;
+}
+.line:not(:nth-child(2n)) .displace-content a {
+  color: #0d9b0d;
 }
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
@@ -1697,19 +1884,4 @@
 }
 .fa-meanpath:before {
   content: "\f20c";
-}
-*,
-*:focus {
-  box-sizing: border-box;
-  outline: none;
-  font-family: open_sans;
-}
-*::-moz-focus-inner,
-*:focus::-moz-focus-inner {
-  border: 0;
-}
-body,
-html {
-  margin: 0;
-  padding: 0;
 }

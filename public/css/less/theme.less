@@ -1,0 +1,132 @@
+*, *:focus {
+	box-sizing: border-box;
+	outline: none;
+	font-family: open_sans;
+
+	// Firefox dotted line selection remove
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+html {
+	background-color: @color_wDarkGrey;
+}
+
+body {
+	color: @color_wWhite;
+}
+
+a {
+	color: @color_wWhite;
+}
+
+.content, .line h1, .line p, .line > a , header {
+	width: 100%;
+	max-width: 1100px;
+	margin: 0 auto;
+	display: block;
+	position: relative;
+}
+
+.content, .line p, .line > a , header {
+	padding: 0 10px;
+}
+
+.line h1 {
+	padding: 5px 0 8px 0;
+}
+
+.line p:not(:last-child) {
+	margin-bottom: 10px;
+}
+
+header {
+	padding-left: 268px;
+	vertical-align: bottom;
+	min-height: 150px;
+	padding-top: 10px;
+}
+
+.logo {
+	border: none;
+	display: inline-block;
+	position: absolute;
+	left: 0;
+}
+
+nav {
+	margin-top: 93px;
+	display: inline-block;
+	width: 9999px;
+	background-color: @color_wGreen;
+	white-space-collapse: discard;
+}
+
+nav .btn {
+	background-color: @color_wDarkGrey;
+	margin: @nav-button-margin 0 @nav-button-margin @nav-button-margin;
+	color: @color_wGreen;
+	height: (@nav-height - ( 2 * @nav-button-margin));
+	line-height: (@nav-height - (( 2 * @nav-button-margin) + (2 * @nav-button-padding)));
+	display: inline-block;
+	font-weight: bold;
+	padding: @nav-button-padding;
+	float: left;
+	cursor: pointer;
+	text-decoration: none;
+
+	&:hover {
+		background-color: @color_wLightGreen;
+		color: @color_wBlack;
+	}
+
+	&.login {
+
+	}
+}
+
+.line {
+	width: 100%;
+	display: block;
+	padding-bottom: 10px;
+
+	&:nth-child(2n) {
+		background-color: @color_wGreen;
+	}
+
+	&:not(:last-child) {
+		margin-bottom: 10px;
+	}
+}
+
+.fork-on-github {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border-left: 2px solid @color_wWhite;
+	border-bottom: 2px solid @color_wWhite;
+	border-bottom-left-radius: 10px;
+	font-size: 20px;
+	padding: 3px 9px;
+	color: @color_wWhite;
+	text-decoration: none;
+
+	&:hover {
+		color: @color_wGreen;
+		background-color: @color_wWhite;
+	}
+}
+
+footer {
+	margin-top: 10px;
+	border-top: 2px solid @color_wGreen;
+	padding: 5px;
+	text-align: center;
+}
