@@ -2,13 +2,14 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
 		<meta name="description" content="Home Automation Open-Source Product">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="favicon.ico" />
 		<title>Home page - UCtrl Website</title>
 	</head>
-	<body>
+	<body ng-app="app">
 		<header>
 			<img src="img/µCtrl_logo.png" alt="µCtrl logo" class="logo"/>
 			<nav>
@@ -20,110 +21,21 @@
 			</nav>
 		</header>
 		<a href="https://github.com/uCtrl" class="fork-on-github"><i class="fa fa-github-alt"></i> Fork us on Github</a>
-		<section>
-			<article class="line">
-				<h1 id="About">About</h1>
 
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel fringilla metus. Nullam dapibus velit nec dignissim molestie. Suspendisse a ex ac diam auctor convallis. Nullam vitae convallis ex, ut dapibus enim. Proin tempor velit justo, lacinia varius sem ultrices non. Proin non fermentum lorem, sit amet accumsan arcu. Curabitur hendrerit nulla eu mi auctor blandit. Vivamus vitae lectus et ante porttitor eleifend vel vitae leo. Maecenas mollis turpis sit amet arcu sagittis rutrum vel a quam. In magna purus, blandit quis neque sit amet, mattis vehicula sapien. Vivamus feugiat, nisi vitae pellentesque ullamcorper, urna lectus convallis leo, et cursus tellus odio eu ligula. Vivamus sed vestibulum urna. Aliquam semper massa gravida, ultricies quam ornare, accumsan dui.</p>
-
-				<p>Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est. </p>
-			</article>
-			<article class="line">
-				<h1 id="Contact">Contact</h1>
-
-				<div class="content">
-					<div class="displace-zone">
-						<div class="displace-case-2">
-							<div class="displace-content">
-								<h2>Software</h2>
-								<ul>
-									<li>Dude 1</li>
-									<li>Dude 2</li>
-									<li>Dude 3</li>
-									<li>Dude 4</li>
-									<li>Dude 5</li>
-									<li>Dude 6</li>
-									<li>Dude 7</li>
-									<li>Dude 8</li>
-									<li>Dude 9</li>
-								</ul>
-							</div>
-						</div>
-						<div class="displace-case-2">
-							<div class="displace-content">
-								<h2>Hardware</h2>
-								<ul>
-									<li>Dude 1</li>
-									<li>Dude 2</li>
-									<li>Dude 3</li>
-									<li>Dude 4</li>
-									<li>Dude 5</li>
-									<li>Dude 6</li>
-									<li>Dude 7</li>
-									<li>Dude 8</li>
-									<li>Dude 9</li>
-								</ul>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-			<article class="line">
-				<h1 id="Download">Download</h1>
-
-				<div class="content">
-					<div class="displace-zone">
-						<div class="displace-case-3">
-							<div class="displace-content">
-								<h2><i class="fa fa-windows fa-fw"></i> Windows</h2>
-								<ul>
-									<li><a href="#">x86 - Desktop Application V. 0.0.0</a></li>
-									<li><a href="#">x64 - Desktop Application V. 0.0.0</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="displace-case-3">
-							<div class="displace-content">
-								<h2><i class="fa fa-apple fa-fw"></i> MAC</h2>
-								<ul>
-									<li><a href="#">x86 - Desktop Application V. 0.0.0</a></li>
-									<li><a href="#">x64 - Desktop Application V. 0.0.0</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="displace-case-3">
-							<div class="displace-content">
-								<h2><i class="fa fa-linux fa-fw"></i> Linux</h2>
-								<ul>
-									<li><a href="#">x86 - Desktop Application V. 0.0.0</a></li>
-									<li><a href="#">x64 - Desktop Application V. 0.0.0</a></li>
-								</ul>
-							</div>
-						</div>
-						<div class="displace-case-2">
-							<div class="displace-content">
-								<h2><i class="fa fa-android fa-fw"></i> Android</h2>
-								<p>Available directly on the <a href="#">Play Store</a>.</p>
-							</div>
-						</div>
-						<div class="displace-case-2">
-							<div class="displace-content">
-								<h2><i class="fa fa-apple fa-fw"></i> IOS</h2>
-								<p>Available directly on the <a href="#">App Store</a>.</p>
-							</div>
-						</div>
-					</div>
-				</div>
-			</article>
-			<article class="line">
-				<h1 id="SourceCode">Source code</h1>
-
-				<p>All our source code is available on <a href="https://github.com/uCtrl"><i class="fa fa-github"></i> Github</a>.</p>
-				<p>Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est. </p>
-			</article>
+		<section ui-view>
+			<!-- Pages will be load here by ui-router -->
 		</section>
+
 		<footer>
 			<p class="content">µCtrl - License MIT</p>
 		</footer>
+
+		<script src="js/vendor/jquery.js"></script>
+		<script src="js/vendor/angular.js"></script>
+		<script src="js/vendor/angular-ui-router.js"></script>
+		<script src="js/vendor/bootstrap.js"></script>
+
+		<!-- Angular app -->
+		<script src="js/app/app.js"></script>
 	</body>
 </html>

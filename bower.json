@@ -17,7 +17,8 @@
 		"jquery": "~1.11.1",
 		"bootstrap": "~3.2.0",
 		"ScrollMagic": "^1.1.1",
-		"stickUp": "~0.5.7",
-		"jquery.scrollTo": "~1.4.13"
+		"jquery.scrollTo": "~1.4.13",
+		"angular": "~1.2.23",
+		"ui-router": "~0.2.11"
 	}
 }
