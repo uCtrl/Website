@@ -43,7 +43,7 @@ html {
   overflow-x: hidden;
 }
 html {
-  background-color: #3c3c3c;
+  background-color: #ffffff;
 }
 body {
   color: #ffffff;
@@ -51,167 +51,43 @@ body {
 a {
   color: #ffffff;
 }
-.content,
-.line h1,
-.line p,
-.line > a,
 header {
-  width: 100%;
-  max-width: 1100px;
-  margin: 0 auto;
-  display: block;
-  position: relative;
-}
-.content,
-.line p,
-.line > a,
-header {
-  padding: 0 10px;
-}
-.line h1 {
-  padding: 5px 0 8px 0;
-}
-.line p:not(:last-child) {
-  margin-bottom: 10px;
-}
-header {
-  padding-left: 268px;
-  vertical-align: bottom;
-  min-height: 150px;
-  padding-top: 10px;
+  padding-top: 50px;
 }
 .logo {
-  border: none;
-  display: inline-block;
-  position: absolute;
-  left: 0;
+  height: 54px;
+  padding: 2px 0;
+  margin-bottom: -17px;
 }
-nav {
-  margin-top: 93px;
-  display: inline-block;
-  width: 9999px;
-  background-color: #0d9b0d;
-  white-space-collapse: discard;
-}
-nav .btn {
-  background-color: #3c3c3c;
-  margin: 2px 0 2px 2px;
-  color: #0d9b0d;
-  height: 31px;
-  line-height: 21px;
-  display: inline-block;
-  font-weight: bold;
-  padding: 5px;
-  float: left;
-  cursor: pointer;
-  text-decoration: none;
-}
-nav .btn:hover {
-  background-color: #0dbe0d;
-  color: #000000;
-}
-.line {
-  width: 100%;
-  display: block;
-  padding-bottom: 10px;
-}
-.line:nth-child(2n) {
-  background-color: #0d9b0d;
-}
-.line:not(:last-child) {
-  margin-bottom: 10px;
+.logo.small {
+  height: 30px;
 }
 .fork-on-github {
   position: absolute;
   top: 0;
   right: 0;
-  border-left: 2px solid #ffffff;
-  border-bottom: 2px solid #ffffff;
+  border-left: 2px solid #0d9b0d;
+  border-bottom: 2px solid #0d9b0d;
   border-bottom-left-radius: 10px;
   font-size: 20px;
   padding: 3px 9px;
-  color: #ffffff;
+  color: #0d9b0d;
   text-decoration: none;
 }
 .fork-on-github:hover {
-  color: #0d9b0d;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: #0d9b0d;
+}
+body .ng-scope:nth-child(2n) {
+  background-color: #f7f6f6;
+}
+body .ng-scope:nth-child(2n) .panel-heading {
+  background-color: #d4d4d4;
 }
 footer {
-  margin-top: 10px;
   border-top: 2px solid #0d9b0d;
   padding: 5px;
   text-align: center;
-}
-.displace-zone {
-  display: table;
-  width: 100%;
-  padding: 5px 0;
-}
-.displace-case-1 {
-  width: 100%;
-}
-.displace-case-2 {
-  width: 50%;
-}
-.displace-case-3 {
-  width: 33.3333333%;
-}
-.displace-case-4 {
-  width: 25%;
-}
-.displace-case-1,
-.displace-case-2,
-.displace-case-3,
-.displace-case-4 {
-  border: 5px solid transparent;
-  display: inline-block;
-  vertical-align: top;
-  float: left;
-}
-.displace-content {
-  padding: 2px;
-}
-.displace-content h1,
-.displace-content h2,
-.displace-content h3,
-.displace-content h4,
-.displace-content h5,
-.displace-content h6 {
-  padding: 0;
-  margin: 0;
-  text-align: center;
-  border-bottom: 2px solid;
-}
-.line:nth-child(2n) .displace-content {
-  border: 2px solid #ffffff;
-  color: #ffffff;
-}
-.line:nth-child(2n) .displace-content h1,
-.line:nth-child(2n) .displace-content h2,
-.line:nth-child(2n) .displace-content h3,
-.line:nth-child(2n) .displace-content h4,
-.line:nth-child(2n) .displace-content h5,
-.line:nth-child(2n) .displace-content h6 {
-  border-color: #ffffff;
-}
-.line:nth-child(2n) .displace-content a {
-  color: #ffffff;
-}
-.line:not(:nth-child(2n)) .displace-content {
-  border: 2px solid #0d9b0d;
-  color: #0d9b0d;
-}
-.line:not(:nth-child(2n)) .displace-content h1,
-.line:not(:nth-child(2n)) .displace-content h2,
-.line:not(:nth-child(2n)) .displace-content h3,
-.line:not(:nth-child(2n)) .displace-content h4,
-.line:not(:nth-child(2n)) .displace-content h5,
-.line:not(:nth-child(2n)) .displace-content h6 {
-  border-color: #0d9b0d;
-}
-.line:not(:nth-child(2n)) .displace-content a {
-  color: #0d9b0d;
 }
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome

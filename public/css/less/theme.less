@@ -16,93 +16,28 @@ body, html {
 }
 
 html {
-	background-color: @color_wDarkGrey;
+	background-color: @color_white;
 }
 
 body {
-	color: @color_wWhite;
+	color: @color_white;
 }
 
 a {
-	color: @color_wWhite;
-}
-
-.content, .line h1, .line p, .line > a , header {
-	width: 100%;
-	max-width: 1100px;
-	margin: 0 auto;
-	display: block;
-	position: relative;
-}
-
-.content, .line p, .line > a , header {
-	padding: 0 10px;
-}
-
-.line h1 {
-	padding: 5px 0 8px 0;
-}
-
-.line p:not(:last-child) {
-	margin-bottom: 10px;
+	color: @color_white;
 }
 
 header {
-	padding-left: 268px;
-	vertical-align: bottom;
-	min-height: 150px;
-	padding-top: 10px;
+	padding-top: 50px;
 }
 
 .logo {
-	border: none;
-	display: inline-block;
-	position: absolute;
-	left: 0;
-}
+	height: 54px;
+	padding: 2px 0;
+	margin-bottom: -17px;
 
-nav {
-	margin-top: 93px;
-	display: inline-block;
-	width: 9999px;
-	background-color: @color_wGreen;
-	white-space-collapse: discard;
-}
-
-nav .btn {
-	background-color: @color_wDarkGrey;
-	margin: @nav-button-margin 0 @nav-button-margin @nav-button-margin;
-	color: @color_wGreen;
-	height: (@nav-height - ( 2 * @nav-button-margin));
-	line-height: (@nav-height - (( 2 * @nav-button-margin) + (2 * @nav-button-padding)));
-	display: inline-block;
-	font-weight: bold;
-	padding: @nav-button-padding;
-	float: left;
-	cursor: pointer;
-	text-decoration: none;
-
-	&:hover {
-		background-color: @color_wLightGreen;
-		color: @color_wBlack;
-	}
-
-	&.login {
-
-	}
-}
-
-.line {
-	width: 100%;
-	display: block;
-	padding-bottom: 10px;
-
-	&:nth-child(2n) {
-		background-color: @color_wGreen;
-	}
-
-	&:not(:last-child) {
-		margin-bottom: 10px;
+	&.small {
+		height: 30px;
 	}
 }
 
@@ -110,23 +45,30 @@ nav .btn {
 	position: absolute;
 	top: 0;
 	right: 0;
-	border-left: 2px solid @color_wWhite;
-	border-bottom: 2px solid @color_wWhite;
+	border-left: 2px solid @color_green;
+	border-bottom: 2px solid @color_green;
 	border-bottom-left-radius: 10px;
 	font-size: 20px;
 	padding: 3px 9px;
-	color: @color_wWhite;
+	color: @color_green;
 	text-decoration: none;
 
 	&:hover {
-		color: @color_wGreen;
-		background-color: @color_wWhite;
+		color: @color_white;
+		background-color: @color_green;
+	}
+}
+
+body .ng-scope:nth-child(2n) {
+	background-color: @color_ultraLightGrey;
+
+	.panel-heading {
+		background-color: @color_mediumLightGrey;
 	}
 }
 
 footer {
-	margin-top: 10px;
-	border-top: 2px solid @color_wGreen;
+	border-top: 2px solid @color_green;
 	padding: 5px;
 	text-align: center;
 }
