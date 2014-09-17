@@ -11,7 +11,7 @@
 	</head>
 	<body ng-app="app">
 		<header>
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainMenu">
 				<div class="container">
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
@@ -31,7 +31,7 @@
 							<li><a href="#SourceCode" class="btn">Source code</a></li>
 						</ul>
 
-						<button type="button" class="btn btn-default navbar-btn navbar-right">Sign in</button>
+						<button type="button" class="btn btn-default navbar-btn navbar-right" ng-click="console.log('pre-call');open();console.log('post-call')">Sign in</button>
 					</div>
 				</div>
 			</nav>
@@ -49,6 +49,8 @@
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/angular.js"></script>
 		<script src="js/vendor/angular-ui-router.js"></script>
+		<script src="js/vendor/ui-bootstrap.js"></script>
+		<script src="js/vendor/ui-bootstrap-tpls.js"></script>
 		<script src="js/vendor/bootstrap.js"></script>
 
 		<!-- Angular app -->
