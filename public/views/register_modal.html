@@ -1,0 +1,78 @@
+<div class="modal-content">
+	<div class="modal-header">
+		<div class="pull-right" style="width: 131px;">
+			<button type="button" class="btn btn-primary" ng-click="login()" ng-class="{disabled: disableButtons}">Login</button>
+			<button type="button" class="close" ng-click="close()" ng-class="{disabled: disableButtons}">
+				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span>
+			</button>
+		</div>
+
+		<h4 class="modal-title">Register to the µCtrl portal</h4>
+	</div>
+	<div class="modal-body">
+		<div class="alert alert-info alert-dismissible" role="alert">
+			<button type="button" class="close" data-dismiss="alert">
+				<span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+			<p>This form allow you to register to the µCtrl web portal service.</p>
+
+			<p>From this portal, you will be able to connect each of your devices and then control them from anywhere!</p>
+		</div>
+
+		<input type="text" name="registerUserNameUCtrl" id="registerUserNameUCtrl" class="form-control" placeholder="Username" ng-model="user.username" required>
+
+		<br/>
+
+		<input type="password" name="registerPasswordUCtrl" id="registerPasswordUCtrl" class="form-control" placeholder="Password" ng-model="user.password1" required>
+
+		<br/>
+
+		<input type="password" name="registerPasswordUCtrl2" id="registerPasswordUCtrl2" class="form-control" placeholder="Password confirmation" ng-model="user.password2" required>
+
+		<br/>
+
+		<div ng-show="user.password1 !== user.password2 && user.password2 != ''">
+			<div class="alert alert-danger" role="alert">
+				Password mismatch!
+			</div>
+		</div>
+
+		<input type="text" name="registerFirstName" id="registerFirstName" class="form-control" placeholder="First name" ng-model="user.firstName" required>
+
+		<br/>
+
+		<input type="text" name="registerLastName" id="registerLastName" class="form-control" placeholder="Last name" ng-model="user.lastName" required>
+
+		<div ng-hide="passValidation">
+			<br/>
+
+			<div class="alert alert-danger" role="alert">
+				<strong>Form validation failed.</strong>
+
+				<br/><br/>
+
+				<p>Please correct theses errors:</p>
+
+				<ul>
+					<li ng-repeat="message in validationMessages">{{message}}</li>
+				</ul>
+			</div>
+		</div>
+
+		<div ng-show="passValidation && validationMessages.length > 0">
+			<br/>
+
+			<div class="alert alert-success" role="alert">
+				<strong>Form validation pass.</strong>
+
+				<br/><br/>
+
+				<p>Waiting for the portal to be ready. <i class="fa fa-spin fa-spinner"></i></p>
+			</div>
+		</div>
+	</div>
+	<div class="modal-footer">
+		<button type="button" class="btn btn-default" ng-click="close()" ng-class="{disabled: disableButtons}">Close</button>
+
+		<button type="button" class="btn btn-success" ng-click="portalRegister()" ng-class="{disabled: disableButtons}">Register and login</button>
+	</div>
+</div>

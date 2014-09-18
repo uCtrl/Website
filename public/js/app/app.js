@@ -32,7 +32,7 @@
 		$scope.open = function() {
 
 			$modal.open({
-				templateUrl: 'views/login_modal.html',
+				templateUrl: 'views/singIn_container.html',
 				controller: singInModal
 			});
 		};
@@ -45,12 +45,40 @@
 		};
 
 		var singInModal = function($scope, $modalInstance) {
+			$scope.user = {
+				"username": '',
+				"password1": '',
+				"password2": '',
+				"firstName": '',
+				"lastName": ''
+			};
+
+			$scope.passValidation = true;
+			$scope.validationMessages = '';
+			$scope.disableButtons = false;
+
+			$scope.templates =
+				[
+					{ name: 'login', url: 'views/login_modal.html'},
+					{ name: 'register', url: 'views/register_modal.html'}
+				];
+
+			$scope.template = $scope.templates[0];
+
 			$scope.register = function() {
-				alert('Catch register from scope singInModal!');
+				$scope.template = $scope.templates[1];
 			};
 
 			$scope.login = function() {
-				alert('Catch login from scope singInModal!');
+				$scope.template = $scope.templates[0];
+			};
+
+			$scope.portalRegister = function() {
+				registerValidation();
+
+				if ($scope.passValidation) {
+					$scope.portalConnect();
+				}
 			};
 
 			$scope.portalConnect = function() {
@@ -59,6 +87,37 @@
 
 			$scope.close = function() {
 				$modalInstance.dismiss('cancel');
+			};
+
+			function registerValidation() {
+				var exit = [];
+				var missing = [];
+
+				Object.getOwnPropertyNames($scope.user).forEach(function(val) {
+					if ($scope.user[val].length < 1) {
+						missing[missing.length] = val;
+					}
+				});
+
+				if (missing.length > 0) {
+					exit[exit.length] = 'Some input were missing: ' + missing.join(', ') + '.';
+				}
+
+				//TODO verify input format
+
+				if (($scope.user.password1.length > 0 || $scope.user.password2.length > 0) && $scope.user.password1 !== $scope.user.password2) {
+					exit[exit.length] = 'The password and the password validation were not he same.';
+				}
+
+				if (exit.length > 0) {
+					$scope.passValidation = false;
+				} else {
+					$scope.passValidation = true;
+					$scope.disableButtons = true;
+					exit[0] = 'Validation successful.';
+				}
+
+				$scope.validationMessages = exit;
 			}
 		}
 	}]);

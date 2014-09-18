@@ -82,10 +82,10 @@ header {
   padding-top: 70px;
   margin-top: -50px;
 }
-body .ng-scope:nth-child(2n) {
+body div.ng-scope:nth-child(2n) {
   background-color: #f7f6f6;
 }
-body .ng-scope:nth-child(2n) .panel-heading {
+body div.ng-scope:nth-child(2n) .panel-heading {
   background-color: #d4d4d4;
 }
 footer {
