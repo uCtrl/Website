@@ -13,8 +13,10 @@
 		<header>
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainMenu">
 				<div class="container">
+					<button type="button" class="btn btn-default navbar-btn navbar-right" ng-click="console.log('pre-call');open();console.log('post-call')" id="singIn">Sign in</button>
+
 					<div class="navbar-header">
-						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar-collapse">
 							<span class="sr-only">Toggle navigation</span>
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
@@ -23,15 +25,13 @@
 						<a ng-href="index.html#/home" class="btn"><img src="img/µCtrl_logo.png" alt="µCtrl logo" class="logo"/></a>
 					</div>
 
-					<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<div class="collapse navbar-collapse" id="navBar-collapse">
 						<ul class="nav navbar-nav">
-							<li><a href="#About" class="btn">About</a></li>
-							<li><a href="#Contact" class="btn">Contact</a></li>
-							<li><a href="#Download" class="btn">Download</a></li>
-							<li><a href="#SourceCode" class="btn">Source code</a></li>
+							<li><a ng-click="scrollTo('About')" class="btn">About</a></li>
+							<li><a ng-click="scrollTo('Team')" class="btn">Team</a></li>
+							<li><a ng-click="scrollTo('Download')" class="btn">Download</a></li>
+							<li><a ng-click="scrollTo('SourceCode')" class="btn">Source code</a></li>
 						</ul>
-
-						<button type="button" class="btn btn-default navbar-btn navbar-right" ng-click="console.log('pre-call');open();console.log('post-call')">Sign in</button>
 					</div>
 				</div>
 			</nav>

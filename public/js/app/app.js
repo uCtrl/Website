@@ -23,23 +23,43 @@
 					'team@home': {
 						templateUrl: 'views/team.html'
 					}
-				},
+				}
 			});
 	});
-	app.controller('mainMenu', ['$scope', '$modal', '$state', function($scope, $modal, $state) {
-			$scope.state = $state;
+	app.controller('mainMenu', ['$scope', '$modal', '$state', '$location', '$anchorScroll', function($scope, $modal, $state, $location, $anchorScroll) {
+		$scope.state = $state;
 
-			$scope.open = function(){
+		$scope.open = function() {
 
-				console.log('I am here!!!!!');
+			$modal.open({
+				templateUrl: 'views/login_modal.html',
+				controller: singInModal
+			});
+		};
 
-				// open modal whithout changing url
-				$modal.open({
-					templateUrl: 'views/login_modal.html'
-				});
+		$scope.scrollTo = function(id) {
+			$(".navbar-collapse").collapse('hide');
 
-				// I need to open popup via $state.go or something like this
+			$location.hash(id);
+			$anchorScroll();
+		};
+
+		var singInModal = function($scope, $modalInstance) {
+			$scope.register = function() {
+				alert('Catch register from scope singInModal!');
 			};
-		}]
-	);
+
+			$scope.login = function() {
+				alert('Catch login from scope singInModal!');
+			};
+
+			$scope.portalConnect = function() {
+				alert('portalConnect login from scope singInModal!');
+			};
+
+			$scope.close = function() {
+				$modalInstance.dismiss('cancel');
+			}
+		}
+	}]);
 })();

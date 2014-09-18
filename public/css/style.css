@@ -78,6 +78,10 @@ header {
   color: #ffffff;
   background-color: #0d9b0d;
 }
+.anchor {
+  padding-top: 70px;
+  margin-top: -50px;
+}
 body .ng-scope:nth-child(2n) {
   background-color: #f7f6f6;
 }
@@ -88,6 +92,12 @@ footer {
   border-top: 2px solid #0d9b0d;
   padding: 5px;
   text-align: center;
+}
+@media screen and (max-width: 768px) {
+  #singIn {
+    position: absolute;
+    right: 74px;
+  }
 }
 /*!
  *  Font Awesome 4.2.0 by @davegandy - http://fontawesome.io - @fontawesome
