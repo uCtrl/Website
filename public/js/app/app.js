@@ -1,14 +1,14 @@
 'use strict';
-(function() {
+(function () {
 	var app = angular.module('app', ['ui.router', 'ui.bootstrap']);
-	app.config(function($stateProvider, $urlRouterProvider) {
+	app.config(function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/home');
 
 		$stateProvider
 			.state('home', {
 				url: '/home',
 				views: {
-					"" : {
+					"": {
 						templateUrl: 'views/index_container.html'
 					},
 					'about@home': {
@@ -26,10 +26,10 @@
 				}
 			});
 	});
-	app.controller('mainMenu', ['$scope', '$modal', '$state', '$location', '$anchorScroll', function($scope, $modal, $state, $location, $anchorScroll) {
+	app.controller('mainMenu', ['$scope', '$modal', '$state', '$location', '$anchorScroll', function ($scope, $modal, $state, $location, $anchorScroll) {
 		$scope.state = $state;
 
-		$scope.open = function() {
+		$scope.open = function () {
 
 			$modal.open({
 				templateUrl: 'views/singIn_container.html',
@@ -37,14 +37,13 @@
 			});
 		};
 
-		$scope.scrollTo = function(id) {
+		$scope.scrollSmooth = function (id) {
 			$(".navbar-collapse").collapse('hide');
 
-			$location.hash(id);
-			$anchorScroll();
+			$.scrollTo('#' + id, 800);
 		};
 
-		var singInModal = function($scope, $modalInstance) {
+		var singInModal = function ($scope, $modalInstance) {
 			$scope.user = {
 				"username": '',
 				"password1": '',
@@ -65,15 +64,15 @@
 
 			$scope.template = $scope.templates[0];
 
-			$scope.register = function() {
+			$scope.register = function () {
 				$scope.template = $scope.templates[1];
 			};
 
-			$scope.login = function() {
+			$scope.login = function () {
 				$scope.template = $scope.templates[0];
 			};
 
-			$scope.portalRegister = function() {
+			$scope.portalRegister = function () {
 				registerValidation();
 
 				if ($scope.passValidation) {
@@ -81,11 +80,11 @@
 				}
 			};
 
-			$scope.portalConnect = function() {
+			$scope.portalConnect = function () {
 				alert('portalConnect login from scope singInModal!');
 			};
 
-			$scope.close = function() {
+			$scope.close = function () {
 				$modalInstance.dismiss('cancel');
 			};
 
@@ -93,7 +92,7 @@
 				var exit = [];
 				var missing = [];
 
-				Object.getOwnPropertyNames($scope.user).forEach(function(val) {
+				Object.getOwnPropertyNames($scope.user).forEach(function (val) {
 					if ($scope.user[val].length < 1) {
 						missing[missing.length] = val;
 					}
