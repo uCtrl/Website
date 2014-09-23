@@ -9,5 +9,8 @@
 * Angular
 * Bootstrap
 * Font Awesome
-* JQuery
+* jQuery
+* jQuery.ScrollTo
 * AngularUI Router
+* UI Bootstrap
+* validator.js

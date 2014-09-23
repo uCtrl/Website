@@ -1,9 +1,23 @@
 'use strict';
-(function() {
+(function () {
+	/**
+	 * Handle team window display.
+	 */
 	var teamM = angular.module('teamModule', []);
 
-	teamM.controller('teamList', ['$scope', '$http', function($scope, $http) {
+	teamM.controller('teamList', ['$scope', '$http', function ($scope, $http) {
+		/**
+		 * Will contain team member information
+		 *
+		 * @type {{}}
+		 */
 		$scope.team = {};
+
+		/**
+		 * team.software empty object, mainly for intellisense purpose.
+		 *
+		 * @type {{firstName: string, lastName: string, email: string, post: string, text: string, picture: string}[]}
+		 */
 		$scope.team.software = [
 			{
 				"firstName": "",
@@ -14,6 +28,12 @@
 				"picture": ""
 			}
 		];
+
+		/**
+		 * team.hardware empty object, mainly for intellisense purpose.
+		 *
+		 * @type {{firstName: string, lastName: string, email: string, post: string, text: string, picture: string}[]}
+		 */
 		$scope.team.hardware = [
 			{
 				"firstName": "",
@@ -25,13 +45,19 @@
 			}
 		];
 
-		// Load team data
+		// Load team data at initialisation.
 		$http.get('data/team.json')
-			.then(function(res) {
+			.then(function (res) {
 				$scope.team = res.data;
 			});
 
-		$scope.position = function(post) {
+		/**
+		 * Display the user job in the team or N.A. for "Not Applicable".
+		 *
+		 * @param post
+		 * @returns {*}
+		 */
+		$scope.position = function (post) {
 			if (post == '') {
 				post = 'N.A.';
 			}
