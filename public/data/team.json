@@ -1,0 +1,158 @@
+{
+	"software": [
+		{
+			"firstName": "Alexandre",
+			"lastName": "Beaudoin",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Bobby",
+			"lastName": "Lavoie",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Jean-Philippe",
+			"lastName": "Gauthier",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Laurens",
+			"lastName": "Coderre",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Simon",
+			"lastName": "Benoit",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Émile",
+			"lastName": "Bélair",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Alexis",
+			"lastName": "Huard",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Alexandre",
+			"lastName": "Martel",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Francis",
+			"lastName": "Beauchemin",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Thomas",
+			"lastName": "Duhautois",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		}
+	],
+	"hardware": [
+		{
+			"firstName": "Cameron",
+			"lastName": "Brouillette",
+			"email": "cameron.brouillette@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Jonathan",
+			"lastName": "D’Amours,",
+			"email": "damours.jonathan@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Mathieu",
+			"lastName": "Gagnon",
+			"email": "gmatiosse1@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Vincent",
+			"lastName": "Guillemette",
+			"email": "vincent.guillemette1@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Alexandre",
+			"lastName": "Proulx",
+			"email": "alexandre.proulx3@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Jean-Philippe",
+			"lastName": "Raymond",
+			"email": "jp.raymond13@gmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Jonatan",
+			"lastName": "Rivest",
+			"email": "jo_arcange@hotmail.com",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Jean-François",
+			"lastName": "Therriault",
+			"email": "jeanfrancois.therriault@usherbrooke.ca",
+			"post": "",
+			"text": "",
+			"picture": ""
+		},
+		{
+			"firstName": "Leur nouveau",
+			"lastName": "Francais",
+			"email": "",
+			"post": "",
+			"text": "",
+			"picture": ""
+		}
+	]
+}
