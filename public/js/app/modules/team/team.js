@@ -2,7 +2,7 @@
 (function() {
 	var teamM = angular.module('teamModule', []);
 
-	teamM.controller('teamList', function($scope, $http) {
+	teamM.controller('teamList', ['$scope', '$http', function($scope, $http) {
 		$scope.team = {};
 		$scope.team.software = [
 			{
@@ -38,5 +38,5 @@
 
 			return post;
 		}
-	});
+	}]);
 })();
