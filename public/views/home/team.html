@@ -1,14 +1,14 @@
 <article class="container">
 	<div class="row col-lg-12" ng-controller="teamList">
-		<h1 class="anchor" id="Team">Team</h1>
+		<h1 class="anchor" id="Team">{{'Team' | translate}}</h1>
 
 		<div class="col-md-6">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h2 class="panel-title">Software</h2>
+					<h2 class="panel-title">{{'Software' | translate}}</h2>
 				</div>
 				<div class="panel-body">
-					This is the list of the project software team.
+					{{'SoftwareTeamDesc' | translate}}
 					<br/>
 					<img ng-src="img/Logo-Software.png" alt="Sub-team logo software" class="img-sub-team"/>
 				</div>
@@ -20,10 +20,10 @@
 								<img ng-if="teammate.picture == ''" ng-src="img/NO-PICTURE.jpg" class="img-thumbnail"/>
 							</div>
 							<div class="col-xs-8">
-								<p ng-if="teammate.email != ''"><strong>Name : </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
-								<p ng-if="teammate.email == ''"><strong>Name : </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
+								<p ng-if="teammate.email != ''"><strong>{{'Name' | translate}}: </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
+								<p ng-if="teammate.email == ''"><strong>{{'Name' | translate}}: </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
 								<p>
-									<strong>Post : </strong>{{position(teammate.post)}}
+									<strong>{{'Post' | translate}}: </strong>{{position(teammate.post)}}
 								</p>
 								<p>
 									{{teammate.text}}
@@ -37,10 +37,10 @@
 		<div class="col-md-6">
 			<div class="panel panel-default">
 				<div class="panel-heading">
-					<h2 class="panel-title">Hardware</h2>
+					<h2 class="panel-title">{{'Hardware' | translate}}</h2>
 				</div>
 				<div class="panel-body">
-					This is the list of the project hardware team.
+					{{'HardwareTeamDesc' | translate}}
 					<br/>
 					<img ng-src="img/Logo-Hardware.png" alt="Sub-team logo hardware" class="img-sub-team"/>
 				</div>
@@ -52,10 +52,10 @@
 								<img ng-if="teammate.picture == ''" ng-src="img/NO-PICTURE.jpg" class="img-thumbnail"/>
 							</div>
 							<div class="col-xs-8">
-								<p ng-if="teammate.email != ''"><strong>Name : </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
-								<p ng-if="teammate.email == ''"><strong>Name : </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
+								<p ng-if="teammate.email != ''"><strong>{{'Name' | translate}}: </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
+								<p ng-if="teammate.email == ''"><strong>{{'Name' | translate}}: </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
 								<p>
-									<strong>Post : </strong>{{position(teammate.post)}}
+									<strong>{{'Post' | translate}}: </strong>{{position(teammate.post)}}
 								</p>
 								<p>
 									{{teammate.text}}

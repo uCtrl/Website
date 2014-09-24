@@ -12,6 +12,9 @@
 		"the name here <mail address here OPTIONNAL>",
 		"Alexandre Beaudoin <ofrogon@gmail.com>"
 	],
+	"dependencies": {
+		"bower-installer": "^0.8.0"
+	},
 	"scripts": {
 		"preinstall": "./install.sh"
 	},
