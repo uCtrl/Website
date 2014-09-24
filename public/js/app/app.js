@@ -80,4 +80,31 @@
 			$.scrollTo('#' + id, 800);
 		};
 	}]);
+
+	app.controller('footerMenu', ['$rootScope','$scope', '$location', '$anchorScroll', '$state', function($rootScope, $scope, $location, $anchorScroll, $state) {
+
+		/**
+		 * Allow multiple state, anchor navigation and wait for loading of data
+		 *
+		 * @param page {string}
+		 * @param id {string}
+		 */
+		$scope.scrollTo = function(page, id) {
+			var oldState = $state.current.name;
+			$state.go(page).then(function() {
+				if (id !== undefined) {
+					// Special home handle
+					if ($state.current.name == 'home' && oldState != 'home') {
+						// Need to wait some time for team member list generation before move, must for the 'Download' and
+						// the 'Source code' section
+						$rootScope.$on('memberLoaded', function() {
+							$.scrollTo('#' + id, 300);
+						});
+					} else {
+						$.scrollTo('#' + id, 800);
+					}
+				}
+			});
+		};
+	}]);
 })();

@@ -5,7 +5,7 @@
 	 */
 	var teamM = angular.module('teamModule', []);
 
-	teamM.controller('teamList', ['$scope', '$http', function ($scope, $http) {
+	teamM.controller('teamList', ['$rootScope', '$scope', '$http', function ($rootScope, $scope, $http) {
 		/**
 		 * Will contain team member information
 		 *
@@ -49,6 +49,10 @@
 		$http.get('data/team.json')
 			.then(function (res) {
 				$scope.team = res.data;
+
+				window.setTimeout(function() {
+					$rootScope.$emit('memberLoaded');
+				}, 500);
 			});
 
 		/**

@@ -13,7 +13,7 @@
 					<img ng-src="img/Logo-Software.png" alt="Sub-team logo software" class="img-sub-team"/>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="teammate in team.software | orderBy:'lastName'">
+					<li class="list-group-item" ng-repeat="teammate in team.software | orderBy:'lastName'" team-generation-callback>
 						<div class="row">
 							<div class="col-xs-4">
 								<img ng-if="teammate.picture != ''" ng-src="{{teammate.picture}}" class="img-thumbnail"/>
@@ -45,7 +45,7 @@
 					<img ng-src="img/Logo-Hardware.png" alt="Sub-team logo hardware" class="img-sub-team"/>
 				</div>
 				<ul class="list-group">
-					<li class="list-group-item" ng-repeat="teammate in team.hardware | orderBy:'lastName'">
+					<li class="list-group-item" ng-repeat="teammate in team.hardware | orderBy:'lastName'" team-generation-callback>
 						<div class="row">
 							<div class="col-xs-4">
 								<img ng-if="teammate.picture != ''" ng-src="{{teammate.picture}}" class="img-thumbnail"/>
