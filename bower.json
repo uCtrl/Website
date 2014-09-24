@@ -13,6 +13,14 @@
 	"homepage": "https://github.com/uCtrl/Website",
 	"private": true,
 	"dependencies": {
-		"fontawesome": "^4.2.0"
+		"fontawesome": "^4.2.0",
+		"jquery": "~1.11.1",
+		"bootstrap": "~3.2.0",
+		"ScrollMagic": "^1.1.1",
+		"jquery.scrollTo": "~1.4.13",
+		"angular": "~1.2.23",
+		"ui-router": "~0.2.11",
+		"angular-bootstrap": "~0.11.0",
+		"validator-js": "~3.18.0"
 	}
 }

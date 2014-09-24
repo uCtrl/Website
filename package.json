@@ -13,7 +13,7 @@
 		"Alexandre Beaudoin <ofrogon@gmail.com>"
 	],
 	"scripts": {
-		"preinstall": "install.sh"
+		"preinstall": "./install.sh"
 	},
 	"engines" : {
 		"node" : ">=0.10.3 <0.12"
