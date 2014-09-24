@@ -161,7 +161,7 @@
 			if (missing.length > 0) {
 				exit[exit.length] = 'Some input were missing: ' + missing.join(', ') + '.';
 			} else {
-				//Format validation ---
+				//Format validation
 				if (!validator.isAlphanumeric($scope.user.username)) {
 					exit[exit.length] = 'Wrong Username format only accept alphanumerical characters';
 				}
@@ -173,7 +173,6 @@
 				if (!validator.isAlpha($scope.user.lastName)) {
 					exit[exit.length] = 'Wrong Last name format only accept alphabetic characters';
 				}
-				//---
 			}
 
 			if (($scope.user.password1.length > 0 || $scope.user.password2.length > 0) && $scope.user.password1 !== $scope.user.password2) {
