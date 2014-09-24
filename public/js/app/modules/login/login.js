@@ -93,7 +93,7 @@
 			registerValidation();
 
 			if ($scope.passValidation) {
-				$scope.portalConnect();
+				$scope.portalConnect($('#registerUserNameUCtrl').val(), $('#registerPasswordUCtrl').val());
 			}
 		};
 

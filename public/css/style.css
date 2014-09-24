@@ -97,7 +97,8 @@ footer {
   border-top: 2px solid #0d9b0d;
 }
 @media screen and (max-width: 768px) {
-  #singIn {
+  #singIn,
+  #goToPortal {
     position: absolute;
     right: 74px;
   }
