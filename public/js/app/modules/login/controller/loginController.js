@@ -2,9 +2,14 @@ angular.module('loginModule')
 	.controller('loginModal', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
 
 		/**
-		 * contain the translation for the controller
+		 * Contain the translation for the controller
 		 *
-		 * @type {{en: {LoginUserAdnPassEmpty: string, LoginWrongConnexion: string}, fr: {LoginUserAdnPassEmpty: string, LoginWrongConnexion: string}}}
+		 * @type {{en: {LoginUserAdnPassEmpty: string, LoginWrongConnexion: string, RegisterInputMissing: string,
+		 * RegisterWrongUsernameFormat: string, RegisterWrongFirstNameFormat: string, RegisterWrongLastNameFormat: string,
+		 * RegisterWrongPassValidation: string, RegisterSuccess: string}, fr: {LoginUserAdnPassEmpty: string,
+		 * LoginWrongConnexion: string, RegisterInputMissing: string, RegisterWrongUsernameFormat: string,
+		 * RegisterWrongFirstNameFormat: string, RegisterWrongLastNameFormat: string, RegisterWrongPassValidation: string,
+		   RegisterSuccess: string}}}
 		 */
 		$scope.lang = {
 			en: {
@@ -29,6 +34,22 @@ angular.module('loginModule')
 			}
 		};
 
+		/**
+		 * This function is use to translate the text
+		 *
+		 * @param sentence {string}
+		 * @returns {*}
+		 */
+		$scope.translate = function(sentence) {
+			// Test if the lang exist
+			var lang = $rootScope.getLang();
+			var index = arrayObjectIndexOf($rootScope.availableLanguage, lang, 'value');
+			if (index == -1) {
+				lang = 'en';
+			}
+
+			return $scope.lang[lang][sentence];
+		};
 
 		/**
 		 * Contain the current logged user.
@@ -139,7 +160,7 @@ angular.module('loginModule')
 			var warning = $('#wrongPasswordUserAlert');
 
 			if (password == '' || username == '') {
-				warning.html($scope.lang[$rootScope.getLang()].LoginUserAdnPassEmpty).show();
+				warning.html($scope.translate('LoginUserAdnPassEmpty')).show();
 
 				return;
 			}
@@ -154,7 +175,7 @@ angular.module('loginModule')
 				$scope.close();
 			} else {
 				//Connexion fail
-				warning.html($scope.lang[$rootScope.getLang()].LoginWrongConnexion).show();
+				warning.html($scope.translate('LoginWrongConnexion')).show();
 			}
 		};
 
@@ -183,24 +204,24 @@ angular.module('loginModule')
 
 			// Missing input data
 			if (missing.length > 0) {
-				exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterInputMissing + missing.join(', ') + '.';
+				exit[exit.length] = $scope.translate('RegisterInputMissing') + missing.join(', ') + '.';
 			} else {
 				//Format validation
 				if (!validator.isAlphanumeric($scope.user.username)) {
-					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongUsernameFormat;
+					exit[exit.length] = $scope.translate('RegisterWrongUsernameFormat');
 				}
 
 				if (!validator.isAlpha($scope.user.firstName)) {
-					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongFirstNameFormat;
+					exit[exit.length] = $scope.translate('RegisterWrongFirstNameFormat');
 				}
 
 				if (!validator.isAlpha($scope.user.lastName)) {
-					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongLastNameFormat;
+					exit[exit.length] = $scope.translate('RegisterWrongLastNameFormat');
 				}
 			}
 
 			if (($scope.user.password1.length > 0 || $scope.user.password2.length > 0) && $scope.user.password1 !== $scope.user.password2) {
-				exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongPassValidation;
+				exit[exit.length] = $scope.translate('RegisterWrongPassValidation');
 			}
 
 			if (exit.length > 0) {
@@ -208,7 +229,7 @@ angular.module('loginModule')
 			} else {
 				$scope.passValidation = true;
 				$scope.disableButtons = true;
-				exit[0] = $scope.lang[$rootScope.getLang()].RegisterSuccess;
+				exit[0] = $scope.translate('RegisterSuccess');
 			}
 
 			$scope.validationMessages = exit;

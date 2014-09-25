@@ -6,25 +6,25 @@
 			"email": "",
 			"picture": "",
 			"en": {
-				"post": "",
+				"post": "Web master",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Web master",
 				"text": ""
 			}
 		},
 		{
 			"firstName": "Bobby",
 			"lastName": "Lavoie",
-			"email": "",
-			"picture": "",
+			"email": "bobby.lavoie@usherbrooke.ca",
+			"picture": "img/teamPictures/bobby.jpg",
 			"en": {
-				"post": "",
+				"post": "Analyst programmer",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Analyste programmeur",
 				"text": ""
 			}
 		},
@@ -32,7 +32,7 @@
 			"firstName": "Jean-Philippe",
 			"lastName": "Gauthier",
 			"email": "",
-			"picture": "",
+			"picture": "img/teamPictures/jpgauthier.jpg",
 			"en": {
 				"post": "",
 				"text": ""
@@ -46,13 +46,13 @@
 			"firstName": "Laurens",
 			"lastName": "Coderre",
 			"email": "",
-			"picture": "",
+			"picture": "img/teamPictures/laurens.jpg",
 			"en": {
-				"post": "",
+				"post": "Team leader",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Chef d'équipe",
 				"text": ""
 			}
 		},
@@ -60,7 +60,7 @@
 			"firstName": "Simon",
 			"lastName": "Benoit",
 			"email": "",
-			"picture": "",
+			"picture": "img/teamPictures/simBen.jpg",
 			"en": {
 				"post": "",
 				"text": ""
@@ -80,7 +80,7 @@
 				"text": ""
 			},
 			"fr": {
-				"post": "Styliste graphique",
+				"post": "Graphiste",
 				"text": ""
 			}
 		},
@@ -88,13 +88,13 @@
 			"firstName": "Alexis",
 			"lastName": "Huard",
 			"email": "",
-			"picture": "",
+			"picture": "img/teamPictures/alexis.jpg",
 			"en": {
-				"post": "",
+				"post": "Scrum master",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Scrum master",
 				"text": ""
 			}
 		},
@@ -104,11 +104,11 @@
 			"email": "",
 			"picture": "",
 			"en": {
-				"post": "",
+				"post": "Wrecker",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Dépaneuse",
 				"text": ""
 			}
 		},
@@ -118,11 +118,11 @@
 			"email": "",
 			"picture": "",
 			"en": {
-				"post": "",
+				"post": "Software architect",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Architechte logiciel",
 				"text": ""
 			}
 		},
@@ -132,11 +132,11 @@
 			"email": "",
 			"picture": "",
 			"en": {
-				"post": "",
+				"post": "Backend programmer",
 				"text": ""
 			},
 			"fr": {
-				"post": "",
+				"post": "Programmeur serveur",
 				"text": ""
 			}
 		}
@@ -160,7 +160,7 @@
 			"firstName": "Jonathan",
 			"lastName": "D’Amours,",
 			"email": "damours.jonathan@gmail.com",
-			"picture": "",
+			"picture": "img/teamPictures/JDAmour.jpg",
 			"en": {
 				"post": "",
 				"text": ""
@@ -202,7 +202,7 @@
 			"firstName": "Alexandre",
 			"lastName": "Proulx",
 			"email": "alexandre.proulx3@gmail.com",
-			"picture": "",
+			"picture": "img/teamPictures/aProulx.jpg",
 			"en": {
 				"post": "",
 				"text": ""

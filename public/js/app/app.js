@@ -49,14 +49,14 @@
 		 *
 		 * @type {{value: string, text: string}[]}
 		 */
-		$scope.availableLanguage = [{'value': 'en', text:'En'}, {'value': 'fr', text:'Fr'}];
+		$rootScope.availableLanguage = [{'value': 'en', text:'En'}, {'value': 'fr', text:'Fr'}];
 
 		/**
 		 * Selected language
 		 *
 		 * @type {string}
 		 */
-		$scope.selectedLanguage = $scope.availableLanguage[1].value;
+		$scope.selectedLanguage = $rootScope.availableLanguage[1].value;
 
 		/**
 		 * Contain the modal instance.
@@ -104,9 +104,9 @@
 				lang = $scope.selectedLanguage;
 			} else {
 				// Search in available language and select-it
-				var index = arrayObjectIndexOf($scope.availableLanguage, lang, 'value');
+				var index = arrayObjectIndexOf($rootScope.availableLanguage, lang, 'value');
 				if (index != -1) {
-					$scope.selectedLanguage = $scope.availableLanguage[index].value;
+					$scope.selectedLanguage = $rootScope.availableLanguage[index].value;
 				}
 			}
 
@@ -140,11 +140,9 @@
 
 			$scope.setLang(lang);
 
-			console.log(lang);
-
-			var index = arrayObjectIndexOf($scope.availableLanguage, lang, 'value');
+			var index = arrayObjectIndexOf($rootScope.availableLanguage, lang, 'value');
 			if (index != -1) {
-				$scope.selectedLanguage = $scope.availableLanguage[index].value;
+				$scope.selectedLanguage = $rootScope.availableLanguage[index].value;
 			}
 
 			//Need a time out to let the time to angular to generate the select
