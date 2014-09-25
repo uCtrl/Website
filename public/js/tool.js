@@ -47,6 +47,14 @@ var cookie = {
 	}
 };
 
+/**
+ * Allow to search in a array of object
+ *
+ * @param myArray {Array}
+ * @param searchTerm {string}
+ * @param property {string}
+ * @returns {number}
+ */
 function arrayObjectIndexOf(myArray, searchTerm, property) {
 	for(var i = 0, len = myArray.length; i < len; i++) {
 		if (myArray[i][property] === searchTerm) return i;
@@ -55,4 +63,4 @@ function arrayObjectIndexOf(myArray, searchTerm, property) {
 }
 
 var langSelect = $('.selectpicker');
-langSelect.selectpicker();
+//langSelect.selectpicker();

@@ -13,7 +13,8 @@
 		"Alexandre Beaudoin <ofrogon@gmail.com>"
 	],
 	"dependencies": {
-		"bower-installer": "^0.8.0"
+		"bower-installer": "^0.8.0",
+		"express": "~4.9.0"
 	},
 	"scripts": {
 		"preinstall": "./install.sh"

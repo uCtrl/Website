@@ -51,8 +51,18 @@
 		 */
 		$scope.pageLanguage = '';
 
+		/**
+		 * List of available languages
+		 *
+		 * @type {{value: string, text: string}[]}
+		 */
 		$scope.availableLanguage = [{'value': 'en', text:'En'}, {'value': 'fr', text:'Fr'}];
-		
+
+		/**
+		 * Selected language
+		 *
+		 * @type {string}
+		 */
 		$scope.selectedLanguage = $scope.availableLanguage[1].value;
 
 		/**
