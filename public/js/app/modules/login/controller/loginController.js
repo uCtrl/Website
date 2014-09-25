@@ -1,3 +1,4 @@
+'use strict';
 angular.module('loginModule')
 	.controller('loginModal', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
 
@@ -24,11 +25,11 @@ angular.module('loginModule')
 			},
 			fr: {
 				'LoginUserAdnPassEmpty': '<strong>Attention!</strong> Le nom d\'utilisateur et/ou le mot de passe ne sont pas remplis.',
-				'LoginWrongConnexion': '<strong>Attention!</strong> Le nom d\'utilisateur et le mot de passe ne correspondent pas dans notre base de donnée.',
-				'RegisterInputMissing': 'Certaines entrées son manquantes : ',
-				'RegisterWrongUsernameFormat': 'Le champ d\'entrée du nom d\'utilisateur accepte seulement les charactères alphanumériques.',
-				'RegisterWrongFirstNameFormat': 'Le champ d\'entrée du prénom accepte seulement les charactères alphabétiques.',
-				'RegisterWrongLastNameFormat': 'Le champ d\'entrée du nom de famille accepte seulement les charactères alphabétiques.',
+				'LoginWrongConnexion': '<strong>Attention!</strong> Le nom d\'utilisateur et le mot de passe ne correspondent pas dans notre base de données.',
+				'RegisterInputMissing': 'Certaines entrées sont manquantes : ',
+				'RegisterWrongUsernameFormat': 'Le champ d\'entrée du nom d\'utilisateur accepte seulement les caractères alphanumériques.',
+				'RegisterWrongFirstNameFormat': 'Le champ d\'entrée du prénom accepte seulement les caractères alphabétiques.',
+				'RegisterWrongLastNameFormat': 'Le champ d\'entrée du nom de famille accepte seulement les caractères alphabétiques.',
 				'RegisterWrongPassValidation': 'Le mot de passe ainsi que son champ de validation ne correspondent pas.',
 				'RegisterSuccess': 'Validation réussie.'
 			}

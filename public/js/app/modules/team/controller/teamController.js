@@ -1,5 +1,6 @@
+'use strict';
 angular.module('teamModule')
-	.controller('teamList', ['$rootScope', '$scope', '$http', function ($rootScope, $scope, $http) {
+	.controller('teamList', ['$rootScope', '$scope', '$http', function($rootScope, $scope, $http) {
 		/**
 		 * Will contain team member information
 		 *
@@ -41,10 +42,10 @@ angular.module('teamModule')
 
 		// Load team data at initialisation.
 		$http.get('data/team.json')
-			.then(function (res) {
+			.then(function(res) {
 				$scope.team = res.data;
 
-				window.setTimeout(function () {
+				window.setTimeout(function() {
 					$rootScope.$emit('memberLoaded');
 				}, 500);
 			});
@@ -55,7 +56,7 @@ angular.module('teamModule')
 		 * @param post
 		 * @returns {*}
 		 */
-		$scope.position = function (post) {
+		$scope.position = function(post) {
 			if (post == '') {
 				post = 'N.A.';
 			}

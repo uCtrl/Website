@@ -1,5 +1,5 @@
 'use strict';
-(function () {
+(function() {
 	/**
 	 * Handle team window display.
 	 */

@@ -1,3 +1,4 @@
+'use strict';
 angular.module('app').config(['$translateProvider', function ($translateProvider) {
 	$translateProvider.translations('en', {
 		/*Home*/
@@ -56,7 +57,7 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		'Team': 'Équipe',
 		'Download': 'Téléchargement',
 		'SourceCode': 'Code source',
-		'ForkGithub': 'Suivez nous sur Github',
+		'ForkGithub': 'Suivez-nous sur Github',
 		'SingIn': 'Connexion',
 		'GoToPortal': 'Aller au portail',
 		'Portal': 'Portail',
@@ -66,13 +67,13 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		'AboutP2': 'Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est.',
 		'Software': 'Logiciel',
 		'Hardware': 'Matériel',
-		'SoftwareTeamDesc': 'Voici la liste des membre de l\'équipe logiciel.',
-		'HardwareTeamDesc': 'Voici la liste des membre de l\'équipe matériel.',
+		'SoftwareTeamDesc': 'Voici la liste des membres de l\'équipe logiciel.',
+		'HardwareTeamDesc': 'Voici la liste des membres de l\'équipe matériel.',
 		'Name': 'Nom ',
 		'Post': 'Poste ',
 		'DownloadText1': 'Tous ces produits sont sous la licence LGPL. Il est optant que vous connaissiez les requis d\'utilisation ou de programmation sous cette licence. Les requis de la LGPL sont ',
 		'DownloadText2': 'disponible ici',
-		'DownloadWhyTitle': 'Pourquoi utiliser la license LGPL',
+		'DownloadWhyTitle': 'Pourquoi utiliser la licence LGPL',
 		'DownloadWhyText1': 'Nous utilisons cette licence, car nous utilisons les produits "open source" de Qt, soit leurs librairies et leurs outils. Celons les conditions d\'utilisation, il nous faut donc garder la licence LGPL.',
 		'DownloadWhyText2': 'Plus d\'information à propos des licences sous Qt est disponible ici.',
 		'DesktopApp': 'Application Bureau',
@@ -95,7 +96,7 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		'ModalRegisterInfo1': 'Ce formulaire vous offre la possibilité de s\'inscrire au portail web de µCtrl.',
 		'ModalRegisterInfo2': 'À partir de ce portail, vous serez capable d\'y ajouter chacun de vos dispositifs et d\'y accéder par la suite de n\'importe où!',
 		'FormValidFail': 'La validation de votre formulaire échoué.',
-		'FormValidOk': 'La validation de votre formulaire a été accepté.',
+		'FormValidOk': 'La validation de votre formulaire a été acceptée.',
 		'FormValidOkTxt': 'Préparation de votre portail.',
 		'PassMismatch': 'Les mots de passe ne sont pas identiques',
 		'CorrErrorPls': 'Veuillez corriger ces erreurs '
