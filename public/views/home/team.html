@@ -23,10 +23,10 @@
 								<p ng-if="teammate.email != ''"><strong>{{'Name' | translate}}: </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
 								<p ng-if="teammate.email == ''"><strong>{{'Name' | translate}}: </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
 								<p>
-									<strong>{{'Post' | translate}}: </strong>{{position(teammate.post)}}
+									<strong>{{'Post' | translate}}: </strong>{{position(teammate[getLang()].post)}}
 								</p>
 								<p>
-									{{teammate.text}}
+									{{teammate[getLang()].text}}
 								</p>
 							</div>
 						</div>
@@ -55,10 +55,10 @@
 								<p ng-if="teammate.email != ''"><strong>{{'Name' | translate}}: </strong><a ng-href="mailto:{{teammate.email}}">{{teammate.firstName + ' ' + teammate.lastName}}</a></p>
 								<p ng-if="teammate.email == ''"><strong>{{'Name' | translate}}: </strong>{{teammate.firstName + ' ' + teammate.lastName}}</p>
 								<p>
-									<strong>{{'Post' | translate}}: </strong>{{position(teammate.post)}}
+									<strong>{{'Post' | translate}}: </strong>{{position(teammate[getLang()].post)}}
 								</p>
 								<p>
-									{{teammate.text}}
+									{{teammate[getLang()].text}}
 								</p>
 							</div>
 						</div>

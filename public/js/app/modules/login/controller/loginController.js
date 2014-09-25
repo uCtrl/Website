@@ -1,6 +1,34 @@
 angular.module('loginModule')
 	.controller('loginModal', ['$rootScope', '$scope', '$state', function ($rootScope, $scope, $state) {
 
+		/**
+		 * contain the translation for the controller
+		 *
+		 * @type {{en: {LoginUserAdnPassEmpty: string, LoginWrongConnexion: string}, fr: {LoginUserAdnPassEmpty: string, LoginWrongConnexion: string}}}
+		 */
+		$scope.lang = {
+			en: {
+				'LoginUserAdnPassEmpty': '<strong>Warning!</strong> Username and/or password are empty.',
+				'LoginWrongConnexion': '<strong>Warning!</strong> Username and password do not match.',
+				'RegisterInputMissing': 'Some input were missing: ',
+				'RegisterWrongUsernameFormat': 'Wrong Username format only accept alphanumerical characters.',
+				'RegisterWrongFirstNameFormat': 'Wrong First name format only accept alphabetic characters.',
+				'RegisterWrongLastNameFormat': 'Wrong Last name format only accept alphabetic characters.',
+				'RegisterWrongPassValidation': 'The password and the password validation were not he same.',
+				'RegisterSuccess': 'Validation successful.'
+			},
+			fr: {
+				'LoginUserAdnPassEmpty': '<strong>Attention!</strong> Le nom d\'utilisateur et/ou le mot de passe ne sont pas remplis.',
+				'LoginWrongConnexion': '<strong>Attention!</strong> Le nom d\'utilisateur et le mot de passe ne correspondent pas dans notre base de donnée.',
+				'RegisterInputMissing': 'Certaines entrées son manquantes : ',
+				'RegisterWrongUsernameFormat': 'Le champ d\'entrée du nom d\'utilisateur accepte seulement les charactères alphanumériques.',
+				'RegisterWrongFirstNameFormat': 'Le champ d\'entrée du prénom accepte seulement les charactères alphabétiques.',
+				'RegisterWrongLastNameFormat': 'Le champ d\'entrée du nom de famille accepte seulement les charactères alphabétiques.',
+				'RegisterWrongPassValidation': 'Le mot de passe ainsi que son champ de validation ne correspondent pas.',
+				'RegisterSuccess': 'Validation réussie.'
+			}
+		};
+
 
 		/**
 		 * Contain the current logged user.
@@ -111,7 +139,7 @@ angular.module('loginModule')
 			var warning = $('#wrongPasswordUserAlert');
 
 			if (password == '' || username == '') {
-				warning.html('<strong>Warning!</strong> Username and/or password are empty.').show();
+				warning.html($scope.lang[$rootScope.getLang()].LoginUserAdnPassEmpty).show();
 
 				return;
 			}
@@ -126,7 +154,7 @@ angular.module('loginModule')
 				$scope.close();
 			} else {
 				//Connexion fail
-				warning.html('<strong>Warning!</strong> Username and password do not match.').show();
+				warning.html($scope.lang[$rootScope.getLang()].LoginWrongConnexion).show();
 			}
 		};
 
@@ -155,24 +183,24 @@ angular.module('loginModule')
 
 			// Missing input data
 			if (missing.length > 0) {
-				exit[exit.length] = 'Some input were missing: ' + missing.join(', ') + '.';
+				exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterInputMissing + missing.join(', ') + '.';
 			} else {
 				//Format validation
 				if (!validator.isAlphanumeric($scope.user.username)) {
-					exit[exit.length] = 'Wrong Username format only accept alphanumerical characters';
+					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongUsernameFormat;
 				}
 
 				if (!validator.isAlpha($scope.user.firstName)) {
-					exit[exit.length] = 'Wrong First name format only accept alphabetic characters';
+					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongFirstNameFormat;
 				}
 
 				if (!validator.isAlpha($scope.user.lastName)) {
-					exit[exit.length] = 'Wrong Last name format only accept alphabetic characters';
+					exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongLastNameFormat;
 				}
 			}
 
 			if (($scope.user.password1.length > 0 || $scope.user.password2.length > 0) && $scope.user.password1 !== $scope.user.password2) {
-				exit[exit.length] = 'The password and the password validation were not he same.';
+				exit[exit.length] = $scope.lang[$rootScope.getLang()].RegisterWrongPassValidation;
 			}
 
 			if (exit.length > 0) {
@@ -180,7 +208,7 @@ angular.module('loginModule')
 			} else {
 				$scope.passValidation = true;
 				$scope.disableButtons = true;
-				exit[0] = 'Validation successful.';
+				exit[0] = $scope.lang[$rootScope.getLang()].RegisterSuccess;
 			}
 
 			$scope.validationMessages = exit;

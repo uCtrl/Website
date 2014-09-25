@@ -45,13 +45,6 @@
 		$scope.state = $state;
 
 		/**
-		 * Contain the page language value
-		 *
-		 * @type {string}
-		 */
-		$scope.pageLanguage = '';
-
-		/**
 		 * List of available languages
 		 *
 		 * @type {{value: string, text: string}[]}
@@ -130,7 +123,7 @@
 		 * @returns {string}
 		 */
 		$rootScope.getLang = function () {
-			return $scope.pageLanguage;
+			return $scope.selectedLanguage;
 		};
 
 		/**
@@ -148,8 +141,6 @@
 			$scope.setLang(lang);
 
 			console.log(lang);
-
-			$scope.pageLanguage = lang;
 
 			var index = arrayObjectIndexOf($scope.availableLanguage, lang, 'value');
 			if (index != -1) {
