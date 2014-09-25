@@ -13,8 +13,14 @@
 		<header id="top">
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainMenu">
 				<div class="container">
-					<button type="button" class="btn btn-default navbar-btn navbar-right" ng-click="modalOpen();" id="singIn" ng-if="!isLogged">{{'SingIn' | translate}}</button>
-					<button type="button" class="btn btn-default navbar-btn navbar-right" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'GoToPortal' | translate}}</button>
+					<div class="btn-group navbar-right navbar-btn" id="navMenu">
+						<button type="button" class="btn btn-default" ng-click="modalOpen();" id="singIn" ng-if="!isLogged">{{'SingIn' | translate}}</button>
+						<button type="button" class="btn btn-default" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'GoToPortal' | translate}}</button>
+
+						<label for="langSelect" class="hidden">Language Selection</label>
+						<select id="langSelect" class="selectpicker" data-width="55px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
+						</select>
+					</div>
 
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar-collapse">
@@ -85,15 +91,21 @@
 		<script src="js/vendor/jquery.js"></script>
 		<script src="js/vendor/angular.js"></script>
 		<script src="js/vendor/angular-ui-router.js"></script>
+		<script src="js/vendor/bootstrap.js"></script>
 		<script src="js/vendor/ui-bootstrap.js"></script>
 		<script src="js/vendor/ui-bootstrap-tpls.js"></script>
-		<script src="js/vendor/bootstrap.js"></script>
 		<script src="js/vendor/jquery.scrollTo.js"></script>
 		<script src="js/vendor/angular-translate.js"></script>
+		<script src="js/vendor/bootstrap-select.js"></script>
+		<script src="js/tool.js"></script>
 
 		<!-- Angular app -->
 		<script src="js/app/app.js"></script>
+		<script src="js/app/modules/lang/app-lang.js"></script>
 		<script src="js/app/modules/team/team.js"></script>
+		<script src="js/app/modules/team/controller/teamController.js"></script>
 		<script src="js/app/modules/login/login.js"></script>
+		<script src="js/app/modules/login/controller/loginController.js"></script>
+
 	</body>
 </html>

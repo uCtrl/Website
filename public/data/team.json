@@ -4,81 +4,141 @@
 			"firstName": "Alexandre",
 			"lastName": "Beaudoin",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Bobby",
 			"lastName": "Lavoie",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Jean-Philippe",
 			"lastName": "Gauthier",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Laurens",
 			"lastName": "Coderre",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Simon",
 			"lastName": "Benoit",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Émile",
 			"lastName": "Bélair",
 			"email": "",
-			"post": "Designer",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "Designer",
+				"text": ""
+			},
+			"fr": {
+				"post": "Styliste graphique",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Alexis",
 			"lastName": "Huard",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Alexandre",
 			"lastName": "Martel",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Francis",
 			"lastName": "Beauchemin",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Thomas",
 			"lastName": "Duhautois",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		}
 	],
 	"hardware": [
@@ -86,73 +146,127 @@
 			"firstName": "Cameron",
 			"lastName": "Brouillette",
 			"email": "cameron.brouillette@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Jonathan",
 			"lastName": "D’Amours,",
 			"email": "damours.jonathan@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Mathieu",
 			"lastName": "Gagnon",
 			"email": "gmatiosse1@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Vincent",
 			"lastName": "Guillemette",
 			"email": "vincent.guillemette1@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Alexandre",
 			"lastName": "Proulx",
 			"email": "alexandre.proulx3@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Jean-Philippe",
 			"lastName": "Raymond",
 			"email": "jp.raymond13@gmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Jonatan",
 			"lastName": "Rivest",
 			"email": "jo_arcange@hotmail.com",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Jean-François",
 			"lastName": "Therriault",
 			"email": "jeanfrancois.therriault@usherbrooke.ca",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		},
 		{
 			"firstName": "Vincent",
 			"lastName": "Le Cunff",
 			"email": "",
-			"post": "",
-			"text": "",
-			"picture": ""
+			"picture": "",
+			"en": {
+				"post": "",
+				"text": ""
+			},
+			"fr": {
+				"post": "",
+				"text": ""
+			}
 		}
 	]
 }

@@ -14,3 +14,5 @@
 * AngularUI Router
 * UI Bootstrap
 * validator.js
+* angular-translate
+* Bootstrap-select
