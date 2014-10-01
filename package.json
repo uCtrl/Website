@@ -14,7 +14,8 @@
 	],
 	"dependencies": {
 		"bower-installer": "^0.8.0",
-		"express": "~4.9.0"
+		"express": "~4.9.0",
+		"open": ""
 	},
 	"scripts": {
 		"preinstall": "./install.sh"

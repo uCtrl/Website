@@ -109,8 +109,8 @@ angular.module('loginModule')
 		 */
 		$scope.templates =
 			[
-				{ name: 'login', url: 'views/login/login_modal.html'},
-				{ name: 'register', url: 'views/login/register_modal.html'}
+				{ name: 'login', url: 'views/login/loginModal.html'},
+				{ name: 'register', url: 'views/login/registerModal.html'}
 			];
 
 		/**

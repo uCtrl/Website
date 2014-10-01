@@ -16,7 +16,7 @@
 				url: '/home',
 				views: {
 					"": {
-						templateUrl: 'views/home/index_container.html'
+						templateUrl: 'views/home/indexContainer.html'
 					},
 					'about@home': {
 						templateUrl: 'views/home/about.html'
@@ -79,7 +79,7 @@
 		 */
 		$scope.modalOpen = function () {
 			$rootScope.modalInstance = $modal.open({
-				templateUrl: 'views/login/singIn_container.html'
+				templateUrl: 'views/login/singInContainer.html'
 			});
 		};
 
