@@ -164,10 +164,10 @@ function filterByKeys(keys, values) {
  * @name ui.router.util
  *
  * @description
- * # ui.router.util sub-modules
+ * # ui.router.util sub-module
  *
- * This modules is a dependency of other sub-modules. Do not include this modules as a dependency
- * in your angular app (use {@link ui.router} modules instead).
+ * This module is a dependency of other sub-modules. Do not include this module as a dependency
+ * in your angular app (use {@link ui.router} module instead).
  *
  */
 angular.module('ui.router.util', ['ng']);
@@ -179,10 +179,10 @@ angular.module('ui.router.util', ['ng']);
  * @requires ui.router.util
  *
  * @description
- * # ui.router.router sub-modules
+ * # ui.router.router sub-module
  *
- * This modules is a dependency of other sub-modules. Do not include this modules as a dependency
- * in your angular app (use {@link ui.router} modules instead).
+ * This module is a dependency of other sub-modules. Do not include this module as a dependency
+ * in your angular app (use {@link ui.router} module instead).
  */
 angular.module('ui.router.router', ['ui.router.util']);
 
@@ -194,10 +194,10 @@ angular.module('ui.router.router', ['ui.router.util']);
  * @requires ui.router.util
  *
  * @description
- * # ui.router.state sub-modules
+ * # ui.router.state sub-module
  *
- * This modules is a dependency of the main ui.router modules. Do not include this modules as a dependency
- * in your angular app (use {@link ui.router} modules instead).
+ * This module is a dependency of the main ui.router module. Do not include this module as a dependency
+ * in your angular app (use {@link ui.router} module instead).
  * 
  */
 angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
@@ -211,15 +211,15 @@ angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
  * @description
  * # ui.router
  * 
- * ## The main modules for ui.router
- * There are several sub-modules included with the ui.router modules, however only this modules is needed
+ * ## The main module for ui.router 
+ * There are several sub-modules included with the ui.router module, however only this module is needed
  * as a dependency within your angular app. The other modules are for organization purposes. 
  *
  * The modules are:
- * * ui.router - the main "umbrella" modules
+ * * ui.router - the main "umbrella" module
  * * ui.router.router - 
  * 
- * *You'll need to include **only** this modules as the dependency within your angular app.*
+ * *You'll need to include **only** this module as the dependency within your angular app.*
  * 
  * <pre>
  * <!doctype html>
@@ -230,7 +230,7 @@ angular.module('ui.router.state', ['ui.router.router', 'ui.router.util']);
  *   <script src="js/angular-ui-router.min.js"></script>
  *   <script>
  *     // ...and add 'ui.router' as a dependency
- *     var myApp = angular.modules('myApp', ['ui.router']);
+ *     var myApp = angular.module('myApp', ['ui.router']);
  *   </script>
  * </head>
  * <body>
@@ -1341,7 +1341,7 @@ angular.module('ui.router.util').provider('$urlMatcherFactory', $UrlMatcherFacto
  * a url in a state configuration. All urls are compiled into a UrlMatcher object.
  *
  * There are several methods on `$urlRouterProvider` that make it useful to use directly
- * in your modules config.
+ * in your module config.
  */
 $UrlRouterProvider.$inject = ['$locationProvider', '$urlMatcherFactoryProvider'];
 function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
@@ -1371,7 +1371,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * @example
    * <pre>
-   * var app = angular.modules('app', ['ui.router.router']);
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *   // Here's an example of how you might allow case insensitive urls
@@ -1407,7 +1407,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * @example
    * <pre>
-   * var app = angular.modules('app', ['ui.router.router']);
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *   // if the path doesn't match any of the urls you configured
@@ -1467,7 +1467,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * @example
    * <pre>
-   * var app = angular.modules('app', ['ui.router.router']);
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *   $urlRouterProvider.when($state.url, function ($match, $stateParams) {
@@ -1540,7 +1540,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
    *
    * @example
    * <pre>
-   * var app = angular.modules('app', ['ui.router.router']);
+   * var app = angular.module('app', ['ui.router.router']);
    *
    * app.config(function ($urlRouterProvider) {
    *
@@ -1644,7 +1644,7 @@ function $UrlRouterProvider(   $locationProvider,   $urlMatcherFactory) {
        *
        * @example
        * <pre>
-       * angular.modules('app', ['ui.router'])
+       * angular.module('app', ['ui.router'])
        *   .run(function($rootScope, $urlRouter) {
        *     $rootScope.$on('$locationChangeSuccess', function(evt) {
        *       // Halt state change from even starting
@@ -2364,7 +2364,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *
      * @example
      * <pre>
-     * var app angular.modules('app', ['ui.router']);
+     * var app angular.module('app', ['ui.router']);
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.reload = function(){
@@ -2399,7 +2399,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *
      * @example
      * <pre>
-     * var app = angular.modules('app', ['ui.router']);
+     * var app = angular.module('app', ['ui.router']);
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {
@@ -2465,7 +2465,7 @@ function $StateProvider(   $urlRouterProvider,   $urlMatcherFactory) {
      *
      * @example
      * <pre>
-     * var app = angular.modules('app', ['ui.router']);
+     * var app = angular.module('app', ['ui.router']);
      *
      * app.controller('ctrl', function ($scope, $state) {
      *   $scope.changeState = function () {

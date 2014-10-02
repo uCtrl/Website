@@ -30,7 +30,10 @@
 			"less": "css/less/",
 			"otf, eot, svg, ttf, woff": "fonts/"
 		},
-		"script": {
+		"option": {
+			"default": "public"
+		},
+		"source": {
 			"angular": {
 				"angular.js": "angular.js"
 			},
