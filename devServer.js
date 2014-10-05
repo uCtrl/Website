@@ -8,7 +8,7 @@ var express = require('express'),
 app.use(express.static(__dirname + '/public'));
 
 // Get the bower libs, install them and start preview
-exec('clean-bower-install -i', function () {
+exec('clean-bower-installer -i', function () {
 	open('http://localhost:' + port);
 });
 
