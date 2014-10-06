@@ -13,16 +13,65 @@
 	"homepage": "https://github.com/uCtrl/Website",
 	"private": true,
 	"dependencies": {
+		"angular": "~1.2.23",
+		"angular-bootstrap": "~0.11.0",
+		"angular-translate": "~2.4.0",
+		"bootstrap": "~3.2.0",
+		"bootstrap-select": "~1.6.2",
 		"fontawesome": "^4.2.0",
 		"jquery": "~1.11.1",
-		"bootstrap": "~3.2.0",
-		"ScrollMagic": "^1.1.1",
 		"jquery.scrollTo": "~1.4.13",
-		"angular": "~1.2.23",
 		"ui-router": "~0.2.11",
-		"angular-bootstrap": "~0.11.0",
-		"validator-js": "~3.18.0",
-		"angular-translate": "~2.4.0",
-		"bootstrap-select": "~1.6.2"
+		"validator-js": "~3.18.0"
+	},
+	"cInstall": {
+		"folder": {
+			"js": "js/vendor/",
+			"less": "css/less/",
+			"otf, eot, svg, ttf, woff": "fonts/"
+		},
+		"option": {
+			"default": "public"
+		},
+		"source": {
+			"angular": {
+				"angular.js": "angular.js"
+			},
+			"angular-bootstrap": {
+				"ui-bootstrap.js": "ui-bootstrap.js",
+				"ui-bootstrap-tpls.js": "ui-bootstrap-tpls.js"
+			},
+			"angular-translate": {
+				"angular-translate.js": "angular-translate.js"
+			},
+			"bootstrap": {
+				"glyphicons-halflings-regular.*": "dist/fonts/*",
+				"bootstrap.js": "dist/js/bootstrap.js",
+				"*.less#bootstrap": "less/*.less"
+			},
+			"bootstrap-select": {
+				"bootstrap-select.less#bootstrapSelect": "less/bootstrap-select.less",
+				"bootstrap-select.js": "dist/js/bootstrap-select.js"
+			},
+			"fontawesome": {
+				"FontAwesome.otf": "fonts/FontAwesome.otf",
+				"fontawesome-webfont.*": "fonts/fontawesome-webfont.*",
+				"*.less#fontawesome": "less/*.less"
+			},
+			"jquery": {
+				"jquery.js": "dist/jquery.js"
+			},
+
+			"jquery.scrollTo": {
+				"jquery.scrollTo.js": "jquery.scrollTo.js"
+			},
+
+			"ui-router": {
+				"angular-ui-router.js": "release/angular-ui-router.js"
+			},
+			"validator-js": {
+				"validator.js": "validator.js"
+			}
+		}
 	}
 }

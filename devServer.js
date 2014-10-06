@@ -1,12 +1,16 @@
-var express = require('express');
-var app = express();
-var open = require("open");
-var port = 64242;
+var express = require('express'),
+	exec = require('child_process').exec,
+	app = express(),
+	open = require("open"),
+	port = 64242;
+
 
 app.use(express.static(__dirname + '/public'));
 
-open('http://localhost:' + port);
+// Get the bower libs, install them and start preview
+exec('clean-bower-installer -i', function () {
+	open('http://localhost:' + port);
+});
+
 
 app.listen(port);
-
-

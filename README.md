@@ -4,6 +4,7 @@
 ## Technologies used
 * LESS
 * BOWER
+* CLEAN-BOWER-INSTALLER
 
 ## Third party components
 * Angular
