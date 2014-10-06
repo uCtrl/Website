@@ -31,3 +31,8 @@
 2. Clone this repository
 3. Run `npm install`
 3. Run `npm start`
+
+## Live refresh
+When running `npm start` or `grunt dev`, you have a file watcher that run beside of the express server. This file watcher give live reload capability.
+
+To activate it, you need to have LiveReload extension install and started on your web browser. To install it, go [here](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-).
