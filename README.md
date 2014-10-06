@@ -1,5 +1,5 @@
 # µCtrl Website
-============================
+This is the website for the µCtrl project.
 
 ## Technologies used
 * [LESS](http://lesscss.org/)
@@ -41,7 +41,7 @@ To activate it, you need to have LiveReload extension install and started on you
 To configure the FTP deployment, you need to create a file on the project root call *serverConf.json*.
 
 This file must contain at lest these information:
-``
+```
 {
 	"host": "server.com",
 	"port": 21,
@@ -50,4 +50,4 @@ This file must contain at lest these information:
 		"password": "password1"
 	}
 }
-``
+```
