@@ -36,3 +36,18 @@
 When running `npm start` or `grunt dev`, you have a file watcher that run beside of the express server. This file watcher give live reload capability.
 
 To activate it, you need to have LiveReload extension install and started on your web browser. To install it, go [here](http://feedback.livereload.com/knowledgebase/articles/86242-how-do-i-install-and-use-the-browser-extensions-).
+
+## Configure the FTP deployment
+To configure the FTP deployment, you need to create a file on the project root call *serverConf.json*.
+
+This file must contain at lest these information:
+``
+{
+	"host": "server.com",
+	"port": 21,
+	"authKey": {
+		"username": "username1",
+		"password": "password1"
+	}
+}
+``

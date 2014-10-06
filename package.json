@@ -26,8 +26,8 @@
 		"preinstall": "install.sh",
 		"start": "grunt dev"
 	},
-	"engines" : {
-		"node" : ">=0.10.3 <0.12"
+	"engines": {
+		"node": ">=0.10.3 <0.12"
 	},
 	"private": true
 }
