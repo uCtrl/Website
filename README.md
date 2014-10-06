@@ -2,9 +2,17 @@
 ============================
 
 ## Technologies used
-* LESS
-* BOWER
-* CLEAN-BOWER-INSTALLER
+* [LESS](http://lesscss.org/)
+* [BOWER](http://bower.io/)
+* [CLEAN-BOWER-INSTALLER](https://github.com/ofrogon/cleanBowerInstaller)
+* [EXPRESS](http://expressjs.com/)
+* [GRUNT](http://gruntjs.com/)
+* [GRUNT-CONTRIB-LESS](https://github.com/gruntjs/grunt-contrib-less)
+* [GRUNT-CONTRIB-WATCH](https://github.com/gruntjs/grunt-contrib-watch)
+* [GRUNT-CONCURRENT](https://github.com/sindresorhus/grunt-concurrent)
+* [GRUNT-FTP-DEPLOY](https://github.com/zonak/grunt-ftp-deploy)
+* [GRUNT-RUN](https://github.com/spenceralger/grunt-run)
+* [OPEN](https://github.com/pwnall/node-open)
 
 ## Third party components
 * Angular
@@ -21,6 +29,5 @@
 ## How to test the website
 1. Install nodejs
 2. Clone this repository
-3. Run "npm install express" or "npm install" in the node command line from the project folder
-4. Run "node devServer.js". **If you got an error, try to change the port use by the server.**
-5. In your browser open "localhost:64242"
+3. Run `npm install`
+3. Run `npm start`

@@ -2,3 +2,4 @@
 
 npm install -g less
 npm install -g clean-bower-installer
+npm install -g grunt-cli

@@ -47,7 +47,8 @@
 			"bootstrap": {
 				"glyphicons-halflings-regular.*": "dist/fonts/*",
 				"bootstrap.js": "dist/js/bootstrap.js",
-				"*.less#bootstrap": "less/*.less"
+				"*.less#bootstrap": "less/*.less",
+				"*.less#bootstrap/mixins": "less/mixins/*.less"
 			},
 			"bootstrap-select": {
 				"bootstrap-select.less#bootstrapSelect": "less/bootstrap-select.less",
