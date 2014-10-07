@@ -30,7 +30,7 @@ This is the website for the µCtrl project.
 1. Install nodejs
 2. Clone this repository
 3. Run `npm install`
-3. Run `npm start`
+3. Run `npm start` or ON WINDOWS `grunt dev`
 
 ## Live refresh
 When running `npm start` or `grunt dev`, you have a file watcher that run beside of the express server. This file watcher give live reload capability.
