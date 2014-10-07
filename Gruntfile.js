@@ -1,4 +1,6 @@
 module.exports = function(grunt) {
+	var os = require('os');
+	var devAction, prodAction;
 
 	// Project configuration.
 	grunt.initConfig({
@@ -52,9 +54,23 @@ module.exports = function(grunt) {
 					'--install'
 				]
 			},
+			winInstallLibs: {
+				cmd: 'sh',
+				args: [
+					'clean-bower-installer',
+					'--install'
+				]
+			},
 			'updateLibs': {
 				cmd: 'clean-bower-installer',
 				args: [
+					'--update'
+				]
+			},
+			winUpdateLibs: {
+				cmd: 'sh',
+				args: [
+					'clean-bower-installer',
 					'--update'
 				]
 			},
@@ -78,12 +94,22 @@ module.exports = function(grunt) {
 	// Load the plugin that provides the "run" task.
 	grunt.loadNpmTasks('grunt-run');
 
+	// Handle spacial way to call grunt on windows
+	grunt.registerTask('default', ['dev']);
+	if (os.type() == 'Windows_NT') {
+		devAction = ['run:winInstallLibs', 'less:development', 'concurrent:express'];
+		prodAction = ['run:winUpdateLibs', 'less:production', 'run:express'];
+	} else {
+		devAction = ['run:installLibs', 'less:development', 'concurrent:express'];
+		prodAction = ['run:updateLibs', 'less:production', 'run:express'];
+	}
+
 	// Task(s).
 	grunt.registerTask('default', ['dev']);
 
-	grunt.registerTask('dev', ['run:installLibs', 'less:development', 'concurrent:express']);
+	grunt.registerTask('dev', devAction);
 
-	grunt.registerTask('prod', ['run:updateLibs', 'less:production', 'run:express']);
+	grunt.registerTask('prod', prodAction);
 
 	grunt.registerTask('deploy', ['run:updateLibs', 'less:production', 'ftp-deploy:build']);
 };
