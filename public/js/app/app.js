@@ -49,7 +49,7 @@
 		 *
 		 * @type {{value: string, text: string}[]}
 		 */
-		$rootScope.availableLanguage = [{'value': 'en', text:'En'}, {'value': 'fr', text:'Fr'}];
+		$rootScope.availableLanguage = [{'value': 'en', text:'English'}, {'value': 'fr', text:'Français'}];
 
 		/**
 		 * Selected language
@@ -76,8 +76,12 @@
 
 		/**
 		 * Open the login modal window.
+		 *
+		 * @param event {object}
 		 */
-		$scope.modalOpen = function () {
+		$scope.modalOpen = function (event) {
+			event.stopPropagation();
+
 			$rootScope.modalInstance = $modal.open({
 				templateUrl: 'views/login/singInContainer.html'
 			});

@@ -28,17 +28,7 @@ a {
 }
 
 header {
-	padding-top: 50px;
-}
-
-.logo {
-	height: 54px;
-	padding: 2px 0;
-	margin-bottom: -17px;
-
-	&.small {
-		height: 30px;
-	}
+	padding-top: @navbar-height;
 }
 
 .fork-on-github {
@@ -86,6 +76,45 @@ footer {
 	#navMenu {
 		position: absolute;
 		right: 74px;
+	}
+}
+
+.navbar {
+	height: @navbar-height;
+	font-size: @navbar-default-font-size;
+
+	.logo {
+		height: @logo-height;
+		margin: ((@navbar-height - @logo-height) /2);
+
+		&.small {
+			height: 30px;
+		}
+	}
+
+	&-btn {
+		margin: 0;
+	}
+
+	ul {
+		margin: ((@navbar-height - @navbar-default-font-size) /2) 0;
+	}
+
+	.btn-default {
+		background: none;
+		border: none;
+	}
+
+	.caret{
+		color: transparent;
+		&:before {
+			color: @navbar-default-color;
+			font-family: FontAwesome !important;
+			content: "\f078" !important;
+			position: relative;
+			top: -12px;
+			left: -8px;
+		}
 	}
 }
 

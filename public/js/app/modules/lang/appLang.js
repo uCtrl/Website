@@ -7,7 +7,7 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		'Download': 'Download',
 		'SourceCode': 'Source code',
 		'ForkGithub': 'Fork us on Github',
-		'SingIn': 'Sing in',
+		'SingIn': 'Log in',
 		'GoToPortal': 'Go to your portal',
 		'Portal': 'Portal',
 		'Home': 'Home',

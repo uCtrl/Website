@@ -13,12 +13,12 @@
 		<header id="top">
 			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainMenu">
 				<div class="container">
-					<div class="btn-group navbar-right navbar-btn" id="navMenu">
-						<button type="button" class="btn btn-default" ng-click="modalOpen();" id="singIn" ng-if="!isLogged">{{'SingIn' | translate}}</button>
+					<div class="navbar-right navbar-btn" id="navMenu">
+						<button type="button" class="btn btn-default" ng-click="modalOpen($event);" id="singIn" ng-if="!isLogged"><i class="fa fa-user fa-fw"></i> {{'SingIn' | translate}}</button>
 						<button type="button" class="btn btn-default" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'GoToPortal' | translate}}</button>
 
 						<label for="langSelect" class="hidden">Language Selection</label>
-						<select id="langSelect" class="selectpicker" data-width="55px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
+						<select id="langSelect" class="selectpicker" data-width="100px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
 						</select>
 					</div>
 
@@ -29,7 +29,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a ng-href="index.html#/home" class="btn"><img src="img/µCtrl_logo.png" alt="µCtrl logo" class="logo"/></a>
+						<a ng-href="index.html#/home"><img src="img/µCtrl_logo.png" alt="µCtrl logo" class="logo"/></a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="navBar-collapse">
