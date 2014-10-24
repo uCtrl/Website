@@ -1,0 +1,31 @@
+.openTech {
+	color: @color_mediumDarkGrey;
+	text-align: center;
+
+	font-size: 20px;
+
+	em {
+		font-weight: bold;
+	}
+
+	.techSrc {
+		display: inline-block;
+		color: @color_green;
+		text-align: left;
+		margin: 15px 20px;
+
+		a {
+			color: @color_green;
+			font-size: 48px;
+
+			&:hover, &:active {
+				color: darken(@color_green, 10%);
+				text-decoration: none;
+			}
+
+			i {
+				font-size: 1.2em;
+			}
+		}
+	}
+}

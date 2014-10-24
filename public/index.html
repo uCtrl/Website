@@ -29,7 +29,7 @@
 							<span class="icon-bar"></span>
 							<span class="icon-bar"></span>
 						</button>
-						<a ng-href="index.html#/home"><img src="img/µCtrl_logo.png" alt="µCtrl logo" class="logo"/></a>
+						<a ng-href="index.html#/home"><img src="img/uCtrl_green.svg" alt="µCtrl logo" class="logo"/></a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="navBar-collapse">
@@ -43,7 +43,7 @@
 				</div>
 			</nav>
 		</header>
-		<a href="https://github.com/uCtrl" class="fork-on-github"><i class="fa fa-github-alt"></i>{{'ForkGithub' | translate}}</a>
+
 
 		<section ui-view>
 			<!-- Pages will be load here by ui-router -->
@@ -52,6 +52,11 @@
 		<footer>
 			<div class="container">
 				<div class="row">
+
+					<div class="col-md-3">
+						<a ng-href="index.html#/home"><img src="img/uCtrl_white.svg" alt="µCtrl logo" class="logo"/></a>
+					</div>
+
 					<div class="col-md-3" ng-controller="footerMenu">
 						<h3>{{'Link' | translate}}</h3>
 						<ul>
@@ -66,13 +71,12 @@
 						</ul>
 						<br/>
 					</div>
-					<div class="col-md-3 text-center">
+
+					<div class="col-md-3">
 						<!--We will find text to put here.-->
 					</div>
-					<div class="col-md-3 text-center">
-						<!--We will find text to put here.-->
-					</div>
-					<div class="col-md-3 text-right">
+
+					<div class="col-md-3>
 						<h3>{{'FollowUs' | translate}}!</h3>
 
 						<a href="#" title="Twitter"><i class="fa fa-twitter-square fa-2x"></i></a>

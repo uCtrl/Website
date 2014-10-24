@@ -1,0 +1,89 @@
+.demo {
+	background-color: @color_ultraLightGrey;
+	text-align: center;
+
+	h1 {
+		font-size: 48px;
+		color: @color_mediumDarkGrey;
+	}
+
+	em {
+		color: @color_green;
+	}
+
+	.image {
+		width: 900px;
+		height: 410px;
+		background: url('../../img/background/home-3.jpg') top right no-repeat;
+		margin: 35px auto;
+		position: relative;
+
+		.ic {
+			background-color: #0D9B0D;
+			height: 40px;
+			width: 40px;
+			border-radius: 20px;
+			position: absolute;
+			line-height: 40px;
+			text-align: center;
+			color: #FFF;
+			cursor: pointer;
+
+			&.tv {
+				top: 140px;
+				right: 530px;
+			}
+
+			&.sd {
+				top: 216px;
+				right: 307px;
+			}
+
+			&.tm {
+				top: 208px;
+				right: 95px;
+			}
+
+			&.lu {
+				top: 28px;
+				right: 25px;
+			}
+
+			&:hover, &:active {
+				background: darken(@color_green, 10%);
+			}
+		}
+
+		.btn-slide {
+			border-radius: 5px;
+			background-color: @color_grey;
+			padding: 10px;
+			width: 180px;
+			font-weight: bold;
+			color: #FFF;
+			cursor: pointer;
+			-webkit-touch-callout: none;
+			-webkit-user-select: none;
+			-khtml-user-select: none;
+			-moz-user-select: none;
+			-ms-user-select: none;
+			user-select: none;
+			margin: 30px 0;
+			position: relative;
+
+			&.active, &:hover:after, &:active:after, &:hover, &:active, &.active:after {
+				background-color: @color_green;
+			}
+
+			&:after {
+				background-color: @color_grey;
+				height: 6px;
+				width: 45px;
+				position: absolute;
+				left: 180px;
+				top: 21px;
+				content: "";
+			}
+		}
+	}
+}

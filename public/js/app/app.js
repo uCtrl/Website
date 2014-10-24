@@ -36,14 +36,14 @@
 					'compatibility@home': {
 						templateUrl: 'views/home/compatibility.html'
 					},
-					'download@home': {
-						templateUrl: 'views/home/download.html'
+					'openTech@home': {
+						templateUrl: 'views/home/openTech.html'
 					},
-					'sourceCode@home': {
-						templateUrl: 'views/home/sourceCode.html'
+					'jumpIn@home': {
+						templateUrl: 'views/home/jumpIn.html'
 					},
-					'team@home': {
-						templateUrl: 'views/home/team.html'
+					'followUs@home': {
+						templateUrl: 'views/home/followUs.html'
 					}
 				}
 			})

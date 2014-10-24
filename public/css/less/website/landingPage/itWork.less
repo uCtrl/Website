@@ -1,0 +1,46 @@
+.itWork {
+	min-height: 450px;
+	background: url("../../img/background/bg-feature-1.jpg") top center no-repeat;
+	background-size: 100%;
+	color: #FFF;
+	font-weight: bold;
+	position: relative;
+
+	h1 {
+		color: #FFF;
+	}
+
+	.center-it {
+		position: absolute;
+		left: 0;
+		bottom: 40px;
+		width: 100%;
+	}
+
+	.btn-slide {
+		margin: 0 auto;
+		display: table;
+		font-size: 0.8em;
+
+		.btn {
+			height: 67px;
+			width: 67px;
+			font-size: 33px;
+			line-height: 57px;
+			border-radius: 34px;
+			background: @color_green;
+
+			&:hover {
+				color: #FFF;
+				background: darken(@color_green, 10%);
+			}
+		}
+
+		.cell {
+			display: table-cell;
+			font-weight: normal;
+			text-align: center;
+			padding: 0 20px;
+		}
+	}
+}

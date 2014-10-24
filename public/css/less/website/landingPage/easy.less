@@ -1,0 +1,68 @@
+.easy {
+	@easyHeight: 670px;
+
+	background: url("../../img/background/bg-usability-large.jpg") top center no-repeat;
+	background-size: 100%;
+	position: relative;
+	height: @easyHeight;
+
+	h1 {
+		font-size: 48px;
+		color: #FFF;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+		font-weight: bold;
+		font-family: 'alegreyasans_extrabold' !important;
+	}
+
+	i {
+		font-size: 72px;
+		color: @color_green;
+	}
+
+	a>i {
+		margin-right: 10px;
+
+		&:hover, &:active {
+			color: darken(@color_green, 10%);
+		}
+	}
+
+	.secondBackground {
+		width: 100%;
+		position: absolute;
+		height: (@easyHeight / 2);
+		bottom: 0;
+		left: 0;
+		background-color: rgba(255,255,255, 0.35);
+	}
+
+	.textZone {
+		height: (@easyHeight / 2);
+
+		&:first-child {
+			color: #FFF;
+			font-size: 24px;
+
+			p, em {
+				margin: 15px 0;
+				text-shadow: 1px 1px 1px #000;
+			}
+
+			em {
+				font-weight: bold;
+			}
+		}
+
+		&:last-child {
+			p {
+				margin: 0;
+			}
+		}
+	}
+
+	.appBackground {
+		background: url("../../img/background/uctrl-app-large.png") center center no-repeat;
+		background-size: 100% auto;
+		min-height: 665px;
+	}
+}

@@ -1,0 +1,39 @@
+.jumpIn {
+	color: @color_mediumDarkGrey;
+	text-align: center;
+
+	background: url("../../img/background/bg-get-started.jpg") center bottom no-repeat;
+	background-size: 100% auto;
+
+	font-size: 1.8em;
+
+	p {
+		margin: 36px auto;
+		max-width: 67%;
+	}
+
+	.btn {
+		color: #FFF;
+		background-color: @color_green;
+		border-radius: 5px;
+		box-shadow: 2px 2px 2px #000;
+		font-size: 1em;
+		padding-left: 60px;
+		position: relative;
+		min-height: 60px;
+
+		i {
+			font-size: 1.4em;
+			line-height: 1em;
+			position: absolute;
+			left: 0px;
+		}
+
+		&:hover {
+			color: #FFF;
+			background: darken(@color_green, 10%);
+		}
+
+		margin-bottom: 60px;
+	}
+}

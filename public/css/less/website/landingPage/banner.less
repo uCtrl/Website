@@ -1,0 +1,82 @@
+.banner {
+	background: url("../../img/background/bg-slide-1.jpg") top center no-repeat;
+	background-position: center top;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+
+	&-collapse {
+
+	}
+
+	p, em {
+		color: #FFF;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+		font-weight: 700;
+		font-family: 'Alegreya Sans', sans-serif;
+	}
+
+	@media (max-width: @screen-sm-min) {
+		height: 207px;
+		background-size: auto 100%;
+
+		p {
+			margin: 20px 0 0 0;
+			font-size: 24px;
+		}
+
+		em {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+
+	@media (min-width: @screen-sm-min) {
+		height: 207px;
+		background-size: 100%;
+		background-position: center center;
+
+		p {
+			margin: 20px 0 0 0;
+			font-size: 24px;
+		}
+
+		em {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+	@media (min-width: @screen-md-min) {
+		height: 400px;
+		background-size: auto 100%;
+
+		p {
+			margin: 20px 0 0 0;
+			font-size: 36px;
+		}
+
+		em {
+			font-size: 56px;
+			line-height: 56px;
+		}
+	}
+	@media (min-width: @screen-lg-min) {
+		height: 450px;
+		background-size: 100% auto;
+
+		p {
+			margin: 20px 0 0 0;
+			font-size: 48px;
+		}
+
+		em {
+			font-size: 70px;
+			line-height: 70px;
+		}
+	}
+}
