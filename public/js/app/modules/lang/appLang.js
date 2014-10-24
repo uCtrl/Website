@@ -1,6 +1,30 @@
 'use strict';
 angular.module('app').config(['$translateProvider', function ($translateProvider) {
 	$translateProvider.translations('en', {
+		/*Home 2*/
+		"banner1": "Control your house",
+		"banner2": "Easily",
+		"aboutTitle": "is a home automation system that works magically",
+		"aboutTxt1": "connects to any of your home devices - your power outlets, your lights, your TV, your door locks - and allows you to control them with your computer or your phone",
+		"aboutTxt2": "Or automatically",
+		"demoTitle": "It Works With You",
+		"demoTxt1": "Using",
+		"demoTxt2": "Scenarios",
+		"demoTxt3": ", your entire house can be configured according to your life events",
+		"demoBt1": "At Home",
+		"demoBt2": "At Work",
+		"demoBt3": "On Vacation",
+		"itWorkTitle": "It Works Automatically",
+		"itWorkTxt1": "Don't want to spend time configuring",
+		"itWorkTxt2": "Let μCtrl do it",
+		"itWorkTxt3": "Let's say you come home every week day at 4 PM and turn on the lights. μCtrl will learn it, and will automatically turn the lights on at 4 Pm",
+		"itWorkTxt4": "No need to say it. Just do it",
+		"itWorkBt1": "Smart",
+		"itWorkBt2": "Green",
+		"itWorkBt3": "Secure",
+		"compatibilityTitle": "It's Compatible",
+		"compatibilityTxt": "It works with any device you may have. Or want",
+
 		/*Home*/
 		'About': 'About',
 		'Team': 'Team',
@@ -52,6 +76,30 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 	});
 
 	$translateProvider.translations('fr', {
+		/*Home 2*/
+		"banner1": "Contrôlez votre maison",
+		"banner2": "Facilement",
+		"aboutTitle": "est un système domotique qui fonctionne comme par magie",
+		"aboutTxt1": "se connecte à n'importe lequel de vos appareils domestiques - vos prises de courant , vos lumières , votre téléviseur , vos serrures de porte - et vous permet de les contrôler avec votre ordinateur ou votre téléphone",
+		"aboutTxt2": "Ou automatiquement",
+		"demoTitle": "Il Travaille Avec Vous",
+		"demoTxt1": "En utilisant les",
+		"demoTxt2": "Scénario",
+		"demoTxt3": "l'ensemble de votre maison peut être configuré en fonction de vos événements de vie",
+		"demoBt1": "Chez Soi",
+		"demoBt2": "Au Travail",
+		"demoBt3": "En Vacances",
+		"itWorkTitle": "Il fonctionne du premier coup",
+		"itWorkTxt1": "",
+		"itWorkTxt2": "",
+		"itWorkTxt3": "",
+		"itWorkTxt4": "",
+		"itWorkBt1": "Intelligent",
+		"itWorkBt2": "Vert",
+		"itWorkBt3": "Sécuritaire",
+		"compatibilityTitle": "Compatible Avec",
+		"compatibilityTxt": "Il fonctionne avec n'importe quel appareil que vous pourriez avoir. Ou vous voulez",
+
 		/*Home*/
 		'About': 'À propos',
 		'Team': 'Équipe',
