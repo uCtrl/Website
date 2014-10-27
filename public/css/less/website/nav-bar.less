@@ -20,7 +20,6 @@
 
 	.logo {
 		height: @logo-height;
-		margin: ((@navbar-height - @logo-height) /2);
 
 		&.small {
 			height: 30px;
@@ -31,8 +30,12 @@
 		margin: 0;
 	}
 
+	.navbar-right {
+		margin-top: 33px;
+	}
+
 	ul {
-		margin: ((@navbar-height - @navbar-default-font-size) /2) 0;
+		margin: 35px 0;
 	}
 
 	.btn-default {
@@ -49,6 +52,36 @@
 			position: relative;
 			top: -15px;
 			left: -8px;
+		}
+	}
+
+	@media (max-width: @screen-sm-max) {
+		.nav > li > a {
+			padding: 0 4px;
+		}
+
+		.logo {
+			margin: ((@navbar-height - @logo-height) /2) 8px ((@navbar-height - @logo-height) /2) 0;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		.nav > li > a {
+			padding: 0 10px;
+		}
+
+		.logo {
+			margin: ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) 0;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		.nav > li > a {
+			padding: 0 15px;
+		}
+
+		.logo {
+			margin: ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) 0;
 		}
 	}
 }

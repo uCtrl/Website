@@ -1,7 +1,30 @@
 'use strict';
 angular.module('app').config(['$translateProvider', function ($translateProvider) {
 	$translateProvider.translations('en', {
-		/*Home 2*/
+		/*Header*/
+		"logIn": "Log In",
+		"goToPortal": "Go To Portal",
+		"home": "Home",
+		"developers": "Developers",
+		"features": "Features",
+		"about": "About",
+		"getStarted": "Get Started",
+		"blog": "Blog",
+
+		/*Footer*/
+		"footerLink": "Site Map",
+		"footerDescription1": "µCtrl is a home automation project developed by a team of 20 students in computer engineering and electrical engineering at ",
+		"footerDescription2": "Université de Sherbrooke",
+		"footerDescription3": "It is entirely non-profit, open and free to use",
+		"footerKIT": "Keep In Touch",
+		"footerSubscribe": "Subscribe to our newsletter:",
+		"footerLikeF": "Like us on Facebook",
+		"footerLikeT": "Follow us on Twitter",
+		"footerLikeG": "Fork us on GitHub",
+		"footerContact": "Contact Us",
+		"footerLicense": "All Rights Reserved",
+
+		/*Landing*/
 		"banner1": "Control your house",
 		"banner2": "Easily",
 		"aboutTitle": "is a home automation system that works magically",
@@ -46,48 +69,6 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"jumpTxt": "Pack your home with the smartest home automation system available",
 		"jumpBtn": "Get Started",
 		"followUs": "Follow Us",
-		"footerLink": "Site Map",
-		"footerDescription1": "µCtrl is a home automation project developed by a team of 20 students in computer engineering and electrical engineering at ",
-		"footerDescription2": "Université de Sherbrooke",
-		"footerDescription3": "It is entirely non-profit, open and free to use",
-		"footerKIT": "Keep In Touch",
-		"footerSubscribe": "Subscribe to our newsletter:",
-		"footerLikeF": "Like us on Facebook",
-		"footerLikeT": "Follow us on Twitter",
-		"footerLikeG": "Fork us on GitHub",
-		"footerContact": "Contact Us",
-
-		"footerLicense": "All Rights Reserved",
-
-		/*Home*/
-		'About': 'About',
-		'Team': 'Team',
-		'Download': 'Download',
-		'SourceCode': 'Source code',
-		'ForkGithub': 'Fork us on Github',
-		'SingIn': 'Log in',
-		'GoToPortal': 'Go to your portal',
-		'Portal': 'Portal',
-		'Home': 'Home',
-		'FollowUs': 'Follow Us',
-		'AboutP1': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel fringilla metus. Nullam dapibus velit nec dignissim molestie. Suspendisse a ex ac diam auctor convallis. Nullam vitae convallis ex, ut dapibus enim. Proin tempor velit justo, lacinia varius sem ultrices non. Proin non fermentum lorem, sit amet accumsan arcu. Curabitur hendrerit nulla eu mi auctor blandit. Vivamus vitae lectus et ante porttitor eleifend vel vitae leo. Maecenas mollis turpis sit amet arcu sagittis rutrum vel a quam. In magna purus, blandit quis neque sit amet, mattis vehicula sapien. Vivamus feugiat, nisi vitae pellentesque ullamcorper, urna lectus convallis leo, et cursus tellus odio eu ligula. Vivamus sed vestibulum urna. Aliquam semper massa gravida, ultricies quam ornare, accumsan dui.',
-		'AboutP2': 'Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est.',
-		'Software': 'Software',
-		'Hardware': 'Hardware',
-		'SoftwareTeamDesc': 'This is the list of the project software team.',
-		'HardwareTeamDesc': 'This is the list of the project hardware team.',
-		'Name': 'Name',
-		'Post': 'Position',
-		'DownloadText1': 'All theses product were under the LGPL licence. It is important that you are in the know of the requirements of using a product or developing under LGPL. Learn about the',
-		'DownloadText2': 'LGPL requirements here',
-		'DownloadWhyTitle': 'Why LGPL license',
-		'DownloadWhyText1': 'Because we are using the open source version of Qt libraries and tool to create the graphic interface of the application, we have to take the licence that they want users to have.',
-		'DownloadWhyText2': 'More information about Qt licensing here.',
-		'DesktopApp': 'Desktop Application',
-		'PlaySorteText': 'Available directly on the ',
-		'AppSorteText': 'Available directly on the ',
-		'SourceCodeText1': 'All our source code is available on ',
-		'SourceCodeText2': 'Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est. ',
 
 		/*Modal*/
 		'ModalLoginPortal': 'Login to your portal',
@@ -110,7 +91,30 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 	});
 
 	$translateProvider.translations('fr', {
-		/*Home 2*/
+		/*Header*/
+		"logIn": "Connexion",
+		"goToPortal": "Aller au Portail",
+		"home": "Accueil",
+		"developers": "Développeurs",
+		"features": "Fonctionnalités",
+		"about": "À propos",
+		"getStarted": "Démarrer",
+		"blog": "Blogue",
+
+		/*Footer*/
+		"footerLink": "Site Map",
+		"footerDescription1": "μCtrl est un projet de domotique développé par une équipe de 20 étudiants en génie informatique et en génie électrique à l'",
+		"footerDescription2": "Université de Sherbrooke",
+		"footerDescription3": "Ce projet est à but non lucratif, ouvert et libre d'utilisation",
+		"footerKIT": "Restez en contact",
+		"footerSubscribe": "Abonnez-vous au bulletin d'information :",
+		"footerLikeF": "Devenez Fan sur Facebook",
+		"footerLikeT": "Suivez-nous sur Twitter",
+		"footerLikeG": "Participez a notre GitHub",
+		"footerContact": "Contactez-Nous",
+		"footerLicense": "Tous Droits Réservés",
+
+		/*Landing*/
 		"banner1": "Contrôlez votre maison",
 		"banner2": "Facilement",
 		"aboutTitle": "est un système domotique qui fonctionne comme par magie",
@@ -155,48 +159,6 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"jumpTxt": "Amméliorez votre maison avec le plus intelligent système de domotique disponible.",
 		"jumpBtn": "Commencez",
 		"followUs": "Pour nous suivre",
-		"footerLink": "Site Map",
-		"footerDescription1": "μCtrl est un projet de domotique développé par une équipe de 20 étudiants en génie informatique et en génie électrique à l'",
-		"footerDescription2": "Université de Sherbrooke",
-		"footerDescription3": "Ce projet est à but non lucratif, ouvert et libre d'utilisation",
-		"footerKIT": "Restez en contact",
-		"footerSubscribe": "Abonnez-vous au bulletin d'information :",
-		"footerLikeF": "Devenez Fan sur Facebook",
-		"footerLikeT": "Suivez-nous sur Twitter",
-		"footerLikeG": "Participez a notre GitHub",
-		"footerContact": "Contactez-Nous",
-
-		"footerLicense": "Tous Droits Réservés",
-
-		/*Home*/
-		'About': 'À propos',
-		'Team': 'Équipe',
-		'Download': 'Téléchargement',
-		'SourceCode': 'Code source',
-		'ForkGithub': 'Suivez-nous sur Github',
-		'SingIn': 'Connexion',
-		'GoToPortal': 'Aller au portail',
-		'Portal': 'Portail',
-		'Home': 'Accueil',
-		'FollowUs': 'Suivez-nous',
-		'AboutP1': 'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec vel fringilla metus. Nullam dapibus velit nec dignissim molestie. Suspendisse a ex ac diam auctor convallis. Nullam vitae convallis ex, ut dapibus enim. Proin tempor velit justo, lacinia varius sem ultrices non. Proin non fermentum lorem, sit amet accumsan arcu. Curabitur hendrerit nulla eu mi auctor blandit. Vivamus vitae lectus et ante porttitor eleifend vel vitae leo. Maecenas mollis turpis sit amet arcu sagittis rutrum vel a quam. In magna purus, blandit quis neque sit amet, mattis vehicula sapien. Vivamus feugiat, nisi vitae pellentesque ullamcorper, urna lectus convallis leo, et cursus tellus odio eu ligula. Vivamus sed vestibulum urna. Aliquam semper massa gravida, ultricies quam ornare, accumsan dui.',
-		'AboutP2': 'Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est.',
-		'Software': 'Logiciel',
-		'Hardware': 'Matériel',
-		'SoftwareTeamDesc': 'Voici la liste des membres de l\'équipe logiciel.',
-		'HardwareTeamDesc': 'Voici la liste des membres de l\'équipe matériel.',
-		'Name': 'Nom ',
-		'Post': 'Poste ',
-		'DownloadText1': 'Tous ces produits sont sous la licence LGPL. Il est optant que vous connaissiez les requis d\'utilisation ou de programmation sous cette licence. Les requis de la LGPL sont ',
-		'DownloadText2': 'disponible ici',
-		'DownloadWhyTitle': 'Pourquoi utiliser la licence LGPL',
-		'DownloadWhyText1': 'Nous utilisons cette licence, car nous utilisons les produits "open source" de Qt, soit leurs librairies et leurs outils. Celons les conditions d\'utilisation, il nous faut donc garder la licence LGPL.',
-		'DownloadWhyText2': 'Plus d\'information à propos des licences sous Qt est disponible ici.',
-		'DesktopApp': 'Application Bureau',
-		'PlayStoreText': 'Disponible directement sur le ',
-		'AppStoreText': 'Disponible directement sur l\'',
-		'SourceCodeText1': 'Notre code source est disponible sur ',
-		'SourceCodeText2': 'Sed non imperdiet ex. Vestibulum ligula tellus, pretium quis leo ut, efficitur pharetra sapien. Quisque eu eros lorem. Nunc dictum arcu in mi eleifend, vel ultricies turpis ornare. Proin augue ligula, posuere vitae volutpat et, cursus a metus. Ut a vulputate odio. Nulla eu orci tellus. Duis ultrices elementum felis, quis accumsan ex laoreet dignissim. Praesent vitae tempor ligula, nec consequat est. ',
 
 		/*Modal*/
 		'ModalLoginPortal': 'Connectez-vous à votre portail',
