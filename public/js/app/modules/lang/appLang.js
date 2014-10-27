@@ -46,7 +46,18 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"jumpTxt": "Pack your home with the smartest home automation system available",
 		"jumpBtn": "Get Started",
 		"followUs": "Follow Us",
-		'Link': 'Site Map',
+		"footerLink": "Site Map",
+		"footerDescription1": "µCtrl is a home automation project developed by a team of 20 students in computer engineering and electrical engineering at ",
+		"footerDescription2": "Université de Sherbrooke",
+		"footerDescription3": "It is entirely non-profit, open and free to use",
+		"footerKIT": "Keep In Touch",
+		"footerSubscribe": "Subscribe to our newsletter:",
+		"footerLikeF": "Like us on Facebook",
+		"footerLikeT": "Follow us on Twitter",
+		"footerLikeG": "Fork us on GitHub",
+		"footerContact": "Contact Us",
+
+		"footerLicense": "All Rights Reserved",
 
 		/*Home*/
 		'About': 'About',
@@ -144,8 +155,18 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"jumpTxt": "Amméliorez votre maison avec le plus intelligent système de domotique disponible.",
 		"jumpBtn": "Commencez",
 		"followUs": "Pour nous suivre",
-		'Link': 'Site Map',
+		"footerLink": "Site Map",
+		"footerDescription1": "μCtrl est un projet de domotique développé par une équipe de 20 étudiants en génie informatique et en génie électrique à l'",
+		"footerDescription2": "Université de Sherbrooke",
+		"footerDescription3": "Ce projet est à but non lucratif, ouvert et libre d'utilisation",
+		"footerKIT": "Restez en contact",
+		"footerSubscribe": "Abonnez-vous au bulletin d'information :",
+		"footerLikeF": "Devenez Fan sur Facebook",
+		"footerLikeT": "Suivez-nous sur Twitter",
+		"footerLikeG": "Participez a notre GitHub",
+		"footerContact": "Contactez-Nous",
 
+		"footerLicense": "Tous Droits Réservés",
 
 		/*Home*/
 		'About': 'À propos',

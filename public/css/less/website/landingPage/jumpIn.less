@@ -3,7 +3,6 @@
 	text-align: center;
 
 	background: url("../../img/background/bg-get-started.jpg") no-repeat center bottom / cover;
-	font-size: 1.8em;
 
 	p {
 		margin: 36px auto;
@@ -15,16 +14,12 @@
 		background-color: @color_green;
 		border-radius: 5px;
 		box-shadow: 2px 2px 2px #000;
-		font-size: 1em;
-		padding-left: 60px;
 		position: relative;
-		min-height: 60px;
+		font-size: 1em;
+		font-weight: 700;
 
 		i {
-			font-size: 1.4em;
-			line-height: 1em;
 			position: absolute;
-			left: 0px;
 		}
 
 		&:hover {
@@ -33,5 +28,45 @@
 		}
 
 		margin-bottom: 60px;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		font-size: 22px;
+		.btn {
+			padding: 5px 12px 5px 45px;
+			min-height: 45px;
+			i {
+				font-size: 30px;
+				line-height: 1em;
+				left: 8px;
+			}
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		font-size: 28px;
+		.btn {
+			padding: 10px 14px 10px 57px;
+			min-height: 54px;
+			i {
+				font-size: 38px;
+				line-height: 1em;
+				left: 10px;
+			}
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		font-size: 36px;
+		.btn {
+			min-height: 60px;
+			padding: 15px 24px 15px 82px;
+
+			i {
+				font-size: 1.4em;
+				line-height: 1em;
+				left: 16px;
+			}
+		}
 	}
 }
