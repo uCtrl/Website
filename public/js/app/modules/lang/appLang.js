@@ -129,7 +129,7 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"easySimple": "Avec une simple application",
 		"easyDeskC": "L'application bureau est disponible pour :",
 		"easyModC": "L'application mobile est disponible pour :",
-		"openTechTitle": "Entièrement open source",
+		"openTechTitle": "Entièrement Open Source",
 		"openTechTxt1": "Des",
 		"openTechTxt2": "plans matériels",
 		"openTechTxt3": "au",

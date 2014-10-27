@@ -1,6 +1,5 @@
 .about {
 	h1 {
-		font-size: 54px;
 		color: @color_mediumDarkGrey;
 	}
 
@@ -9,8 +8,44 @@
 	}
 
 	.bck {
-		height: 450px;
-		background: url("../../img/background/uconnect.png") center center no-repeat;
-		background-size: 537px 418px;
+		height: 300px;
+		background: url("../../img/background/uconnect.png") no-repeat center center / contain;
+		margin: 50px 0;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		h1 {
+			font-size: 34px;
+		}
+
+		p {
+			font-size: 16px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		h1 {
+			font-size: 40px;
+		}
+
+		p {
+			font-size: 18px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		h1 {
+			font-size: 54px;
+		}
+
+		p {
+			font-size: 20px;
+		}
+
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			h1 {
+				font-size: 64px;
+			}
+		}
 	}
 }

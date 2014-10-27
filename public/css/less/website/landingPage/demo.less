@@ -3,7 +3,6 @@
 	text-align: center;
 
 	h1 {
-		font-size: 48px;
 		color: @color_mediumDarkGrey;
 	}
 
@@ -84,6 +83,24 @@
 				top: 21px;
 				content: "";
 			}
+		}
+	}
+
+	@media (max-width: @screen-sm-max) {
+		h1 {
+			font-size: 32px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		h1 {
+			font-size: 38px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		h1 {
+			font-size: 48px;
 		}
 	}
 }
