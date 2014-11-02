@@ -17,7 +17,6 @@
 						<button type="button" class="btn btn-default" ng-click="modalOpen($event);" id="singIn" ng-if="!isLogged"><i class="fa fa-user fa-fw"></i> {{'logIn' | translate}}</button>
 						<button type="button" class="btn btn-default" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'goToPortal' | translate}}</button>
 
-						<label for="langSelect" class="hidden">Language Selection</label>
 						<select id="langSelect" class="selectpicker" data-width="100px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
 						</select>
 					</div>
@@ -44,7 +43,6 @@
 				</div>
 			</nav>
 		</header>
-
 
 		<section ui-view>
 			<!-- Pages will be load here by ui-router -->
@@ -88,7 +86,7 @@
 						<br/>
 						<a href="#" title="Twitter"><i class="fa fa-twitter-square"></i> {{'footerLikeT' | translate}}</a>
 						<br/>
-						<a href="#"  title="Google+"><i class="fa fa-github-square"></i> {{'footerLikeG' | translate}}</a>
+						<a href="#"  title="GitHub"><i class="fa fa-github-square"></i> {{'footerLikeG' | translate}}</a>
 					</div>
 
 					<div class="col-md-3 col-sm-6">

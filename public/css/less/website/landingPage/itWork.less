@@ -1,11 +1,22 @@
 .itWork {
-	background: url("../img/background/bg-feature-1.jpg") no-repeat top center / cover;
 	color: #FFF;
 	font-weight: bold;
 
 	h1 {
 		color: #FFF;
-		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
+	}
+
+	&.bg1 {
+		background: url("../img/background/bg-feature-1.jpg") no-repeat top center / cover;
+	}
+
+	&.bg2 {
+		background: url("../img/background/bg-feature-2.jpg") no-repeat top center / cover;
+	}
+
+	&.bg3 {
+		background: url("../img/background/bg-feature-3.jpg") no-repeat top center / cover;
 	}
 
 	.btn-slide {
@@ -14,12 +25,22 @@
 		font-size: 0.8em;
 
 		.btn {
+
+			&.active {
+				background: @color_green;
+			}
+
+			&:hover, .active:hover {
+				color: #FFF;
+				background: darken(@color_green, 10%);
+			}
+
 			height: 67px;
 			width: 67px;
 			font-size: 33px;
 			line-height: 57px;
 			border-radius: 34px;
-			background: @color_green;
+			background: @color_mediumDarkGrey;
 
 			&:hover {
 				color: #FFF;
