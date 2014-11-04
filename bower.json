@@ -22,7 +22,7 @@
 		"jquery": "~2.1.1",
 		"jquery.scrollTo": "~1.4.13",
 		"ui-router": "~0.2.11",
-		"validator-js": "~3.20.0"
+		"validator-js": "^3.20.0"
 	},
 	"cInstall": {
 		"folder": {
