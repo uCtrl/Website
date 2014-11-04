@@ -134,6 +134,8 @@
 			$translate.use(lang);
 
 			langSelect.selectpicker('render');
+
+			$rootScope.$emit('changeLang');
 		};
 
 		/**
