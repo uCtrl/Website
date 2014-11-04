@@ -30,7 +30,7 @@
 		}
 
 		.ic {
-			background-color: #0D9B0D;
+			background-color: darken(@color_grey, 10%);
 			height: 40px;
 			width: 40px;
 			border-radius: 20px;
@@ -61,7 +61,15 @@
 			}
 
 			&:hover, &:active {
-				background: darken(@color_green, 10%);
+				background: darken(@color_grey, 20%);
+			}
+
+			&.active {
+				background-color: @color_green;
+
+				&:hover, &:active {
+					background: darken(@color_green, 10%);
+				}
 			}
 		}
 

@@ -120,12 +120,7 @@ angular.module('demoModule')
 		 * Initialise the tooltips
 		 */
 		$scope.ini = function() {
-			$scope.elements.icTv.attr('title', $scope.info[$rootScope.getLang()][$scope.state][0]);
-			$scope.elements.icSd.attr('title', $scope.info[$rootScope.getLang()][$scope.state][1]);
-			$scope.elements.icTm.attr('title', $scope.info[$rootScope.getLang()][$scope.state][2]);
-			$scope.elements.icLu.attr('title', $scope.info[$rootScope.getLang()][$scope.state][3]);
-
-			$(".ic").tooltip();
+			$scope.change($scope.state, true);
 		};
 
 		$scope.ini();
