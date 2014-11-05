@@ -11,11 +11,73 @@
 	}
 
 	.image {
-		width: 900px;
-		height: 410px;
-
 		margin: 35px auto;
 		position: relative;
+
+		@media (max-width: @screen-sm-max) {
+			display: none;
+
+			.ic, .btn-slide {
+				display: none !important;
+			}
+		}
+
+		@media (min-width: @screen-md-min) {
+			width: 670px;
+			height: 492px;
+
+			.btn-slide {
+				margin: 30px 0 0 0;
+				position: absolute;
+				bottom: 0;
+
+				&:after {
+					background-color: @color_grey;
+					height: 45px;
+					width: 6px;
+					position: absolute;
+					left: 86px;
+					top: -34px;
+					content: "";
+				}
+			}
+
+			#demoHome {
+				left: 0;
+			}
+
+			#demoVacation {
+				right: 0;
+			}
+
+			#demoWork {
+				right: 243px;
+			}
+		}
+
+		@media (min-width: @screen-lg-min) {
+			width: 900px;
+			height: 410px;
+
+			.btn-slide {
+				margin: 30px 0;
+				position: relative;
+
+				&:after {
+					background-color: @color_grey;
+					height: 6px;
+					width: 45px;
+					position: absolute;
+					left: 180px;
+					top: 21px;
+					content: "";
+				}
+			}
+
+			#demoHome, #demoVacation, #demoWork {
+				right: 0;
+			}
+		}
 
 		&.b {
 			&.bg1 {
@@ -87,21 +149,9 @@
 			-moz-user-select: none;
 			-ms-user-select: none;
 			user-select: none;
-			margin: 30px 0;
-			position: relative;
 
 			&.active, &:hover:after, &:active:after, &:hover, &:active, &.active:after {
 				background-color: @color_green;
-			}
-
-			&:after {
-				background-color: @color_grey;
-				height: 6px;
-				width: 45px;
-				position: absolute;
-				left: 180px;
-				top: 21px;
-				content: "";
 			}
 		}
 	}
