@@ -14,24 +14,24 @@ angular.module('loginModule')
 		 */
 		$scope.lang = {
 			en: {
-				'LoginUserAdnPassEmpty': '<strong>Warning!</strong> Username and/or password are empty.',
-				'LoginWrongConnexion': '<strong>Warning!</strong> Username and password do not match.',
-				'RegisterInputMissing': 'Some input were missing: ',
-				'RegisterWrongUsernameFormat': 'Wrong Username format only accept alphanumerical characters.',
-				'RegisterWrongFirstNameFormat': 'Wrong First name format only accept alphabetic characters.',
-				'RegisterWrongLastNameFormat': 'Wrong Last name format only accept alphabetic characters.',
-				'RegisterWrongPassValidation': 'The password and the password validation were not he same.',
-				'RegisterSuccess': 'Validation successful.'
+				"LoginUserAdnPassEmpty": "<strong>Warning!</strong> Username and/or password are empty.",
+				"LoginWrongConnexion": "<strong>Warning!</strong> Username and password do not match.",
+				"RegisterInputMissing": "Some input were missing: ",
+				"RegisterWrongUsernameFormat": "Wrong Username format only accept alphanumerical characters.",
+				"RegisterWrongFirstNameFormat": "Wrong First name format only accept alphabetic characters.",
+				"RegisterWrongLastNameFormat": "Wrong Last name format only accept alphabetic characters.",
+				"RegisterWrongPassValidation": "The password and the password validation were not he same.",
+				"RegisterSuccess": "Validation successful."
 			},
 			fr: {
-				'LoginUserAdnPassEmpty': '<strong>Attention!</strong> Le nom d\'utilisateur et/ou le mot de passe ne sont pas remplis.',
-				'LoginWrongConnexion': '<strong>Attention!</strong> Le nom d\'utilisateur et le mot de passe ne correspondent pas dans notre base de données.',
-				'RegisterInputMissing': 'Certaines entrées sont manquantes : ',
-				'RegisterWrongUsernameFormat': 'Le champ d\'entrée du nom d\'utilisateur accepte seulement les caractères alphanumériques.',
-				'RegisterWrongFirstNameFormat': 'Le champ d\'entrée du prénom accepte seulement les caractères alphabétiques.',
-				'RegisterWrongLastNameFormat': 'Le champ d\'entrée du nom de famille accepte seulement les caractères alphabétiques.',
-				'RegisterWrongPassValidation': 'Le mot de passe ainsi que son champ de validation ne correspondent pas.',
-				'RegisterSuccess': 'Validation réussie.'
+				"LoginUserAdnPassEmpty": "<strong>Attention!</strong> Le nom d\'utilisateur et/ou le mot de passe ne sont pas remplis.",
+				"LoginWrongConnexion": "<strong>Attention!</strong> Le nom d\'utilisateur et le mot de passe ne correspondent pas dans notre base de données.",
+				"RegisterInputMissing": "Certaines entrées sont manquantes : ",
+				"RegisterWrongUsernameFormat": "Le champ d\'entrée du nom d\'utilisateur accepte seulement les caractères alphanumériques.",
+				"RegisterWrongFirstNameFormat": "Le champ d\'entrée du prénom accepte seulement les caractères alphabétiques.",
+				"RegisterWrongLastNameFormat": "Le champ d\'entrée du nom de famille accepte seulement les caractères alphabétiques.",
+				"RegisterWrongPassValidation": "Le mot de passe ainsi que son champ de validation ne correspondent pas.",
+				"RegisterSuccess": "Validation réussie."
 			}
 		};
 

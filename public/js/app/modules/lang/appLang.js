@@ -1,6 +1,7 @@
 'use strict';
-angular.module('app').config(['$translateProvider', function ($translateProvider) {
-	$translateProvider.translations('en', {
+
+angular.module('app').config(["$translateProvider", function ($translateProvider) {
+	$translateProvider.translations("en", {
 		/*Header*/
 		"logIn": "Log In",
 		"goToPortal": "Go To Portal",
@@ -79,26 +80,26 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"followUs": "Follow Us",
 
 		/*Modal*/
-		'ModalLoginPortal': 'Login to your portal',
-		'ModalRegisterPortal': 'Register to the µCtrl portal',
-		'Close': 'Close',
-		'Username': 'Username',
-		'Password': 'Password',
-		'PasswordConf': 'Password confirmation',
-		'Register': 'Register',
-		'FirstName': 'First name',
-		'LastName': 'Last name',
-		'Register&Login': 'Register and login',
-		'ModalRegisterInfo1': 'This form allow you to register to the µCtrl web portal service.',
-		'ModalRegisterInfo2': 'From this portal, you will be able to connect each of your devices and then control them from anywhere!',
-		'FormValidFail': 'Form validation failed.',
-		'FormValidOk': 'Form validation pass.',
-		'FormValidOkTxt': 'Waiting for the portal to be ready.',
-		'PassMismatch': 'Password mismatch',
-		'CorrErrorPls': 'Please correct theses errors'
+		"ModalLoginPortal": "Login to your portal",
+		"ModalRegisterPortal": "Register to the µCtrl portal",
+		"Close": "Close",
+		"Username": "Username",
+		"Password": "Password",
+		"PasswordConf": "Password confirmation",
+		"Register": "Register",
+		"FirstName": "First name",
+		"LastName": "Last name",
+		"Register&Login": "Register and login",
+		"ModalRegisterInfo1": "This form allow you to register to the µCtrl web portal service.",
+		"ModalRegisterInfo2": "From this portal, you will be able to connect each of your devices and then control them from anywhere!",
+		"FormValidFail": "Form validation failed.",
+		"FormValidOk": "Form validation pass.",
+		"FormValidOkTxt": "Waiting for the portal to be ready.",
+		"PassMismatch": "Password mismatch",
+		"CorrErrorPls": "Please correct theses errors"
 	});
 
-	$translateProvider.translations('fr', {
+	$translateProvider.translations("fr", {
 		/*Header*/
 		"logIn": "Connexion",
 		"goToPortal": "Aller au Portail",
@@ -176,24 +177,24 @@ angular.module('app').config(['$translateProvider', function ($translateProvider
 		"followUs": "Pour nous suivre",
 
 		/*Modal*/
-		'ModalLoginPortal': 'Connectez-vous à votre portail',
-		'ModalRegisterPortal': 'Inscrivez-vous au portail μCtrl',
-		'Close': 'Fermer',
-		'Username': 'Nom d\'utilisateur',
-		'Password': 'Mot de passe',
-		'PasswordConf': 'Confirmation du mot de passe',
-		'Register': 'S\'inscrire',
-		'FirstName': 'Prénom',
-		'LastName': 'Nom de famille',
-		'Register&Login': 'Inscription et connexion',
-		'ModalRegisterInfo1': 'Ce formulaire vous offre la possibilité de s\'inscrire au portail web de µCtrl.',
-		'ModalRegisterInfo2': 'À partir de ce portail, vous serez capable d\'y ajouter chacun de vos dispositifs et d\'y accéder par la suite de n\'importe où!',
-		'FormValidFail': 'La validation de votre formulaire échoué.',
-		'FormValidOk': 'La validation de votre formulaire a été acceptée.',
-		'FormValidOkTxt': 'Préparation de votre portail.',
-		'PassMismatch': 'Les mots de passe ne sont pas identiques',
-		'CorrErrorPls': 'Veuillez corriger ces erreurs '
+		"ModalLoginPortal": "Connectez-vous à votre portail",
+		"ModalRegisterPortal": "Inscrivez-vous au portail μCtrl",
+		"Close": "Fermer",
+		"Username": "Nom d'utilisateur",
+		"Password": "Mot de passe",
+		"PasswordConf": "Confirmation du mot de passe",
+		"Register": "S'inscrire",
+		"FirstName": "Prénom",
+		"LastName": "Nom de famille",
+		"Register&Login": "Inscription et connexion",
+		"ModalRegisterInfo1": "Ce formulaire vous offre la possibilité de s'inscrire au portail web de µCtrl.",
+		"ModalRegisterInfo2": "À partir de ce portail, vous serez capable d'y ajouter chacun de vos dispositifs et d'y accéder par la suite de n'importe où!",
+		"FormValidFail": "La validation de votre formulaire échoué.",
+		"FormValidOk": "La validation de votre formulaire a été acceptée.",
+		"FormValidOkTxt": "Préparation de votre portail.",
+		"PassMismatch": "Les mots de passe ne sont pas identiques",
+		"CorrErrorPls": "Veuillez corriger ces erreurs "
 	});
 
-	$translateProvider.preferredLanguage('en');
+	$translateProvider.preferredLanguage("en");
 }]);
