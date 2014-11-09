@@ -1,0 +1,52 @@
+.followUs {
+	box-shadow: 0 4px 9px -5px #000 inset;
+	text-align: center;
+	background: url("../img/background/bg-follow-us-large.jpg") no-repeat center bottom / cover;
+
+	a {
+		white-space: nowrap;
+	}
+
+	&, a, a:visited {
+		color: rgba(red(@color_mediumDarkGrey), green(@color_mediumDarkGrey), blue(@color_mediumDarkGrey), 0.5);
+		text-decoration: none;
+	}
+
+	a:hover, a:active, a:focus {
+		color: rgba(red(@color_mediumDarkGrey), green(@color_mediumDarkGrey), blue(@color_mediumDarkGrey), 0.85);
+		text-decoration: none;
+	}
+
+	.element {
+		display: inline-block;
+
+		i {
+			font-size: 1.2em;
+		}
+	}
+
+	@media (max-width: @screen-sm-max) {
+		.element {
+			font-size: 58px;
+			margin: 10px;
+
+			&:last-child {
+				margin-bottom: 30px;
+			}
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		.element {
+			font-size: 70px;
+			margin: 30px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		.element {
+			font-size: 70px;
+			margin: 30px;
+		}
+	}
+}

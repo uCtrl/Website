@@ -63,4 +63,3 @@ function arrayObjectIndexOf(myArray, searchTerm, property) {
 }
 
 var langSelect = $('.selectpicker');
-//langSelect.selectpicker();

@@ -1,0 +1,51 @@
+@import "nav-bar";
+@import "footer";
+
+@import "landingPage/index";
+
+*, *:focus {
+	box-sizing: border-box;
+	outline: none;
+
+	// Firefox dotted line selection remove
+	&::-moz-focus-inner {
+		border: 0;
+	}
+}
+
+body, html {
+	margin: 0;
+	padding: 0;
+	overflow-x: hidden;
+}
+
+html {
+	background-color: @color_white;
+}
+
+body {
+	color: @color_white;
+}
+
+a {
+	color: @color_white;
+}
+
+header {
+	padding-top: @navbar-height;
+}
+
+.img-sub-team {
+	display: block;
+	width: 30%;
+	margin: 0 auto;
+}
+
+em {
+	font-style: normal;
+	text-decoration: none;
+}
+
+.green {
+	color: @color_green;
+}

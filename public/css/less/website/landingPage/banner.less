@@ -1,0 +1,58 @@
+.banner {
+	background: url("../img/background/bg-slide-1.jpg") no-repeat top center / cover;
+
+	-webkit-touch-callout: none;
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	cursor: default;
+
+	p, em {
+		color: #FFF;
+		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
+		font-weight: 700;
+	}
+
+	p {
+		margin: 20px 0 0 0;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		height: 207px;
+
+		p {
+			font-size: 24px;
+		}
+
+		em {
+			font-size: 40px;
+			line-height: 40px;
+		}
+	}
+	@media (min-width: @screen-md-min) {
+		height: 400px;
+
+		p {
+			font-size: 36px;
+		}
+
+		em {
+			font-size: 56px;
+			line-height: 56px;
+		}
+	}
+	@media (min-width: @screen-lg-min) {
+		height: 450px;
+
+		p {
+			font-size: 48px;
+		}
+
+		em {
+			font-size: 70px;
+			line-height: 70px;
+		}
+	}
+}

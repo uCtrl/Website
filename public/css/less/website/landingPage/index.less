@@ -1,0 +1,29 @@
+@import "banner";
+@import "about";
+@import "demo";
+@import "itWork";
+@import "compatibility";
+@import "easy";
+@import "openTech";
+@import "jumpIn";
+@import "followUs";
+
+.banner, .about, .compatibility, .demo, .easy, .followUs, .itWork, .jumpIn, .openTech {
+	@media (max-width: @screen-sm-max) {
+		h1 {
+			font-size: 32px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		h1 {
+			font-size: 38px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		h1 {
+			font-size: 48px;
+		}
+	}
+}

@@ -1,0 +1,46 @@
+.about {
+	h1 {
+		color: @color_mediumDarkGrey;
+	}
+
+	em {
+		color: @color_green;
+	}
+
+	.bck {
+		background: url("../img/background/uconnect.png") no-repeat center center / contain;
+		margin: 50px 10px;
+	}
+
+	@media (max-width: @screen-sm-max) {
+		p {
+			font-size: 16px;
+		}
+
+		.bck {
+			height: 180px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		p {
+			font-size: 18px;
+		}
+
+		.bck {
+			height: 300px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		p {
+			font-size: 20px;
+		}
+
+		@media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi) {
+			h1 {
+				font-size: 64px;
+			}
+		}
+	}
+}

@@ -3,7 +3,7 @@
 	/**
 	 * Main application module.
 	 */
-	var app = angular.module('app', ['ui.router', 'loginModule', 'teamModule', 'pascalprecht.translate']);
+	var app = angular.module('app', ['ui.router', 'loginModule', 'teamModule', 'demoModule', 'pascalprecht.translate']);
 
 	/**
 	 * Handle the application state routing.
@@ -18,17 +18,32 @@
 					"": {
 						templateUrl: 'views/home/indexContainer.html'
 					},
+					'banner@home': {
+						templateUrl: 'views/home/banner.html'
+					},
 					'about@home': {
 						templateUrl: 'views/home/about.html'
 					},
-					'download@home': {
-						templateUrl: 'views/home/download.html'
+					'demo@home': {
+						templateUrl: 'views/home/demo.html'
 					},
-					'sourceCode@home': {
-						templateUrl: 'views/home/sourceCode.html'
+					'itWork@home': {
+						templateUrl: 'views/home/itWork.html'
 					},
-					'team@home': {
-						templateUrl: 'views/home/team.html'
+					'easy@home': {
+						templateUrl: 'views/home/easy.html'
+					},
+					'compatibility@home': {
+						templateUrl: 'views/home/compatibility.html'
+					},
+					'openTech@home': {
+						templateUrl: 'views/home/openTech.html'
+					},
+					'jumpIn@home': {
+						templateUrl: 'views/home/jumpIn.html'
+					},
+					'followUs@home': {
+						templateUrl: 'views/home/followUs.html'
 					}
 				}
 			})
@@ -49,7 +64,7 @@
 		 *
 		 * @type {{value: string, text: string}[]}
 		 */
-		$rootScope.availableLanguage = [{'value': 'en', text:'En'}, {'value': 'fr', text:'Fr'}];
+		$rootScope.availableLanguage = [{'value': 'en', text:'English'}, {'value': 'fr', text:'Français'}];
 
 		/**
 		 * Selected language
@@ -76,8 +91,12 @@
 
 		/**
 		 * Open the login modal window.
+		 *
+		 * @param event {object}
 		 */
-		$scope.modalOpen = function () {
+		$scope.modalOpen = function (event) {
+			event.stopPropagation();
+
 			$rootScope.modalInstance = $modal.open({
 				templateUrl: 'views/login/singInContainer.html'
 			});
@@ -115,6 +134,8 @@
 			$translate.use(lang);
 
 			langSelect.selectpicker('render');
+
+			$rootScope.$emit('changeLang');
 		};
 
 		/**
