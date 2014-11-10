@@ -42,7 +42,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"itWorkTitle": "It Works Automatically",
 		"itWorkTxt1": "Don't want to spend time configuring",
 		"itWorkTxt2": "Let μCtrl do it",
-		"itWorkTxt3": "Let's say you come home every week day at 4 PM and turn on the lights. μCtrl will learn it, and will automatically turn the lights on at 4 Pm",
+		"itWorkTxt3": "Let's say you come home every week day at 4 PM and turn on the lights. μCtrl will learn it, and will automatically turn the lights on at 4 PM",
 		"itWorkTxt4": "No need to say it. Just do it",
 		"itEchoTitle": "It's Environmentally Friendly",
 		"itEchoTxt1": "With power consumption calculation, you can monitor how much your electronic devices are using, and set a threshold to prevent over-consumption",

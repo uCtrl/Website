@@ -2,7 +2,8 @@
 	"name": "uCtrl-Website",
 	"version": "0.0.1",
 	"contributors": [
-		"Alexandre Beaudoin <ofrogon@gmail.com>"
+		"Alexandre Beaudoin <ofrogon@gmail.com>",
+		"Émile Bélair"
 	],
 	"description": "Website and portal for the uCtrl web division",
 	"keywords": [
