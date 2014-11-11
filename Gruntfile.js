@@ -19,6 +19,13 @@ module.exports = function(grunt) {
 				cwd: 'public/',
 				src: ['data/**', 'fonts/**', 'img/**', 'favicon.ico'],
 				dest: 'build/prod'
+			},
+			getMap: {
+				files: [
+					{'build/prod/js/vendor/jquery.min.map': 'bower_components/jquery/dist/jquery.min.map'},
+					{'build/prod/js/vendor/angular.min.js.map': 'bower_components/angular/angular.min.js.map'},
+					{'build/prod/js/vendor/bootstrap-select.js.map': 'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map'}
+				]
 			}
 		},
 		htmlmin: {
@@ -41,7 +48,8 @@ module.exports = function(grunt) {
 			},
 			prod: {
 				options: {
-					cleancss: true,
+					dumpLineNumbers: 'comments',
+					compress: true,
 					ieCompat: true
 				},
 				files: {
@@ -74,9 +82,8 @@ module.exports = function(grunt) {
 		'ftp-deploy': {
 			build: {
 				auth: grunt.file.readJSON('serverConf.json'),
-				src: 'public',
-				dest: '.',
-				exclusions: ['**/*.less']
+				src: 'build/prod',
+				dest: '.'
 			}
 		},
 		run: {
@@ -174,5 +181,5 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('deploy', ['buildProd', 'ftp-deploy:build']);
 	
-	grunt.registerTask('buildProd', [prodAction, 'copy:main', 'htmlmin:prod', 'less:prod', 'uglify:prod']);
+	grunt.registerTask('buildProd', [prodAction, 'copy:main', 'copy:getMap', 'htmlmin:prod', 'less:prod', 'uglify:prod']);
 };

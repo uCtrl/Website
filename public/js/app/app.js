@@ -8,7 +8,7 @@
 	/**
 	 * Handle the application state routing.
 	 */
-	app.config(function ($stateProvider, $urlRouterProvider) {
+	app.config(['$stateProvider','$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/home');
 
 		$stateProvider
@@ -51,7 +51,7 @@
 				url: '/portal',
 				templateUrl: 'views/portal/portal_container.html'
 			});
-	});
+	}]);
 
 	app.controller('mainMenu', ['$rootScope', '$scope', '$modal', '$state', '$translate', function ($rootScope, $scope, $modal, $state, $translate) {
 		/**

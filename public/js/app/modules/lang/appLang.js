@@ -136,7 +136,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"demoBt1": "Chez Soi",
 		"demoBt2": "Au Travail",
 		"demoBt3": "En Vacances",
-		"itWorkTitle": "Il fonctionne du premier coup",
+		"itWorkTitle": "Il Fonctionne Du Premier Coup",
 		"itWorkTxt1": "Vous ne souhaitez pas passer votre temps à configurer",
 		"itWorkTxt2": "Laissez μCtrl le faire",
 		"itWorkTxt3": "Disons que vous venez à la maison tous les jours de la semaine à 16 heures et allumez les lumières. μCtrl l'apprendra, et fera automatiquement allumer les lumières à 16 heures",
@@ -174,7 +174,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpTitle": "Prêt À Commencer",
 		"jumpTxt": "Améliorez votre maison avec le plus intelligent système de domotique disponible",
 		"jumpBtn": "Commencez",
-		"followUs": "Pour nous suivre",
+		"followUs": "Pour Nous Suivre",
 
 		/*Modal*/
 		"ModalLoginPortal": "Connectez-vous à votre portail",
