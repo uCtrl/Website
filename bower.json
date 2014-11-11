@@ -33,7 +33,8 @@
 		},
 		"option": {
 			"default": {
-				"folder": "public"
+				"folder": "public",
+				"minFolder": "build/prod"
 			}
 		},
 		"source": {

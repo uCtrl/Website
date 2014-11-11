@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo npm install -g less
-sudo npm install -g clean-bower-installer
-sudo npm install -g grunt-cli
+npm install -g less
+npm install -g clean-bower-installer
+npm install -g grunt-cli
