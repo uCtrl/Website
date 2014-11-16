@@ -42,7 +42,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"itWorkTitle": "It Works Automatically",
 		"itWorkTxt1": "Don't want to spend time configuring",
 		"itWorkTxt2": "Let μCtrl do it",
-		"itWorkTxt3": "Let's say you come home every week day at 4 PM and turn on the lights. μCtrl will learn it, and will automatically turn the lights on at 4 Pm",
+		"itWorkTxt3": "Let's say you come home every week day at 4 PM and turn on the lights. μCtrl will learn it, and will automatically turn the lights on at 4 PM",
 		"itWorkTxt4": "No need to say it. Just do it",
 		"itEchoTitle": "It's Environmentally Friendly",
 		"itEchoTxt1": "With power consumption calculation, you can monitor how much your electronic devices are using, and set a threshold to prevent over-consumption",
@@ -136,7 +136,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"demoBt1": "Chez Soi",
 		"demoBt2": "Au Travail",
 		"demoBt3": "En Vacances",
-		"itWorkTitle": "Il fonctionne du premier coup",
+		"itWorkTitle": "Il Fonctionne Du Premier Coup",
 		"itWorkTxt1": "Vous ne souhaitez pas passer votre temps à configurer",
 		"itWorkTxt2": "Laissez μCtrl le faire",
 		"itWorkTxt3": "Disons que vous venez à la maison tous les jours de la semaine à 16 heures et allumez les lumières. μCtrl l'apprendra, et fera automatiquement allumer les lumières à 16 heures",
@@ -174,7 +174,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpTitle": "Prêt À Commencer",
 		"jumpTxt": "Améliorez votre maison avec le plus intelligent système de domotique disponible",
 		"jumpBtn": "Commencez",
-		"followUs": "Pour nous suivre",
+		"followUs": "Pour Nous Suivre",
 
 		/*Modal*/
 		"ModalLoginPortal": "Connectez-vous à votre portail",

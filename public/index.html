@@ -63,13 +63,13 @@
 							<div class="col-sm-6" ng-controller="footerMenu">
 								<h3>{{'footerLink' | translate}}</h3>
 
-								<div class="links">
-									<div class="link"><a href="">{{'home' | translate}}</a></div>
+								<div class="links" ng-controller="mainMenu">
+									<div class="link"><a href="#">{{'home' | translate}}</a></div>
 									<div class="link"><a href="">{{'developers' | translate}}</a></div>
 									<div class="link"><a href="">{{'features' | translate}}</a></div>
 									<div class="link"><a href="">{{'about' | translate}}</a></div>
 									<div class="link"><a href="">{{'getStarted' | translate}}</a></div>
-									<div class="link"><a href="">{{'logIn' | translate}}</a></div>
+									<div class="link"><a href="" ng-click="modalOpen($event);">{{'logIn' | translate}}</a></div>
 									<div class="link"><a href="">{{'blog' | translate}}</a></div>
 								</div>
 							</div>
@@ -86,7 +86,7 @@
 						<br/>
 						<a href="#" title="Twitter"><i class="fa fa-twitter-square"></i> {{'footerLikeT' | translate}}</a>
 						<br/>
-						<a href="#" title="GitHub"><i class="fa fa-github-square"></i> {{'footerLikeG' | translate}}</a>
+						<a href="https://github.com/uCtrl"  target="_blank" title="GitHub"><i class="fa fa-github-square"></i> {{'footerLikeG' | translate}}</a>
 					</div>
 
 					<div class="col-md-3 col-sm-6">

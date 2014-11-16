@@ -15,16 +15,16 @@ This is the website for the µCtrl project.
 * [OPEN](https://github.com/pwnall/node-open)
 
 ## Third party components
-* Angular
-* Bootstrap
-* Font Awesome
-* jQuery
-* jQuery.ScrollTo
-* AngularUI Router
-* UI Bootstrap
-* validator.js
-* angular-translate
-* Bootstrap-select
+* [Angular](https://angularjs.org/)
+* [Bootstrap](http://getbootstrap.com/)
+* [Font Awesome](http://fortawesome.github.io/Font-Awesome/)
+* [jQuery](http://jquery.com/)
+* [jQuery.ScrollTo](https://github.com/flesler/jquery.scrollTo)
+* [AngularUI Router](https://github.com/angular-ui/ui-router)
+* [UI Bootstrap](http://angular-ui.github.io/bootstrap/)
+* [validator.js](https://github.com/chriso/validator.js)
+* [angular-translate](http://angular-translate.github.io/)
+* [Bootstrap-select](http://silviomoreto.github.io/bootstrap-select/)
 
 ## How to test the website
 1. Install nodejs
