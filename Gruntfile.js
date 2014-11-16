@@ -74,6 +74,21 @@ module.exports = function(grunt) {
 					'--update'
 				]
 			},
+			'updateLibsProd': {
+				cmd: 'clean-bower-installer',
+				args: [
+					'--update',
+					'--renameMin'
+				]
+			},
+			winUpdateLibsProd: {
+				cmd: 'sh',
+				args: [
+					'clean-bower-installer',
+					'--update',
+					'--renameMin'
+				]
+			},
 			'express': {
 				cmd: 'node',
 				args: [
@@ -98,10 +113,10 @@ module.exports = function(grunt) {
 	grunt.registerTask('default', ['dev']);
 	if (os.type() == 'Windows_NT') {
 		devAction = ['run:winInstallLibs', 'less:development', 'concurrent:express'];
-		prodAction = ['run:winUpdateLibs', 'less:production', 'run:express'];
+		prodAction = ['run:winUpdateLibsProd', 'less:production', 'run:express'];
 	} else {
 		devAction = ['run:installLibs', 'less:development', 'concurrent:express'];
-		prodAction = ['run:updateLibs', 'less:production', 'run:express'];
+		prodAction = ['run:updateLibsProd', 'less:production', 'run:express'];
 	}
 
 	// Task(s).
