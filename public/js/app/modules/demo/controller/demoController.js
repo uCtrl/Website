@@ -31,14 +31,14 @@ angular.module('demoModule')
 		 */
 		$scope.info = {
 			"fr": [
-				["TV Ouverte","Musique Ouverte","25°C","Lumières Ouvertes"],
-				["TV Éteinte","Musique Éteinte","20°C","Lumières Éteintes"],
-				["TV Éteinte","Musique Éteinte","12°C","Lumières Éteintes"]
+				["Télévision allumée","Musique ouverte","25°C","Lumières allumées"],
+				["Télévision fermée","Musique éteinte","20°C","Lumières éteintes"],
+				["Télévision fermée","Musique éteinte","12°C","Lumières éteintes"]
 			],
 			"en": [
-				["TV is ON", "Music is ON","25°C","Lights are ON"],
-				["TV is OFF","Music is OFF","20°C","Lights are OFF"],
-				["TV is OFF","Music is OFF","12°C","Lights are OFF"]
+				["TV is on", "Music is playing","25°C","Lights are on"],
+				["TV is off","Music is stopped","20°C","Lights are off"],
+				["TV is off","Music is stopped","12°C","Lights are off"]
 			]
 		};
 
@@ -50,7 +50,7 @@ angular.module('demoModule')
 		$scope.stateActions =[
 			[" active", " active", " active", " active"],
 			["", "", " active", ""],
-			["", "", " active", ""]
+			["", "", "", ""]
 		];
 
 		/**

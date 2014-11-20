@@ -7,7 +7,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="stylesheet" href="css/style.css">
 		<link rel="icon" href="favicon.ico" />
-		<title>Home page - UCtrl Website</title>
+		<title>µCtrl</title>
 	</head>
 	<body ng-app="app">
 		<header id="top">
@@ -33,11 +33,11 @@
 
 					<div class="collapse navbar-collapse" id="navBar-collapse">
 						<ul class="nav navbar-nav" ng-if="state.current.name == 'home'">
-							<li><a ng-click="scrollSmooth('top')" class="btn" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
-							<li><a ng-click="scrollSmooth('Team')" class="btn">{{'features' | translate}}</a></li>
-							<li><a ng-click="scrollSmooth('Download')" class="btn">{{'getStarted' | translate}}</a></li>
-							<li><a ng-click="scrollSmooth('SourceCode')" class="btn">{{'developers' | translate}}</a></li>
-							<li><a ng-click="scrollSmooth('SourceCode')" class="btn" title="{{'about' | translate}}"><i class="fa fa-info-circle"></i></a></li>
+							<li class="active"><a href="#" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
+							<li><a href="#" ng-click="scrollSmooth('Team')">{{'features' | translate}}</a></li>
+							<li><a href="#" ng-click="scrollSmooth('Download')">{{'getStarted' | translate}}</a></li>
+							<li><a href="#" ng-click="scrollSmooth('SourceCode')">{{'developers' | translate}}</a></li>
+							<li><a href="#" ng-click="scrollSmooth('SourceCode')">{{'about' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -76,7 +76,7 @@
 						</div>
 					</div>
 
-					<div class="col-md-3 col-sm-6">
+					<div class="col-md-3 col-sm-6 social">
 						<h3>{{'footerKIT' | translate}}</h3>
 						<p>{{'footerSubscribe' | translate}}</p>
 
@@ -92,7 +92,7 @@
 					<div class="col-md-3 col-sm-6">
 						<h3>{{'footerContact' | translate}}</h3>
 						<em>μCtrl</em>
-						<p>2500, boulevard de l'Université<br/>Local C1-5118<br/>Sherbrooke (Québec)<br/>Canada J1K&nbsp;2R1</p>
+						<p>2500, boulevard de l'Université<br/>Local C1-5118<br/>Sherbrooke (Québec)<br/>Canada &nbsp;J1K&nbsp;2R1</p>
 
 						<em><a href="mailto:uctrl@outlook.com">uctrl@outlook.com</a></em>
 					</div>
@@ -112,6 +112,7 @@
 		<script src="js/vendor/ui-bootstrap.js"></script>
 		<script src="js/vendor/ui-bootstrap-tpls.js"></script>
 		<script src="js/vendor/jquery.scrollTo.js"></script>
+		<script src="js/vendor/angular-sanitize.js"></script>
 		<script src="js/vendor/angular-translate.js"></script>
 		<script src="js/vendor/bootstrap-select.js"></script>
 		<script src="js/tool.js"></script>

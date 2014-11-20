@@ -1,11 +1,9 @@
 .itWork {
+	padding: 10px;
+	
 	color: #FFF;
-	font-weight: bold;
-
-	h1 {
-		color: #FFF;
-		text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.7);
-	}
+	font-weight: 500;
+	text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 
 	&.bg1 {
 		background: url("../img/background/bg-feature-1.jpg") no-repeat top center / cover;
@@ -26,26 +24,22 @@
 
 		.btn {
 
-			&.active {
+			&.active, &:hover, .active:hover {
+				color: #fff;
 				background: @color_green;
 			}
 
-			&:hover, .active:hover {
-				color: #FFF;
-				background: darken(@color_green, 10%);
-			}
-
-			height: 67px;
-			width: 67px;
-			font-size: 33px;
-			line-height: 57px;
+			height: 58px;
+			width: 58px;
+			font-size: 28px;
+			line-height: 58px;
+			padding: 0;
+			margin-bottom: 5px;
 			border-radius: 34px;
-			background: @color_mediumDarkGrey;
-
-			&:hover {
-				color: #FFF;
-				background: darken(@color_green, 10%);
-			}
+			background: @color_grey;
+			
+			text-shadow: none;
+			box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 		}
 
 		.cell {

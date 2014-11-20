@@ -13,18 +13,18 @@
 		color: #FFF;
 		background-color: @color_green;
 		border-radius: 5px;
-		box-shadow: 2px 2px 2px #000;
+		box-shadow: 0px 2px 4px rgba(0,0,0,0.5);
 		position: relative;
 		font-size: 1em;
 		font-weight: 700;
 
-		i {
-			position: absolute;
-		}
-
 		&:hover {
 			color: #FFF;
 			background: darken(@color_green, 10%);
+		}
+		
+		i {
+			vertical-align: bottom;
 		}
 
 		margin-bottom: 60px;
@@ -33,39 +33,43 @@
 	@media (max-width: @screen-sm-max) {
 		font-size: 22px;
 		.btn {
-			padding: 5px 12px 5px 45px;
+			padding: 12px 17px;
 			min-height: 45px;
 			i {
-				font-size: 30px;
-				line-height: 1em;
-				left: 8px;
+				font-size: 32px;
+				padding-right: 4px;
+				margin-left: -4px;
 			}
 		}
 	}
 
 	@media (min-width: @screen-md-min) {
 		font-size: 28px;
+		
 		.btn {
-			padding: 10px 14px 10px 57px;
-			min-height: 54px;
+			min-height: 60px;
+			padding: 15px 25px;
+
 			i {
-				font-size: 38px;
-				line-height: 1em;
-				left: 10px;
+				font-size: 42px;
+				vertical-align: bottom;
+				padding-right: 5px;
+				margin-left: -6px;
 			}
 		}
 	}
 
 	@media (min-width: @screen-lg-min) {
-		font-size: 36px;
+		font-size: 34px;
+		
 		.btn {
 			min-height: 60px;
-			padding: 15px 24px 15px 82px;
+			padding: 15px 25px;
 
 			i {
-				font-size: 1.4em;
-				line-height: 1em;
-				left: 16px;
+				font-size: 48px;
+				padding-right: 5px;
+				margin-left: -6px;
 			}
 		}
 	}

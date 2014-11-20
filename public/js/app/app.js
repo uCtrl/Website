@@ -3,7 +3,7 @@
 	/**
 	 * Main application module.
 	 */
-	var app = angular.module('app', ['ui.router', 'loginModule', 'teamModule', 'demoModule', 'pascalprecht.translate']);
+	var app = angular.module('app', ['ngSanitize', 'ui.router', 'loginModule', 'teamModule', 'demoModule', 'pascalprecht.translate']);
 
 	/**
 	 * Handle the application state routing.

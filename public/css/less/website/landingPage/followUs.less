@@ -1,4 +1,5 @@
 .followUs {
+	padding: 10px 0 15px 0;
 	box-shadow: 0 4px 9px -5px #000 inset;
 	text-align: center;
 	background: url("../img/background/bg-follow-us-large.jpg") no-repeat center bottom / cover;
@@ -19,19 +20,38 @@
 
 	.element {
 		display: inline-block;
-
-		i {
-			font-size: 1.2em;
+		
+		.logo {
+			display: block;
+			opacity: 0.3;
+			
+			&:hover {
+				opacity: 0.4;
+			}
+			
+			&.facebook {
+				.img-retina("../img/social-facebook.png", "../img/social-facebook@2x.png", 282px, 72px);
+			}
+			
+			&.twitter {
+				.img-retina("../img/social-twitter.png", "../img/social-twitter@2x.png", 282px, 72px);
+			}
+			
+			&.github {
+				.img-retina("../img/social-github.png", "../img/social-github@2x.png", 282px, 72px);
+			}
 		}
 	}
 
 	@media (max-width: @screen-sm-max) {
 		.element {
 			font-size: 58px;
-			margin: 10px;
-
-			&:last-child {
-				margin-bottom: 30px;
+			margin: 20px 20px 30px 20px;
+		
+			.logo {
+				height: 46px;
+				width: 180px;
+				background-size: 180px 46px !important;
 			}
 		}
 	}
@@ -40,6 +60,12 @@
 		.element {
 			font-size: 70px;
 			margin: 30px;
+		
+			.logo {
+				height: 56px;
+				width: 220px;
+				background-size: 220px 56px !important;
+			}
 		}
 	}
 
@@ -47,6 +73,12 @@
 		.element {
 			font-size: 70px;
 			margin: 30px;
+		
+			.logo {
+				height: 72px;
+				width: 282px;
+				background-size: 282px 72px !important;
+			}
 		}
 	}
 }

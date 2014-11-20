@@ -3,19 +3,23 @@
 	color: #FFF;
 	font-size: 24px;
 	position: relative;
+	padding-top: 15px;
 
 	h1 {
 		color: #FFF;
 		text-shadow: 1px 1px 4px rgba(0,0,0,0.7);
 		font-weight: bold;
+		margin-bottom: 20px;
 	}
 
 	p , em{
-		text-shadow: 1px 1px 1px #000;
+		text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
 	}
 
 	em {
-		font-weight: bold;
+		display: block;
+		padding-top: 10px;
+		font-weight: 400;
 	}
 
 	.secondBackground {
@@ -25,7 +29,9 @@
 
 		.textZone {
 			color: #000;
-			font-size: 24px;
+			font-size: 18px;
+			font-weight: 400;
+			color: @gray-light;
 
 			p {
 				margin: 0 0 15px 0;
@@ -43,7 +49,7 @@
 			margin-right: 10px;
 
 			&:hover, &:active {
-				color: darken(@color_green, 10%);
+				color: darken(@color_green, 5%);
 			}
 		}
 	}
