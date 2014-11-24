@@ -11,27 +11,25 @@
 	</head>
 	<body ng-app="app">
 		<header id="top">
-			<nav class="navbar navbar-default navbar-fixed-top" role="navigation" ng-controller="mainMenu">
+			<nav class="navbar navbar-default navbar-fixed-top small" role="navigation" ng-controller="mainMenu" id="navBar">
 				<div class="container">
-					<div class="navbar-right navbar-btn" id="navMenu">
-						<button type="button" class="btn btn-default" ng-click="modalOpen($event);" id="singIn" ng-if="!isLogged"><i class="fa fa-user fa-fw"></i> {{'logIn' | translate}}</button>
-						<button type="button" class="btn btn-default" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'goToPortal' | translate}}</button>
-
-						<select id="langSelect" class="selectpicker" data-width="100px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
-						</select>
-					</div>
-
 					<div class="navbar-header">
 						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navBar-collapse">
 							<span class="sr-only">Toggle navigation</span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
-							<span class="icon-bar"></span>
+							<i class="fa fa-navicon"></i>
 						</button>
 						<a ng-href="index.html#/home"><img src="img/uCtrl_green.svg" alt="µCtrl logo" class="logo"/></a>
 					</div>
 
 					<div class="collapse navbar-collapse" id="navBar-collapse">
+						<div class="navbar-right navbar-btn" id="navMenu">
+							<button type="button" class="btn btn-default" ng-click="modalOpen($event);" id="singIn" ng-if="!isLogged"><i class="fa fa-user fa-fw"></i> {{'logIn' | translate}}</button>
+							<button type="button" class="btn btn-default" ui-sref="portal" id="goToPortal" ng-if="isLogged && state.current.name != 'portal'">{{'goToPortal' | translate}}</button>
+
+							<select id="langSelect" class="selectpicker" data-width="100px" ng-options="lang.value as lang.text for lang in availableLanguage" ng-model="selectedLanguage" ng-change="setLang()">
+							</select>
+						</div>
+
 						<ul class="nav navbar-nav" ng-if="state.current.name == 'home'">
 							<li class="active"><a href="#" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
 							<li><a href="#" ng-click="scrollSmooth('Team')">{{'features' | translate}}</a></li>
