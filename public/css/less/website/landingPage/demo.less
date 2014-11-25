@@ -11,20 +11,15 @@
 		color: @color_green;
 	}
 
+	.container {
+		overflow: auto;
+	}
+
 	.image {
 		margin: 35px auto;
 		position: relative;
 
-		@media (max-width: @screen-sm-max) {
-			/* [TODO] ! */
-			display: none;
-
-			.ic, .btn-slide {
-				display: none !important;
-			}
-		}
-
-		@media (min-width: @screen-md-min) {
+		@media (max-width: @screen-md-min) {
 			width: 670px;
 			height: 492px;
 
@@ -40,7 +35,7 @@
 					width: 6px;
 					position: absolute;
 					left: 86px;
-					top: -34px;
+					top: -40px;
 					content: "";
 				}
 			}
@@ -58,7 +53,7 @@
 			}
 		}
 
-		@media (min-width: @screen-lg-min) {
+		@media (min-width: @screen-md-min) {
 			width: 900px;
 			height: 410px;
 

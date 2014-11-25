@@ -1,20 +1,82 @@
 .itWork {
-	padding: 10px;
-	
+	position: relative;
 	color: #FFF;
 	font-weight: 500;
-	text-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+	text-shadow: 0 2px 4px rgba(0,0,0,0.50);
 
-	&.bg1 {
+	&.itWork {
+		height: 100%;
+	}
+
+	.bg1 {
 		background: url("../img/background/bg-feature-1.jpg") no-repeat top center / cover;
 	}
 
-	&.bg2 {
+	.bg2 {
 		background: url("../img/background/bg-feature-2.jpg") no-repeat top center / cover;
 	}
 
-	&.bg3 {
+	.bg3 {
 		background: url("../img/background/bg-feature-3.jpg") no-repeat top center / cover;
+	}
+
+	.bg1, .bg2, .bg3 {
+		padding: 10px 10px 120px 10px;
+		top: 0;
+		height: 100%;
+	}
+
+	.slideHidden {
+		position: absolute;
+		width: 100%;
+	}
+
+	.slideShowed {
+		width: 100%;
+		position: absolute;
+		transition: transform 1s;
+		z-index: 1000;
+	}
+
+	.slideHide {
+		-webkit-animation: hideSlide 1s; /* Chrome, Safari, Opera */
+		animation: hideSlide 1s;
+	}
+
+	.slideShow {
+		-webkit-animation: showSlide 1s; /* Chrome, Safari, Opera */
+		animation: showSlide 1s;
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes showSlide {
+		from {right: 2000px;}
+		to {right: 0;}
+	}
+
+	/* Standard syntax */
+	@keyframes showSlide {
+		from {right: 2000px;}
+		to {right: 0;}
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes hideSlide {
+		from {right: 0;}
+		to {left: 9999px;}
+	}
+
+	/* Standard syntax */
+	@keyframes hideSlide {
+		from {right: 0;height: 100%;}
+		to {left: 9999px;height: 100%;}
+	}
+
+	.btnZone {
+		position: absolute;
+		width: 100%;
+		bottom: 0;
+		z-index: 1001;
 	}
 
 	.btn-slide {
@@ -39,7 +101,7 @@
 			background: @color_grey;
 			
 			text-shadow: none;
-			box-shadow: 0px 2px 4px rgba(0,0,0,0.50);
+			box-shadow: 0 2px 4px rgba(0,0,0,0.50);
 		}
 
 		.cell {

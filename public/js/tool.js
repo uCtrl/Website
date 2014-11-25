@@ -1,7 +1,7 @@
 /**
  * Cookie support.
  *
- * @type {{set: set, get: get, test: test}}
+ * @type {{set: Function, get: Function, test: Function}}
  */
 var cookie = {
 	/**
@@ -63,3 +63,36 @@ function arrayObjectIndexOf(myArray, searchTerm, property) {
 }
 
 var langSelect = $('.selectpicker');
+
+// Page scroll position
+window.onscroll = pagePosition;
+var scrollRebound = true,
+	waiting = false,
+	scrollRefreshInterval,
+	navBar = document.getElementById('navBar');
+
+function pagePosition() {
+	if (scrollRebound) {
+		scrollRebound = false;
+
+		if (window.pageYOffset > 25) {
+			navBar.className = "navbar navbar-default navbar-fixed-top small";
+		} else {
+			navBar.className = "navbar navbar-default navbar-fixed-top";
+		}
+
+		window.clearTimeout(scrollRefreshInterval);
+		scrollRefreshInterval = setTimeout(function() {
+			scrollRebound = true;
+			if (waiting) {
+				waiting = false;
+				pagePosition();
+			}
+		}, 300);
+	} else {
+		waiting = true;
+	}
+}
+
+// At least one execution at page load
+pagePosition();

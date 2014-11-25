@@ -177,7 +177,7 @@ module.exports = function(grunt) {
 
 	grunt.registerTask('dev', devAction);
 
-	grunt.registerTask('prod', ['buildProd', 'expressProd']);
+	grunt.registerTask('prod', ['buildProd', 'run:expressProd']);
 
 	grunt.registerTask('deploy', ['buildProd', 'ftp-deploy:build']);
 	

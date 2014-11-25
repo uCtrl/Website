@@ -2,7 +2,7 @@
 	height: @navbar-height;
 	font-size: @navbar-default-font-size;
 	font-weight: 400;
-	box-shadow: 0px 2px 3px 0px rgba(0,0,0,0.30);
+	box-shadow: 0 2px 3px 0 rgba(0, 0, 0, 0.30);
 
 	-webkit-touch-callout: none;
 	-webkit-user-select: none;
@@ -10,6 +10,10 @@
 	-moz-user-select: none;
 	-ms-user-select: none;
 	user-select: none;
+
+	.navbar-toggle {
+		padding: 3px 14px;
+	}
 
 	.btn {
 		@media (max-width: @screen-sm-max) {
@@ -93,6 +97,38 @@
 			margin: ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) ((@navbar-height - @logo-height) /2) 0;
 		}
 	}
+
+	&.small {
+		height: 75px;
+		min-height: 75px;
+
+		.logo {
+			margin: 10px 18px;
+			height: 55px;
+		}
+
+		.navbar-toggle {
+			margin: 23px;
+		}
+
+		@media (min-width: @screen-sm-max) {
+			#navBar-collapse > ul, #navMenu {
+				margin: 23px 0;
+			}
+		}
+
+		@media (max-width: @screen-sm-max) {
+			#navBar-collapse > ul, #navMenu {
+				margin: 0;
+			}
+
+			#navBar-collapse {
+				top: 75px;
+				position: fixed;
+				width: 100%;
+			}
+		}
+	}
 }
 
 #navMenu {
@@ -117,9 +153,10 @@ ul.dropdown-menu > li > a > span {
 	}
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: @screen-sm) {
 	#navMenu {
-		position: absolute;
-		right: 74px;
+		text-align: center;
+		margin: 0 0 5px;
+		border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 	}
 }
