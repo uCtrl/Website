@@ -39,7 +39,10 @@
 			"default": {
 				"folder": "public",
 				"minFolder": "build/prod"
-			}
+			},
+		    "min": {
+			    "ignoreExt": ["less"]
+		    }
 		},
 		"source": {
 			"angular": {

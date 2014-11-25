@@ -107,18 +107,14 @@
 			var current;
 			var i;
 			for (i = 0; i < slides.length; i++) {
-				current = slides[i].clientHeight;
+				current = slides[i].getElementsByClassName('container')[0].clientHeight;
 
 				if (current > bigger) {
 					bigger = current;
 				}
 			}
 
-			itWorkContainer.style.height = (bigger) + 'px';
-
-			for (i = 0; i < btnZoneC.length; i++) {
-				slides[i].style.height = (bigger) + 'px';
-			}
+			itWorkContainer.style.height = (bigger + 120) + 'px';
 
 			window.clearTimeout(resizeInterval);
 			resizeInterval = setTimeout(function() {
@@ -127,7 +123,7 @@
 					resizeWaiting = false;
 					resizeCarousel();
 				}
-			}, 300);
+			}, 500);
 		} else {
 			resizeWaiting = true;
 		}
