@@ -39,37 +39,54 @@
 	}
 
 	.slideHide {
-		-webkit-animation: hideSlide 1s; /* Chrome, Safari, Opera */
-		animation: hideSlide 1s;
+		-webkit-animation: hideSlide 0.3s; /* Chrome, Safari, Opera */
+		animation: hideSlide 0.3s;
 	}
 
-	.slideShow {
-		-webkit-animation: showSlide 1s; /* Chrome, Safari, Opera */
-		animation: showSlide 1s;
+	.slideShowLeft {
+		-webkit-animation: showSlideLeft 0.3s; /* Chrome, Safari, Opera */
+		animation: showSlideLeft 0.3s;
+	}
+
+	.slideShowRight {
+		-webkit-animation: showSlideRight 0.3s; /* Chrome, Safari, Opera */
+		animation: showSlideRight 0.3s;
 	}
 
 	/* Chrome, Safari, Opera */
-	@-webkit-keyframes showSlide {
-		from {right: 2000px;}
-		to {right: 0;}
+	@-webkit-keyframes showSlideLeft {
+		from {left: 2500px; opacity:0;}
+		to {left: 0; opacity: 1;}
 	}
 
 	/* Standard syntax */
-	@keyframes showSlide {
-		from {right: 2000px;}
-		to {right: 0;}
+	@keyframes showSlideLeft {
+		from {left: 2500px; opacity:0;}
+		to {left: 0; opacity: 1;}
+	}
+
+	/* Chrome, Safari, Opera */
+	@-webkit-keyframes showSlideRight {
+		from {right: 2500px; opacity:0;}
+		to {right: 0; opacity: 1;}
+	}
+
+	/* Standard syntax */
+	@keyframes showSlideRight {
+		from {right: 2500px; opacity:0;}
+		to {right: 0; opacity: 1;}
 	}
 
 	/* Chrome, Safari, Opera */
 	@-webkit-keyframes hideSlide {
-		from {right: 0;}
-		to {left: 9999px;}
+		from {left: 0; opacity: 1;}
+		to {left: 2500px; opacity:0;}
 	}
 
 	/* Standard syntax */
 	@keyframes hideSlide {
-		from {right: 0;height: 100%;}
-		to {left: 9999px;height: 100%;}
+		from {left: 0; opacity: 1; height: 100%;}
+		to {left: 2500px; opacity: 0; height: 100%;}
 	}
 
 	.btnZone {
