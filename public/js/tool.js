@@ -75,7 +75,7 @@ function pagePosition() {
 	if (scrollRebound) {
 		scrollRebound = false;
 
-		if (window.pageYOffset > 25) {
+		if (window.pageYOffset > 250) {
 			navBar.className = "navbar navbar-default navbar-fixed-top small";
 		} else {
 			navBar.className = "navbar navbar-default navbar-fixed-top";
