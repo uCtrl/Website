@@ -50,6 +50,33 @@
 			.state('portal', {
 				url: '/portal',
 				templateUrl: 'views/portal/portal_container.html'
+			})
+			.state('400', {
+				url: '/400',
+				templateUrl: 'views/error/400.html'
+			})
+			.state('401', {
+				url: '/401',
+				templateUrl: 'views/error/401.html'
+			})
+			.state('403', {
+				url: '/403',
+				templateUrl: 'views/error/403.html'
+			})
+			.state('404', {
+				url: '/404',
+				templateUrl: 'views/error/404.html'
+			})
+			.state('405', {
+				url: '/405',
+				templateUrl: 'views/error/405.html'
+			})
+			.state('406', {
+				url: '/406',
+				templateUrl: 'views/error/406.html'
+			}).state('500', {
+				url: '/500',
+				templateUrl: 'views/error/500.html'
 			});
 	}]);
 

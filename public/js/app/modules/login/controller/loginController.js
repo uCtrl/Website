@@ -188,7 +188,7 @@ angular.module('loginModule')
 		};
 
 		/**
-		 * Compile the different error in the register form.
+		 * Compile the different views.error in the register form.
 		 */
 		function registerValidation() {
 			var exit = [];
