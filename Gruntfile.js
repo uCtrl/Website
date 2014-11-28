@@ -24,7 +24,8 @@ module.exports = function(grunt) {
 				files: [
 					{'build/prod/js/vendor/jquery.min.map': 'bower_components/jquery/dist/jquery.min.map'},
 					{'build/prod/js/vendor/angular.min.js.map': 'bower_components/angular/angular.min.js.map'},
-					{'build/prod/js/vendor/bootstrap-select.js.map': 'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map'}
+					{'build/prod/js/vendor/bootstrap-select.js.map': 'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map'},
+					{'build/prod/js/vendor/angular-sanitize.min.js.map': 'bower_components/angular-sanitize/angular-sanitize.min.js.map'}
 				]
 			}
 		},
@@ -32,7 +33,8 @@ module.exports = function(grunt) {
 			prod: {
 				options: {
 					removeComments: true,
-					collapseWhitespace: true
+					collapseWhitespace: true,
+					minifyJS: true
 				},
 				expand: true,
 				cwd: 'public/',
