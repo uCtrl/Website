@@ -96,7 +96,23 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"FormValidOk": "Form validation pass.",
 		"FormValidOkTxt": "Waiting for the portal to be ready.",
 		"PassMismatch": "Password mismatch",
-		"CorrErrorPls": "Please correct theses errors"
+		"CorrErrorPls": "Please correct theses errors",
+
+		/*Errors*/
+		"err400T": "Error 400 - Bad Request",
+		"err400M": "Bad Request. Your browser sent a request that this server could not understand",
+		"err401T": "Error 401 - Unauthorized",
+		"err401M": "Authorization Required",
+		"err403T": "Error 403 - Forbidden",
+		"err403M": "Forbidden: You don't have permission to access this file on this server",
+		"err404T": "Error 404 - Not Found",
+		"err404M": "The requested URL was not found on this server",
+		"err405T": "Error 405 - Method Not Allowed",
+		"err405M": "A request was made of a resource using a request method not supported by that resource",
+		"err406T": "Error 406 - Not Acceptable",
+		"err406M": "The requested resource is only capable of generating content not acceptable according to the Accept headers sent in the request",
+		"err500T": "Error 500 - Internal Server Error",
+		"err500M": "A generic error message, given when an unexpected condition was encountered and no more specific message is suitable"
 	});
 
 	$translateProvider.translations("fr", {
@@ -193,7 +209,23 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"FormValidOk": "La validation de votre formulaire a été acceptée.",
 		"FormValidOkTxt": "Préparation de votre portail.",
 		"PassMismatch": "Les mots de passe ne sont pas identiques",
-		"CorrErrorPls": "Veuillez corriger ces erreurs "
+		"CorrErrorPls": "Veuillez corriger ces erreurs ",
+
+		/*Errors*/
+		"err400T": "Erreur 400",
+		"err400M": "La syntaxe de la requête est erronée",
+		"err401T": "Erreur 401",
+		"err401M": "Une authentification est nécessaire pour accéder à la ressource",
+		"err403T": "Erreur 403",
+		"err403M": "Le serveur a compris la requête, mais refuse de l'exécuter",
+		"err404T": "Erreur 404",
+		"err404M": "Ressource non trouvée",
+		"err405T": "Erreur 405",
+		"err405M": "Méthode de requête non autorisée",
+		"err406T": "Erreur 406",
+		"err406M": "La ressource demandée n'est pas disponible",
+		"err500T": "Erreur 500",
+		"err500M": "Erreur interne du serveur"
 	});
 
 	$translateProvider.preferredLanguage("en");

@@ -53,8 +53,8 @@ This file must contain at lest these information:
 ```
 
 ## Windows problem solving
-On windows, you can get error depending of the way *git bash* was install.
+On windows, you can get views.error depending of the way *git bash* was install.
 
-To correct the error, you will have to install *git-scm* by choosing the third option when the installer asking for PATH environment.
+To correct the views.error, you will have to install *git-scm* by choosing the third option when the installer asking for PATH environment.
 
 ![Select the third choice in the PATH environment choice.](http://misheska.com/images/wingitunixtools.png)

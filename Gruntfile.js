@@ -90,33 +90,33 @@ module.exports = function(grunt) {
 			installLibs: {
 				cmd: 'clean-bower-installer',
 				args: [
-					'--install'
+					'--automatic'
 				]
 			},
 			winInstallLibs: {
 				cmd: 'sh',
 				args: [
 					'clean-bower-installer',
-					'--install'
+					'--automatic'
 				]
 			},
 			'updateLibs': {
 				cmd: 'clean-bower-installer',
 				args: [
-					'--update'
+					'--automatic'
 				]
 			},
 			winUpdateLibs: {
 				cmd: 'sh',
 				args: [
 					'clean-bower-installer',
-					'--update'
+					'--automatic'
 				]
 			},
 			'updateLibsProd': {
 				cmd: 'clean-bower-installer',
 				args: [
-					'--update',
+					'--automatic',
 					'--renameMin'
 				]
 			},
@@ -124,7 +124,7 @@ module.exports = function(grunt) {
 				cmd: 'sh',
 				args: [
 					'clean-bower-installer',
-					'--update',
+					'--automatic',
 					'--renameMin'
 				]
 			},
