@@ -10,7 +10,9 @@
 		<div class="row">
 			<div class="col-sm-6">
 				<h1><em>μCtrl</em> {{'aboutTitle' | translate}}.</h1>
+
 				<p><strong class="text-primary">μCtrl</strong> {{'aboutTxt1' | translate}}.</p>
+
 				<p>{{'aboutTxt2' | translate}}.</p>
 			</div>
 			<div class="col-sm-6">
@@ -24,13 +26,19 @@
 	<article class="demo" ng-controller="demo">
 		<div class="container">
 			<h1>{{'demoTitle' | translate}}</h1>
-			<p>{{'demoTxt1' | translate}} <strong class="text-primary">{{'demoTxt2' | translate}}</strong> {{'demoTxt3' | translate}}.</p>
+
+			<p>{{'demoTxt1' | translate}}
+				<strong class="text-primary">{{'demoTxt2' | translate}}</strong> {{'demoTxt3' | translate}}.</p>
 
 			<div class="image b bg1">
-				<div class="ic lu active" data-toggle="tooltip" data-placement="left"><i class="fa fa-lightbulb-o"></i></div>
-				<div class="ic sd active" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-volume-up"></i></div>
-				<div class="ic tm active" data-toggle="tooltip" data-placement="right"><i class="fa icm-thermo"></i></div>
-				<div class="ic tv active" data-toggle="tooltip" data-placement="left"><i class="fa fa-desktop"></i></div>
+				<div class="ic lu active" data-toggle="tooltip" data-placement="left"><i class="fa fa-lightbulb-o"></i>
+				</div>
+				<div class="ic sd active" data-toggle="tooltip" data-placement="bottom"><i class="fa fa-volume-up"></i>
+				</div>
+				<div class="ic tm active" data-toggle="tooltip" data-placement="right"><i class="fa icm-thermo"></i>
+				</div>
+				<div class="ic tv active" data-toggle="tooltip" data-placement="left"><i class="fa fa-desktop"></i>
+				</div>
 
 				<div class="btn-slide active" id="demoHome" ng-click="change(0)">
 					{{'demoBt1' | translate}}
@@ -109,7 +117,8 @@
 			<div class="btnZone">
 				<div class="btn-slide">
 					<div class="cell">
-						<div class="btn active" title="{{'itWorkBt1' | translate}}"><i class="fa fa-fw fa-magic"></i></div>
+						<div class="btn active" title="{{'itWorkBt1' | translate}}"><i class="fa fa-fw fa-magic"></i>
+						</div>
 						<br/>
 						{{'itWorkBt1' | translate}}
 					</div>
@@ -131,17 +140,35 @@
 	<article class="compatibility">
 		<div class="container">
 			<h1>{{'compatibilityTitle' | translate}}</h1>
+
 			<p>{{'compatibilityTxt' | translate}}.</p>
+
 			<div class="image-display">
-				<a href="http://www.belkin.com/us/Products/c/home-automation/" target="_blank"><img src="img/compatibility/WeMo.svg" alt="WeMo"></a>
-				<a href="http://www.sonos.com/" target="_blank"><img src="img/compatibility/sonos.svg" alt="SONOS"></a>
-				<a href="http://www.ninjablocks.com/" target="_blank"><img src="img/compatibility/ninjablocks.svg" alt="NinjaBlocks"></a>
-				<a href="http://www2.meethue.com/" target="_blank"><img src="img/compatibility/hue.svg" alt="hue"></a>
-				<a href="https://nest.com/ca/" target="_blank"><img src="img/compatibility/nest.svg" alt="nest"></a>
-				<img src="img/compatibility/uCtrl.svg" alt="uCtrl">
-				<a href="http://lifx.co/" target="_blank"><img src="img/compatibility/lifx.svg" alt="LIFX"></a>
-				<a href="https://www.tado.com/" target="_blank"><img src="img/compatibility/tado.svg" alt="tado"></a>
-				<a href="https://jawbone.com/up" target="_blank"><img src="img/compatibility/up.svg" alt="UP"></a>
+				<a href="http://www.belkin.com/us/Products/c/home-automation/" target="_blank">
+					<img src="img/compatibility/WeMo.svg" alt="WeMo" class="lgs">
+				</a>
+				<a href="http://www.sonos.com/" target="_blank">
+					<img src="img/compatibility/sonos.svg" alt="SONOS" class="lgxl">
+				</a>
+				<a href="http://www.ninjablocks.com/" target="_blank">
+					<img src="img/compatibility/ninjablocks.svg" alt="NinjaBlocks" class="lgs">
+				</a>
+				<a href="http://www2.meethue.com/" target="_blank">
+					<img src="img/compatibility/hue.svg" alt="hue" class="lgm">
+				</a>
+				<a href="https://nest.com/ca/" target="_blank">
+					<img src="img/compatibility/nest.svg" alt="nest" class="lgl">
+				</a>
+				<img src="img/compatibility/uCtrl.svg" alt="uCtrl" class="lgm">
+				<a href="http://lifx.co/" target="_blank">
+					<img src="img/compatibility/lifx.svg" alt="LIFX" class="lgxs">
+				</a>
+				<a href="https://www.tado.com/" target="_blank">
+					<img src="img/compatibility/tado.svg" alt="tado" class="lgxl">
+				</a>
+				<a href="https://jawbone.com/up" target="_blank">
+					<img src="img/compatibility/up.svg" alt="UP" class="lgm">
+				</a>
 			</div>
 		</div>
 	</article>
@@ -172,6 +199,7 @@
 						<a href="#" title="Apple"><i class="fa fa-fw fa-apple"></i></a>
 						<a href="#" title="Linux"><i class="fa fa-fw fa-linux"></i></a>
 						<br/><br/>
+
 						<p>{{'easyModC' | translate}}</p>
 
 						<a href="#" title="Android"><i class="fa fa-fw fa-android"></i></a>
@@ -186,7 +214,9 @@
 	<article class="openTech">
 		<div class="container">
 			<h1>{{'openTechTitle' | translate}}</h1>
-			<p>{{'openTechTxt1' | translate}} <em>{{'openTechTxt2' | translate}}</em> {{'openTechTxt3' | translate}} <em>{{'openTechTxt4' | translate}}</em>, <br>{{'openTechTxt5' | translate}}.</p>
+
+			<p>{{'openTechTxt1' | translate}} <em>{{'openTechTxt2' | translate}}</em> {{'openTechTxt3' | translate}}
+				<em>{{'openTechTxt4' | translate}}</em>, <br>{{'openTechTxt5' | translate}}.</p>
 
 			<div class="techSrc">
 				{{'openTechGitH' | translate}}
@@ -211,6 +241,7 @@
 	<article class="jumpIn">
 		<div class="container">
 			<h1>{{'jumpTitle' | translate}}?</h1>
+
 			<p>{{'jumpTxt' | translate}}.</p>
 
 
@@ -227,15 +258,21 @@
 			<h1>{{'followUs' | translate}}</h1>
 
 			<div class="element">
-				<a href="https://facebook.com/uctrl.io" target="_blank"><div class="facebook logo"></div></a>
+				<a href="https://facebook.com/uctrl.io" target="_blank">
+					<div class="facebook logo"></div>
+				</a>
 			</div>
 
 			<div class="element">
-				<a href="https://twitter.com/uctrl_io" target="_blank"><div class="twitter logo"></div></a>
+				<a href="https://twitter.com/uctrl_io" target="_blank">
+					<div class="twitter logo"></div>
+				</a>
 			</div>
 
 			<div class="element">
-				<a href="https://github.com/uCtrl" target="_blank"><div class="github logo"></div></a>
+				<a href="https://github.com/uCtrl" target="_blank">
+					<div class="github logo"></div>
+				</a>
 			</div>
 
 		</div>
@@ -301,7 +338,7 @@
 	}
 
 	resizeCarousel();
-	window.setTimeout(resizeCarousel(),500);
+	window.setTimeout(resizeCarousel(), 500);
 
 	function changeSlide(number) {
 		if (number != slideNumber) {
@@ -316,7 +353,7 @@
 				// Change the background
 				if (i == (number - 1)) {
 					//Show
-					slides[i].className = 'bg' + (i + 1) + (number>slideNumber?' slideShowLeft':' slideShowRight') + ' slideShowed';
+					slides[i].className = 'bg' + (i + 1) + (number > slideNumber ? ' slideShowLeft' : ' slideShowRight') + ' slideShowed';
 					slides[i].style.zIndex = 1000;
 				} else if (i == (slideNumber - 1)) {
 					//Hide

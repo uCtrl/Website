@@ -63,12 +63,15 @@ module.exports = function(grunt) {
 			prod: {
 				options: {
 					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-						'<%= grunt.template.today("yyyy-mm-dd") %> */\n'
+						'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+					maxLineLen: 10000
 				},
-				expand: true,
-				cwd: 'public/',
-				src: ['js/tool.js', 'js/app/**/*.js'],
-				dest: 'build/prod'
+				files: {
+					"build/prod/js/script.js": ['public/js/tool.js', 'public/js/app/app.js', 'public/js/app/modules/lang/appLang.js',
+						'public/js/app/modules/team/team.js', 'public/js/app/modules/team/controller/teamController.js',
+						'public/js/app/modules/login/login.js', 'public/js/app/modules/login/controller/loginController.js',
+						'public/js/app/modules/demo/demo.js', 'public/js/app/modules/demo/controller/demoController.js']
+				}
 			}
 		},
 		watch: {
