@@ -14,38 +14,7 @@
 		$stateProvider
 			.state('home', {
 				url: '/home',
-				views: {
-					"": {
-						templateUrl: 'views/home/indexContainer.html'
-					},
-					'banner@home': {
-						templateUrl: 'views/home/banner.html'
-					},
-					'about@home': {
-						templateUrl: 'views/home/about.html'
-					},
-					'demo@home': {
-						templateUrl: 'views/home/demo.html'
-					},
-					'itWork@home': {
-						templateUrl: 'views/home/itWork.html'
-					},
-					'easy@home': {
-						templateUrl: 'views/home/easy.html'
-					},
-					'compatibility@home': {
-						templateUrl: 'views/home/compatibility.html'
-					},
-					'openTech@home': {
-						templateUrl: 'views/home/openTech.html'
-					},
-					'jumpIn@home': {
-						templateUrl: 'views/home/jumpIn.html'
-					},
-					'followUs@home': {
-						templateUrl: 'views/home/followUs.html'
-					}
-				}
+				templateUrl: 'views/home/indexContainer.html'
 			})
 			.state('portal', {
 				url: '/portal',

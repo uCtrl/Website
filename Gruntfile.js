@@ -24,7 +24,8 @@ module.exports = function(grunt) {
 				files: [
 					{'build/prod/js/vendor/jquery.min.map': 'bower_components/jquery/dist/jquery.min.map'},
 					{'build/prod/js/vendor/angular.min.js.map': 'bower_components/angular/angular.min.js.map'},
-					{'build/prod/js/vendor/bootstrap-select.js.map': 'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map'}
+					{'build/prod/js/vendor/bootstrap-select.js.map': 'bower_components/bootstrap-select/dist/js/bootstrap-select.js.map'},
+					{'build/prod/js/vendor/angular-sanitize.min.js.map': 'bower_components/angular-sanitize/angular-sanitize.min.js.map'}
 				]
 			}
 		},
@@ -32,7 +33,8 @@ module.exports = function(grunt) {
 			prod: {
 				options: {
 					removeComments: true,
-					collapseWhitespace: true
+					collapseWhitespace: true,
+					minifyJS: true
 				},
 				expand: true,
 				cwd: 'public/',
@@ -61,12 +63,15 @@ module.exports = function(grunt) {
 			prod: {
 				options: {
 					banner: '/*! <%= pkg.name %> - v<%= pkg.version %> - ' +
-						'<%= grunt.template.today("yyyy-mm-dd") %> */\n'
+						'<%= grunt.template.today("yyyy-mm-dd") %> */\n',
+					maxLineLen: 10000
 				},
-				expand: true,
-				cwd: 'public/',
-				src: ['js/tool.js', 'js/app/**/*.js'],
-				dest: 'build/prod'
+				files: {
+					"build/prod/js/script.js": ['public/js/tool.js', 'public/js/app/app.js', 'public/js/app/modules/lang/appLang.js',
+						'public/js/app/modules/team/team.js', 'public/js/app/modules/team/controller/teamController.js',
+						'public/js/app/modules/login/login.js', 'public/js/app/modules/login/controller/loginController.js',
+						'public/js/app/modules/demo/demo.js', 'public/js/app/modules/demo/controller/demoController.js']
+				}
 			}
 		},
 		watch: {
