@@ -8,7 +8,7 @@
 	/**
 	 * Handle the application state routing.
 	 */
-	app.config(['$stateProvider','$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
+	app.config(['$stateProvider', '$urlRouterProvider', function ($stateProvider, $urlRouterProvider) {
 		$urlRouterProvider.otherwise('/home');
 
 		$stateProvider
@@ -60,7 +60,10 @@
 		 *
 		 * @type {{value: string, text: string}[]}
 		 */
-		$rootScope.availableLanguage = [{'value': 'en', text:'English'}, {'value': 'fr', text:'Français'}];
+		$rootScope.availableLanguage = [
+			{'value': 'en', text: 'English'},
+			{'value': 'fr', text: 'Français'}
+		];
 
 		/**
 		 * Selected language
@@ -132,6 +135,12 @@
 			langSelect.selectpicker('render');
 
 			$rootScope.$emit('changeLang');
+
+			// Resize the carousel
+			setTimeout(function() {
+				$(window).trigger('resize');
+			}, 500);
+
 		};
 
 		/**
@@ -163,7 +172,7 @@
 			}
 
 			//Need a time out to let the time to angular to generate the select
-			window.setTimeout(function() {
+			window.setTimeout(function () {
 				langSelect.selectpicker('refresh');
 			}, 50);
 		};

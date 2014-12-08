@@ -232,7 +232,8 @@
 			<div class="techSrc">
 				{{'openTechConf' | translate}}
 				<br/>
-				<a href="https://curuba.atlassian.net/wiki/" target="_blank"><i class="fa icm-confluence"></i> Confluence</a>
+				<a href="https://curuba.atlassian.net/wiki/" target="_blank"><i class="fa icm-confluence"></i>
+					Confluence</a>
 			</div>
 			<p>{{'openTechTxt6' | translate}} <em class="green">{{'openTechTxt7' | translate}}</em>.</p>
 		</div>
@@ -245,10 +246,8 @@
 			<p>{{'jumpTxt' | translate}}.</p>
 
 
-			<a href="#">
-				<div class="btn">
-					<i class="fa icm-Ctrl"></i>{{'jumpBtn' | translate}}
-				</div>
+			<a href="#" class="btn">
+				<i class="fa icm-Ctrl"></i>{{'jumpBtn' | translate}}
 			</a>
 		</div>
 	</article>
@@ -258,21 +257,15 @@
 			<h1>{{'followUs' | translate}}</h1>
 
 			<div class="element">
-				<a href="https://facebook.com/uctrl.io" target="_blank">
-					<div class="facebook logo"></div>
-				</a>
+				<a href="https://facebook.com/uctrl.io" target="_blank" class="facebook logo"></a>
 			</div>
 
 			<div class="element">
-				<a href="https://twitter.com/uctrl_io" target="_blank">
-					<div class="twitter logo"></div>
-				</a>
+				<a href="https://twitter.com/uctrl_io" target="_blank" class="twitter logo"></a>
 			</div>
 
 			<div class="element">
-				<a href="https://github.com/uCtrl" target="_blank">
-					<div class="github logo"></div>
-				</a>
+				<a href="https://github.com/uCtrl" target="_blank" class="github logo"></a>
 			</div>
 
 		</div>
@@ -280,7 +273,7 @@
 </div>
 
 <script>
-	// Carousel
+	// Carousel event watcher
 	window.onresize = resizeCarousel;
 
 	var resizeRebound = true,
@@ -296,16 +289,20 @@
 		btnZoneC = itWorkCarousel.getElementsByClassName('btnZone')[0].getElementsByClassName('btn'),
 		slideNumber = 1;
 
-	btnZoneC[0].addEventListener('click', function() {
+	// Click event watcher for the slide buttons
+	btnZoneC[0].addEventListener('click', function () {
 		changeSlide(1);
 	});
-	btnZoneC[1].addEventListener('click', function() {
+	btnZoneC[1].addEventListener('click', function () {
 		changeSlide(2);
 	});
-	btnZoneC[2].addEventListener('click', function() {
+	btnZoneC[2].addEventListener('click', function () {
 		changeSlide(3);
 	});
 
+	/**
+	 * Resize the carousel height depending of the maximum height of the content of the slide
+	 */
 	function resizeCarousel() {
 		if (resizeRebound) {
 			resizeRebound = false;
@@ -325,7 +322,7 @@
 			itWorkContainer.style.height = (bigger + 120) + 'px';
 
 			window.clearTimeout(resizeInterval);
-			resizeInterval = setTimeout(function() {
+			resizeInterval = setTimeout(function () {
 				resizeRebound = true;
 				if (resizeWaiting) {
 					resizeWaiting = false;
@@ -337,9 +334,15 @@
 		}
 	}
 
+	// Two auto carousel resize
 	resizeCarousel();
 	window.setTimeout(resizeCarousel(), 500);
 
+	/**
+	 * Change the current displayed slide
+	 *
+	 * @param number {number}
+	 */
 	function changeSlide(number) {
 		if (number != slideNumber) {
 			for (var i = 0; i < btnZoneC.length; i++) {
