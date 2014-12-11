@@ -79,6 +79,25 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpBtn": "Get Started",
 		"followUs": "Follow Us",
 
+		/*About us*/
+		"aboutUsTitle1": "was created by a team of students from ",
+		"aboutUsTitle2": "in Québec",
+		"aboutUsP1T1": "is the result of 8 months of research and development, that took place within the scope of an",
+		"aboutUsP1T2": "end-of-degree project",
+		"aboutUsP1T3": "in Computer Engineering and Electrical Engineering",
+		"aboutUsP2T1": "Supervised by",
+		"aboutUsP2T2": "3 professors",
+		"aboutUsP2T3": "the team of",
+		"aboutUsP2T4": "19 students",
+		"aboutUsP2T5": "worked days and night to build the most intelligent home automation system that exist",
+		"meetTeamTitle": "Meet The Team",
+		"meetTeamText1": "The",
+		"meetTeamText2": "system was developed by 2 groups:",
+		"meetTeamText3": "Software",
+		"meetTeamText4": "and",
+		"meetTeamText5": "Hardware",
+		"meetTeamText6": "development",
+
 		/*Modal*/
 		"ModalLoginPortal": "Login to your portal",
 		"ModalRegisterPortal": "Register to the µCtrl portal",
@@ -191,6 +210,25 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpTxt": "Améliorez votre maison avec le plus intelligent système de domotique disponible",
 		"jumpBtn": "Commencez",
 		"followUs": "Suivez-nous",
+
+		/*About us*/
+		"aboutUsTitle1": "a été créé par une équipe de l'",
+		"aboutUsTitle2": "au Québec",
+		"aboutUsP1T1": "est le résultat de 8 mois de recherche et développement, prenant place dans le cadre d'un",
+		"aboutUsP1T2": "projet de fin d'étude",
+		"aboutUsP1T3": "en Génie Informatique et en Génie Électrique",
+		"aboutUsP2T1": "Supervisé par",
+		"aboutUsP2T2": "3 professeurs",
+		"aboutUsP2T3": "l'équipe de",
+		"aboutUsP2T4": "19 étudiants",
+		"aboutUsP2T5": "a travaillé jours et nuits pour concevoir le système d'automatisation le plus intelligent existant",
+		"meetTeamTitle": "Découvrez l'équipe",
+		"meetTeamText1": "Le système",
+		"meetTeamText2": "a été développé par 2 groupes : les équipes",
+		"meetTeamText3": "Logiciel",
+		"meetTeamText4": "et",
+		"meetTeamText5": "Matériel",
+		"meetTeamText6": "",
 
 		/*Modal*/
 		"ModalLoginPortal": "Connectez-vous à votre portail",

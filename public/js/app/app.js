@@ -14,7 +14,11 @@
 		$stateProvider
 			.state('home', {
 				url: '/home',
-				templateUrl: 'views/home/indexContainer.html'
+				templateUrl: 'views/home/home.html'
+			})
+			.state('about', {
+				url: '/about',
+				templateUrl: 'views/about/about.html'
 			})
 			.state('portal', {
 				url: '/portal',
