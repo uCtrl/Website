@@ -13,15 +13,30 @@
 		width: 200px;
 		padding: 10px;
 		border-radius: 8px;
+		font-size: 16px;
+		vertical-align: top;
 
 		img {
 			width: 100%;
 			height: auto;
 		}
 
+		a, a:visited, a:hover, a:active {
+			color: #333;
+		}
+
 		&:hover {
 			background: #555;
 			color: #FAFAFA;
+
+			a, a:visited {
+				color: #EEE;
+			}
+
+			a:hover, a:active {
+				color: @color_green;
+				text-decoration: none;
+			}
 		}
 	}
 

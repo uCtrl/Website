@@ -30,12 +30,12 @@
 							</select>
 						</div>
 
-						<ul class="nav navbar-nav" ng-if="state.current.name == 'home'">
-							<li class="active"><a href="#" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
+						<ul class="nav navbar-nav">
+							<li ng-class="{ active: state.current.name == 'home' }"><a href="#" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
 							<li><a href="#" ng-click="scrollSmooth('Team')">{{'features' | translate}}</a></li>
 							<li><a href="#" ng-click="scrollSmooth('Download')">{{'getStarted' | translate}}</a></li>
 							<li><a href="#" ng-click="scrollSmooth('SourceCode')">{{'developers' | translate}}</a></li>
-							<li><a href="#/about" ng-click="scrollSmooth('SourceCode')">{{'about' | translate}}</a></li>
+							<li ng-class="{ active: state.current.name == 'about' }"><a href="#/about" ng-click="scrollSmooth('SourceCode')">{{'about' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>

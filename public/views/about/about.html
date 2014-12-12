@@ -12,114 +12,38 @@
 		</div>
 	</article>
 
-	<article class="meetTeam">
+	<article class="meetTeam" ng-controller="teamList">
 		<h1>{{'meetTeamTitle' | translate}}</h1>
 		<p>{{'meetTeamText1' | translate}} <em>μCtrl</em> {{'meetTeamText2' | translate}} <b>{{'meetTeamText3' | translate}}</b> {{'meetTeamText4' | translate}} <b>{{'meetTeamText5' | translate}}</b> {{'meetTeamText6' | translate}}.</p>
 
 		<div class="container">
 			<div class="col-lg-12 align-left">
-				<div class="btn active">{{'meetTeamText3' | translate}}</div>
-				<div class="btn">{{'meetTeamText5' | translate}}</div>
+				<div class="btn active" id="displaySoft">{{'meetTeamText3' | translate}}</div>
+				<div class="btn" id="displayHard">{{'meetTeamText5' | translate}}</div>
 			</div>
-			<div class="col-lg-12">
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
+			<div class="col-lg-12" id="software">
+				<div class="presenter" ng-repeat="teammate in team.software | orderBy:'lastName'">
+					<img ng-if="teammate.picture != ''" ng-src="img/teamPictures/{{teammate.picture}}" alt="{{teammate.firstName + ' ' + teammate.lastName}}"/>
+					<img ng-if="teammate.picture == ''" ng-src="img/NO-PICTURE.jpg" alt="img-thumbnail" style="border-radius: 100%;"/>
+					<b>{{teammate.firstName + ' ' + teammate.lastName}}</b>
+					<p>{{position(teammate[getLang()].post)}}</p>
 					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
+						<a ng-if="teammate.facebook != ''" class="fa fa-facebook fa-fw" ng-href="{{teammate.facebook}}" target="_blank" title="Facebook"></a>
+						<a ng-if="teammate.linkedIn != ''" class="fa fa-linkedin fa-fw" ng-href="{{teammate.linkedIn}}" target="_blank" title="LinkedIn"></a>
+						<a ng-if="teammate.email != ''" class="fa fa-envelope fa-fw" ng-href="{{teammate.email}}" title="Email"></a>
 					</p>
 				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
+			</div>
+			<div class="col-lg-12" id="hardware" style="display: none;">
+				<div class="presenter" ng-repeat="teammate in team.hardware | orderBy:'lastName'">
+					<img ng-if="teammate.picture != ''" ng-src="img/teamPictures/{{teammate.picture}}" alt="{{teammate.firstName + ' ' + teammate.lastName}}"/>
+					<img ng-if="teammate.picture == ''" ng-src="img/NO-PICTURE.jpg" alt="img-thumbnail" style="border-radius: 100%;"/>
+					<b>{{teammate.firstName + ' ' + teammate.lastName}}</b>
+					<p>{{position(teammate[getLang()].post)}}</p>
 					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
-					</p>
-				</div>
-				<div class="presenter">
-					<img src="img/teamPictures/team-beauchemin.png" alt="Francis Beauchemin"/>
-					<b>Francis Beauchemin</b>
-					<p>Voice Specialist</p>
-					<p>
-						<i class="fa fa-facebook fa-fw"></i>
-						<i class="fa fa-linkedin fa-fw"></i>
-						<i class="fa fa-envelope  fa-fw"></i>
+						<a ng-if="teammate.facebook != ''" class="fa fa-facebook fa-fw" ng-href="{{teammate.facebook}}" target="_blank" title="Facebook"></a>
+						<a ng-if="teammate.linkedIn != ''" class="fa fa-linkedin fa-fw" ng-href="{{teammate.linkedIn}}" target="_blank" title="LinkedIn"></a>
+						<a ng-if="teammate.email != ''" class="fa fa-envelope fa-fw" ng-href="{{teammate.email}}" title="Email"></a>
 					</p>
 				</div>
 			</div>
@@ -145,3 +69,34 @@
 		</div>
 	</article>
 </div>
+<script>
+	var btnS = document.getElementById('displaySoft'),
+		btnH = document.getElementById('displayHard');
+
+	btnS.addEventListener('click', function() {
+		changeTeamDisplay('S');
+	});
+
+	btnH.addEventListener('click', function() {
+		changeTeamDisplay('H');
+	});
+
+	var oldTeam = '';
+	function changeTeamDisplay(team) {
+		if (team !== oldTeam) {
+			oldTeam = team;
+
+			if (team === 'S') {
+				$('#hardware').hide('slow');
+				$('#software').show('slow');
+				btnS.className = "btn active";
+				btnH.className = "btn";
+			} else {
+				$('#software').hide('slow');
+				$('#hardware').show('slow');
+				btnS.className = "btn";
+				btnH.className = "btn active";
+			}
+		}
+	}
+</script>

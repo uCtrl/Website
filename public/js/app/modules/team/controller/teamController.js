@@ -11,32 +11,44 @@ angular.module('teamModule')
 		/**
 		 * team.software empty object, mainly for intellisense purpose.
 		 *
-		 * @type {{firstName: string, lastName: string, email: string, post: string, text: string, picture: string}[]}
+		 * @type {{firstName: string, lastName: string, email: string, linkedIn: string, facebook: string, picture: string, en: {post: string}, fr: {post: string}}[]}
 		 */
 		$scope.team.software = [
 			{
 				"firstName": "",
 				"lastName": "",
 				"email": "",
-				"post": "",
-				"text": "",
-				"picture": ""
+				"linkedIn": "",
+				"facebook": "",
+				"picture": "",
+				"en": {
+					"post": ""
+				},
+				"fr": {
+					"post": ""
+				}
 			}
 		];
 
 		/**
 		 * team.hardware empty object, mainly for intellisense purpose.
 		 *
-		 * @type {{firstName: string, lastName: string, email: string, post: string, text: string, picture: string}[]}
+		 * @type {{firstName: string, lastName: string, email: string, linkedIn: string, facebook: string, picture: string, en: {post: string}, fr: {post: string}}[]}
 		 */
 		$scope.team.hardware = [
 			{
 				"firstName": "",
 				"lastName": "",
 				"email": "",
-				"post": "",
-				"text": "",
-				"picture": ""
+				"linkedIn": "",
+				"facebook": "",
+				"picture": "",
+				"en": {
+					"post": ""
+				},
+				"fr": {
+					"post": ""
+				}
 			}
 		];
 
