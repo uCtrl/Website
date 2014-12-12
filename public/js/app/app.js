@@ -20,6 +20,10 @@
 				url: '/about',
 				templateUrl: 'views/about/about.html'
 			})
+			.state('developers', {
+				url: '/developers',
+				templateUrl: 'views/developers/developers.html'
+			})
 			.state('portal', {
 				url: '/portal',
 				templateUrl: 'views/portal/portal_container.html'

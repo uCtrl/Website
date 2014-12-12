@@ -1,0 +1,87 @@
+.extendIt {
+	background: url("../img/background/bg-usability-large.jpg") no-repeat top center / cover;
+	color: #FFF;
+	font-size: 24px;
+	position: relative;
+	padding-top: 15px;
+	text-align: center;
+	padding-bottom: 50px;
+
+	h1, p {
+		text-shadow: 0px 2px 2px rgba(0, 0, 0, 0.65);
+	}
+
+	em {
+		color: @color_green;
+		font-weight: bold;
+		margin: 15px 20px;
+		display: block;
+	}
+
+	.techSrc {
+		display: inline-block;
+		color: @color_green;
+		margin: 15px 20px;
+		font-size: 15px;
+		font-weight: bold;
+
+		a {
+			color: @color_green;
+			white-space: nowrap;
+			font-weight: 700;
+
+			&:hover, &:active, &:focus {
+				color: darken(@color_green, 10%);
+				text-decoration: none;
+			}
+
+			i {
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	@media (max-width: @screen-sm-max) {
+		.techSrc {
+			text-align: center;
+			font-weight: bold;
+			font-size: 16px;
+
+			a {
+				font-size: 36px;
+			}
+		}
+
+		em {
+			line-height: 36px;
+		}
+	}
+
+	@media (min-width: @screen-md-min) {
+		.techSrc {
+			text-align: left;
+
+			a {
+				font-size: 38px;
+			}
+		}
+
+		em {
+			line-height: 38px;
+		}
+	}
+
+	@media (min-width: @screen-lg-min) {
+		.techSrc {
+			text-align: left;
+
+			a {
+				font-size: 48px;
+			}
+		}
+
+		em {
+			line-height: 48px;
+		}
+	}
+}

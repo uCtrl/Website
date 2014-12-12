@@ -2,6 +2,8 @@
 
 angular.module('app').config(["$translateProvider", function ($translateProvider) {
 	$translateProvider.translations("en", {
+		"lang": "en",
+
 		/*Header*/
 		"logIn": "Log In",
 		"goToPortal": "Go To Portal",
@@ -98,6 +100,31 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"meetTeamText5": "Hardware",
 		"meetTeamText6": "development",
 
+		/*Developers*/
+		"wantToExtendTitle": "Want To Extend µCtrl",
+		"wantToExtendSubTitle1": "Whether you want to",
+		"wantToExtendSubTitle2": "contribute",
+		"wantToExtendSubTitle3": "or you're simply",
+		"wantToExtendSubTitle4": "curious",
+		"wantToExtendT1": "Browse the source code",
+		"wantToExtendT2": "Explore the source map",
+		"wantToExtendT3": "Read the documentation",
+		"doesItWkTitle": "How Does It Work",
+		"doesItWkSubTitle1": "The",
+		"doesItWkSubTitle2": "system, in a nutshell",
+		"doesItWkT1": "works over",
+		"doesItWkT2": "power-line communication",
+		"doesItWkT3": "(PLC) to work with its own devices",
+		"doesItWkT4": "It also works with",
+		"doesItWkT5": "using its own server, with a custom layer called",
+		"doesItWkT6": "That way",
+		"doesItWkT7": "everything",
+		"doesItWkT8": "is connected",
+		"doesItWkT9": "all the time",
+		"doesItWkT10": "and",
+		"doesItWkT11": "everywhere",
+		"devJumpTitle": "Want To Jump In Directly",
+
 		/*Modal*/
 		"ModalLoginPortal": "Login to your portal",
 		"ModalRegisterPortal": "Register to the µCtrl portal",
@@ -135,6 +162,8 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 	});
 
 	$translateProvider.translations("fr", {
+		"lang": "fr",
+
 		/*Header*/
 		"logIn": "Connexion",
 		"goToPortal": "Aller au portail",
@@ -229,6 +258,31 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"meetTeamText4": "et",
 		"meetTeamText5": "Matériel",
 		"meetTeamText6": "",
+
+		/*Developers*/
+		"wantToExtendTitle": "Prêt À Étendre µCtrl",
+		"wantToExtendSubTitle1": "Que vous voulez",
+		"wantToExtendSubTitle2": "contribuer",
+		"wantToExtendSubTitle3": "ou si vous êtes simplement",
+		"wantToExtendSubTitle4": "curieux",
+		"wantToExtendT1": "Parcourir le code source",
+		"wantToExtendT2": "Explorer le plan des sources",
+		"wantToExtendT3": "Lire la documentation",
+		"doesItWkTitle": "How Does It Work",
+		"doesItWkSubTitle1": "Le système",
+		"doesItWkSubTitle2": "en quelques mots",
+		"doesItWkT1": "fonctionne par",
+		"doesItWkT2": "courants porteurs de ligne",
+		"doesItWkT3": "(PLC, en anglais) a fin de communiquer avec ses propres dispositifs",
+		"doesItWkT4": "Il est également compatibles",
+		"doesItWkT5": "utilisant leurs propres serveurs, à l'aide d'un mudule appelé",
+		"doesItWkT6": "Ainsi",
+		"doesItWkT7": "tout",
+		"doesItWkT8": "est connecté",
+		"doesItWkT9": "à tout moment",
+		"doesItWkT10": "et",
+		"doesItWkT11": "partout",
+		"devJumpTitle": "Commencer Maintenant",
 
 		/*Modal*/
 		"ModalLoginPortal": "Connectez-vous à votre portail",
