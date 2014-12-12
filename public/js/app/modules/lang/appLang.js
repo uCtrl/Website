@@ -217,7 +217,7 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"aboutUsP1T1": "est le résultat de 8 mois de recherche et développement, prenant place dans le cadre d'un",
 		"aboutUsP1T2": "projet de fin d'étude",
 		"aboutUsP1T3": "en Génie Informatique et en Génie Électrique",
-		"aboutUsP2T1": "Supervisé par",
+		"aboutUsP2T1": "Supervisée par",
 		"aboutUsP2T2": "3 professeurs",
 		"aboutUsP2T3": "l'équipe de",
 		"aboutUsP2T4": "19 étudiants",
@@ -225,9 +225,9 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"meetTeamTitle": "Découvrez l'équipe",
 		"meetTeamText1": "Le système",
 		"meetTeamText2": "a été développé par 2 groupes : les équipes",
-		"meetTeamText3": "Logiciel",
+		"meetTeamText3": "Logicielle",
 		"meetTeamText4": "et",
-		"meetTeamText5": "Matériel",
+		"meetTeamText5": "Matérielle",
 		"meetTeamText6": "",
 
 		/*Modal*/
