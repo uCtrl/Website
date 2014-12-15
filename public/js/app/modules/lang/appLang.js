@@ -2,6 +2,8 @@
 
 angular.module('app').config(["$translateProvider", function ($translateProvider) {
 	$translateProvider.translations("en", {
+		"lang": "en",
+
 		/*Header*/
 		"logIn": "Log In",
 		"goToPortal": "Go To Portal",
@@ -79,6 +81,50 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpBtn": "Get Started",
 		"followUs": "Follow Us",
 
+		/*About us*/
+		"aboutUsTitle1": "was created by a team of students from ",
+		"aboutUsTitle2": "in Québec",
+		"aboutUsP1T1": "is the result of 8 months of research and development, that took place within the scope of an",
+		"aboutUsP1T2": "end-of-degree project",
+		"aboutUsP1T3": "in Computer Engineering and Electrical Engineering",
+		"aboutUsP2T1": "Supervised by",
+		"aboutUsP2T2": "3 professors",
+		"aboutUsP2T3": "the team of",
+		"aboutUsP2T4": "19 students",
+		"aboutUsP2T5": "worked days and night to build the most intelligent home automation system that exist",
+		"meetTeamTitle": "Meet The Team",
+		"meetTeamText1": "The",
+		"meetTeamText2": "system was developed by 2 groups:",
+		"meetTeamText3": "Software",
+		"meetTeamText4": "and",
+		"meetTeamText5": "Hardware",
+		"meetTeamText6": "development",
+
+		/*Developers*/
+		"wantToExtendTitle": "Want To Extend µCtrl",
+		"wantToExtendSubTitle1": "Whether you want to",
+		"wantToExtendSubTitle2": "contribute",
+		"wantToExtendSubTitle3": "or you're simply",
+		"wantToExtendSubTitle4": "curious",
+		"wantToExtendT1": "Browse the source code",
+		"wantToExtendT2": "Explore the source map",
+		"wantToExtendT3": "Read the documentation",
+		"doesItWkTitle": "How Does It Work",
+		"doesItWkSubTitle1": "The",
+		"doesItWkSubTitle2": "system, in a nutshell",
+		"doesItWkT1": "works over",
+		"doesItWkT2": "power-line communication",
+		"doesItWkT3": "(PLC) to work with its own devices",
+		"doesItWkT4": "It also works with",
+		"doesItWkT5": "using its own server, with a custom layer called",
+		"doesItWkT6": "That way",
+		"doesItWkT7": "everything",
+		"doesItWkT8": "is connected",
+		"doesItWkT9": "all the time",
+		"doesItWkT10": "and",
+		"doesItWkT11": "everywhere",
+		"devJumpTitle": "Want To Jump In Directly",
+
 		/*Modal*/
 		"ModalLoginPortal": "Login to your portal",
 		"ModalRegisterPortal": "Register to the µCtrl portal",
@@ -116,6 +162,8 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 	});
 
 	$translateProvider.translations("fr", {
+		"lang": "fr",
+
 		/*Header*/
 		"logIn": "Connexion",
 		"goToPortal": "Aller au portail",
@@ -191,6 +239,50 @@ angular.module('app').config(["$translateProvider", function ($translateProvider
 		"jumpTxt": "Améliorez votre maison avec le plus intelligent système de domotique disponible",
 		"jumpBtn": "Commencez",
 		"followUs": "Suivez-nous",
+
+		/*About us*/
+		"aboutUsTitle1": "a été créé par une équipe de l'",
+		"aboutUsTitle2": "au Québec",
+		"aboutUsP1T1": "est le résultat de 8 mois de recherche et développement, prenant place dans le cadre d'un",
+		"aboutUsP1T2": "projet de fin d'étude",
+		"aboutUsP1T3": "en Génie Informatique et en Génie Électrique",
+		"aboutUsP2T1": "Supervisé par",
+		"aboutUsP2T2": "3 professeurs",
+		"aboutUsP2T3": "l'équipe de",
+		"aboutUsP2T4": "19 étudiants",
+		"aboutUsP2T5": "a travaillé jours et nuits pour concevoir le système d'automatisation le plus intelligent existant",
+		"meetTeamTitle": "Découvrez l'équipe",
+		"meetTeamText1": "Le système",
+		"meetTeamText2": "a été développé par 2 groupes : les équipes",
+		"meetTeamText3": "Logiciel",
+		"meetTeamText4": "et",
+		"meetTeamText5": "Matériel",
+		"meetTeamText6": "",
+
+		/*Developers*/
+		"wantToExtendTitle": "Prêt À Étendre µCtrl",
+		"wantToExtendSubTitle1": "Que vous voulez",
+		"wantToExtendSubTitle2": "contribuer",
+		"wantToExtendSubTitle3": "ou si vous êtes simplement",
+		"wantToExtendSubTitle4": "curieux",
+		"wantToExtendT1": "Parcourir le code source",
+		"wantToExtendT2": "Explorer le plan des sources",
+		"wantToExtendT3": "Lire la documentation",
+		"doesItWkTitle": "How Does It Work",
+		"doesItWkSubTitle1": "Le système",
+		"doesItWkSubTitle2": "en quelques mots",
+		"doesItWkT1": "fonctionne par",
+		"doesItWkT2": "courants porteurs de ligne",
+		"doesItWkT3": "(PLC, en anglais) a fin de communiquer avec ses propres dispositifs",
+		"doesItWkT4": "Il est également compatible",
+		"doesItWkT5": "utilisant leurs propres serveurs, à l'aide d'un module appelé",
+		"doesItWkT6": "Ainsi",
+		"doesItWkT7": "tout",
+		"doesItWkT8": "est connecté",
+		"doesItWkT9": "à tout moment",
+		"doesItWkT10": "et",
+		"doesItWkT11": "partout",
+		"devJumpTitle": "Commencer Maintenant",
 
 		/*Modal*/
 		"ModalLoginPortal": "Connectez-vous à votre portail",

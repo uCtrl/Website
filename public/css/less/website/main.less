@@ -2,6 +2,8 @@
 @import "footer";
 
 @import "landingPage/index";
+@import "developers/index";
+@import "about/index";
 
 *, *:focus {
 	box-sizing: border-box;
@@ -77,4 +79,22 @@ em {
 
 section.ng-scope {
 	min-height: 800px;
+}
+
+@media (max-width: @screen-sm-max) {
+	h1 {
+		font-size: 32px;
+	}
+}
+
+@media (min-width: @screen-md-min) {
+	h1 {
+		font-size: 38px;
+	}
+}
+
+@media (min-width: @screen-lg-min) {
+	h1 {
+		font-size: 48px;
+	}
 }
