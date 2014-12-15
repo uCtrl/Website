@@ -95,7 +95,7 @@
 				"post": "QML Adept"
 			},
 			"fr": {
-				"post": "Spécialist QML"
+				"post": "Spécialiste QML"
 			}
 		},
 		{
@@ -148,12 +148,12 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-brouillette.png",
 			"en": {
-				"post": ""
+				"post": "Hardware Designer"
 			},
 			"fr": {
-				"post": ""
+				"post": "Concepteur Matériel"
 			}
 		},
 		{
@@ -162,12 +162,12 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-amour.png",
 			"en": {
-				"post": ""
+				"post": "Kiosk Builder"
 			},
 			"fr": {
-				"post": ""
+				"post": "Monteur de Kiosque"
 			}
 		},
 		{
@@ -176,7 +176,7 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-gagnon.png",
 			"en": {
 				"post": "Pokemon Master"
 			},
@@ -190,7 +190,7 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-guillemette.png",
 			"en": {
 				"post": "EMBED Specialist"
 			},
@@ -204,7 +204,7 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-proulx.png",
 			"en": {
 				"post": "One Man Army"
 			},
@@ -232,7 +232,7 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-rivest.png",
 			"en": {
 				"post": ""
 			},
@@ -246,7 +246,7 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-therriault.png",
 			"en": {
 				"post": "PLC Specialist"
 			},
@@ -260,12 +260,12 @@
 			"email": "",
 			"linkedIn": "",
 			"facebook": "",
-			"picture": "",
+			"picture": "team-cunff.png",
 			"en": {
-				"post": ""
+				"post": "Intern"
 			},
 			"fr": {
-				"post": ""
+				"post": "Stagiaire"
 			}
 		}
 	]
