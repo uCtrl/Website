@@ -31,11 +31,11 @@
 						</div>
 
 						<ul class="nav navbar-nav">
-							<li ng-class="{ active: state.current.name == 'home' }"><a href="#/home" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
+							<li ng-class="{ active: state.current.name == 'home' }"><a ng-href="#/home" ng-click="scrollSmooth('top')" title="{{'home' | translate}}"><i class="fa fa-home"></i></a></li>
 							<li><a href="#" ng-click="scrollSmooth('Team')">{{'features' | translate}}</a></li>
 							<li><a href="#" ng-click="scrollSmooth('Download')">{{'getStarted' | translate}}</a></li>
-							<li ng-class="{ active: state.current.name == 'developers' }"><a href="#/developers" ng-click="scrollSmooth('SourceCode')">{{'developers' | translate}}</a></li>
-							<li ng-class="{ active: state.current.name == 'about' }"><a href="#/about" ng-click="scrollSmooth('SourceCode')">{{'about' | translate}}</a></li>
+							<li ng-class="{ active: state.current.name == 'developers' }"><a ng-href="#/developers" ng-click="scrollSmooth('SourceCode')">{{'developers' | translate}}</a></li>
+							<li ng-class="{ active: state.current.name == 'about' }"><a ng-href="#/about" ng-click="scrollSmooth('SourceCode')">{{'about' | translate}}</a></li>
 						</ul>
 					</div>
 				</div>
@@ -62,10 +62,10 @@
 								<h3>{{'footerLink' | translate}}</h3>
 
 								<div class="links" ng-controller="mainMenu">
-									<div class="link"><a href="#">{{'home' | translate}}</a></div>
-									<div class="link"><a href="">{{'developers' | translate}}</a></div>
-									<div class="link"><a href="">{{'features' | translate}}</a></div>
-									<div class="link"><a href="">{{'about' | translate}}</a></div>
+									<div class="link"><a ng-href="#/home">{{'home' | translate}}</a></div>
+									<div class="link"><a ng-href="#/developers">{{'developers' | translate}}</a></div>
+									<div class="link"><a ng-href="">{{'features' | translate}}</a></div>
+									<div class="link"><a ng-href="#/about">{{'about' | translate}}</a></div>
 									<div class="link"><a href="">{{'getStarted' | translate}}</a></div>
 									<div class="link"><a href="" ng-click="modalOpen($event);">{{'logIn' | translate}}</a></div>
 									<div class="link"><a href="">{{'blog' | translate}}</a></div>
